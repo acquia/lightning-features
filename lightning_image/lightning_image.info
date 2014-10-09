@@ -1,0 +1,13 @@
+name = lightning Image
+description = Basic Image field configurations.
+core = 7.x
+package = Lightning
+version = 7.x-1.0
+project = lightning_image
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_file_image_alt_text
+features[field_base][] = field_file_image_title_text
+features[field_base][] = field_image

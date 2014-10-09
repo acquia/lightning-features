@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_landing feature.
+ */
+
+include_once 'lightning_landing.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_landing_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_landing enabled ' . $component . ' component');
+}
+

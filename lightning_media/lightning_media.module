@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_media feature.
+ */
+
+include_once 'lightning_media.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_media_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_media enabled ' . $component . ' component');
+}
+

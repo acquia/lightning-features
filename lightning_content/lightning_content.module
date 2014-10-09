@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_content feature.
+ */
+
+include_once 'lightning_content.features.inc';
+
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_content_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_content enabled ' . $component . ' component');
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function lightning_content_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['alternate'] = array(
+    'label' => t('Alternate'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['thumbnail'] = array(
+    'label' => t('Thumbnail'),
+    'custom settings' => TRUE,
+  );
+}
+

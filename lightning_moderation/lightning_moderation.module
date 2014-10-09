@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_moderation moderation feature.
+ */
+
+include_once 'lightning_moderation.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_moderation_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_moderation enabled ' . $component . ' component');
+}
+

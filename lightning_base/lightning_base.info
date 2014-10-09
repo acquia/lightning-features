@@ -1,0 +1,11 @@
+name = lightning Base
+description = Generic field base configurations.
+core = 7.x
+package = Lightning
+version = 7.x-1.0
+project = lightning_base
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = comment_body
