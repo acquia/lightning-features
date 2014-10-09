@@ -90,6 +90,13 @@ projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
+projects[escape_admin][version] = "1.x-dev"
+projects[escape_admin][type] = "module"
+projects[escape_admin][subdir] = "contrib"
+projects[escape_admin][download][type] = "git"
+projects[escape_admin][download][revision] = "ecd3f58"
+projects[escape_admin][download][branch] = "7.x-1.x"
+
 projects[fape][version] = "1.2"
 projects[fape][type] = "module"
 projects[fape][subdir] = "contrib"

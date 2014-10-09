@@ -8,6 +8,7 @@ dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = lightning_roles
 dependencies[] = ember_support
+dependencies[] = escape_admin
 dependencies[] = features
 dependencies[] = jquery_update
 dependencies[] = menu
