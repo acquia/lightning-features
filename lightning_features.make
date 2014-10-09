@@ -287,10 +287,6 @@ projects[plupload][version] = "1.6"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[pm_existing_pages][version] = "1.4"
-projects[pm_existing_pages][type] = "module"
-projects[pm_existing_pages][subdir] = "contrib"
-
 projects[quickedit][version] = "1.x-dev"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
