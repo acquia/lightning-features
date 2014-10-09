@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Code for the Curate Article feature.
+ */
+
+include_once 'curate_article.features.inc';
+/**
+ * @file
+ * Code for the curate_article feature.
+ */
+

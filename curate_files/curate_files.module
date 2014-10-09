@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the curate_files feature.
+ */
+
+include_once 'curate_files.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function curate_files_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'curate_files enabled ' . $component . ' component');
+}
+

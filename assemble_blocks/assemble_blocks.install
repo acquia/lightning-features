@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for Assemble module
+ */
+
+/**
+ * Implements hook_install().
+ */
+function assemble_blocks_install() {
+
+  $submodules = array(
+    'assemble_blocks_breakpoints',
+    'assemble_blocks_forms',
+    'assemble_blocks_fpp',
+    'assemble_blocks_landing',
+    'assemble_blocks_letterbox',
+    'assemble_blocks_panels',
+    'assemble_blocks_views',
+  );
+  //Enable the optional submodules.
+  module_enable($submodules, TRUE);
+
+}
+

@@ -1,0 +1,14 @@
+name = Curate Roles
+description = User role configurations.
+core = 7.x
+package = Lightning
+version = 7.x-1.0
+project = curate_roles
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = role_export
+dependencies[] = system
+datestamp = 1408404197
+features[features_api][] = api:2
+features[user_role][] = curator
+features[user_role][] = reviewer

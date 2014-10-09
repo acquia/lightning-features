@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the assemble_roles feature.
+ */
+
+include_once 'assemble_roles.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function assemble_roles_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'assemble_roles enabled ' . $component . ' component');
+}
+

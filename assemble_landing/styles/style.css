@@ -1,0 +1,2 @@
+/* hide the panelizer reset button when using the content type "landing page" because of undesired results  */
+.node-type-landing #panelizer-ipe-revert {display:none;}
