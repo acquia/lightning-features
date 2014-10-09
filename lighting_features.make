@@ -1,12 +1,6 @@
 api = 2
 core = 7.x
 
-projects[assemble][version] = "1.x-dev"
-projects[assemble][type] = "module"
-projects[assemble][subdir] = "contrib"
-projects[assemble][download][type] = "git"
-projects[assemble][download][branch] = "7.x-1.x"
-
 projects[better_formats][version] = "1.0-beta1"
 projects[better_formats][type] = "module"
 projects[better_formats][subdir] = "contrib"
@@ -63,12 +57,6 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"
 projects[ctools][download][revision] = "ae66d65"
 projects[ctools][download][branch] = "7.x-1.x"
-
-projects[curate][version] = "1.x-dev"
-projects[curate][type] = "module"
-projects[curate][subdir] = "contrib"
-projects[curate][download][type] = "git"
-projects[curate][download][branch] = "7.x-1.x"
 
 projects[date][version] = "2.8"
 projects[date][type] = "module"
