@@ -1,4 +1,4 @@
-name = lightning Panels
+name = Lightning Panels
 description = Layout building toolset and base configurations.
 core = 7.x
 package = Lightning

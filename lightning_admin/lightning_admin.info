@@ -1,4 +1,4 @@
-name = lightning Admin
+name = Lightning Admin
 description = Basic administration settings.
 core = 7.x
 package = Lightning

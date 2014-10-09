@@ -1,4 +1,4 @@
-name = lightning Files
+name = Lightning Files
 description = File Entity Configurations.
 core = 7.x
 package = Lightning

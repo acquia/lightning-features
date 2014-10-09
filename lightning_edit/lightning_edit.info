@@ -1,4 +1,4 @@
-name = lightning Edit
+name = Lightning Edit
 description = In-place content editing configurations.
 core = 7.x
 package = Lightning

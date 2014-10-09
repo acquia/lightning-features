@@ -1,4 +1,4 @@
-name = lightning Image
+name = Lightning Image
 description = Basic Image field configurations.
 core = 7.x
 package = Lightning

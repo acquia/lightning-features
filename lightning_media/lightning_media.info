@@ -1,4 +1,4 @@
-name = lightning Media
+name = Lightning Media
 description = Media configurations.
 core = 7.x
 package = Lightning

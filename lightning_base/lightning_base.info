@@ -1,4 +1,4 @@
-name = lightning Base
+name = Lightning Base
 description = Generic field base configurations.
 core = 7.x
 package = Lightning

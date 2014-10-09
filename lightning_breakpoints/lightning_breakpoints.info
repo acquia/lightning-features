@@ -1,4 +1,4 @@
-name = lightning Breakpoints
+name = Lightning Breakpoints
 description = Basic breakpoint configurations.
 core = 7.x
 package = Lightning

@@ -1,4 +1,4 @@
-name = lightning Filter
+name = Lightning Filter
 description = Text format and filter configurations.
 core = 7.x
 package = Lightning

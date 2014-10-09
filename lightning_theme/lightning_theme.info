@@ -1,4 +1,4 @@
-name = lightning Theme
+name = Lightning Theme
 description = Administration theme configuration.
 core = 7.x
 package = Lightning

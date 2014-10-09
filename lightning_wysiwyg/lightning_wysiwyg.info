@@ -1,4 +1,4 @@
-name = lightning WYSIWYG
+name = Lightning WYSIWYG
 description = WYSIWIG editor configurations.
 core = 7.x
 package = Lightning

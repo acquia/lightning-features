@@ -1,4 +1,4 @@
-name = lightning Roles
+name = Lightning Roles
 description = User role configurations.
 core = 7.x
 package = Lightning

@@ -1,4 +1,4 @@
-name = lightning SPS
+name = Lightning SPS
 description = Site preview system configurations.
 core = 7.x
 package = Lightning

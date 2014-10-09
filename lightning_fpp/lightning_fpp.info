@@ -1,4 +1,4 @@
-name = lightning FPP
+name = Lightning FPP
 description = Fieldable Panels Pane (Widget) configurations.
 core = 7.x
 package = Lightning

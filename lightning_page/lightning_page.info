@@ -1,4 +1,4 @@
-name = lightning Page
+name = Lightning Page
 description = Basic page content type configurations.
 core = 7.x
 package = Lightning

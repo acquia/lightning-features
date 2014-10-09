@@ -1,4 +1,4 @@
-name = lightning Forms
+name = Lightning Forms
 description = Dynamic form building tools.
 core = 7.x
 package = Lightning

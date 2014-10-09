@@ -1,4 +1,4 @@
-name = lightning Blocks
+name = Lightning Blocks
 description = Block entity configurations.
 core = 7.x
 package = Lightning

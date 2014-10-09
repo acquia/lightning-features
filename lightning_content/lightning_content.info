@@ -1,4 +1,4 @@
-name = lightning Content
+name = Lightning Content
 description = Core node administration configurations.
 core = 7.x
 package = Lightning

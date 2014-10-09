@@ -1,4 +1,4 @@
-name = lightning Article
+name = Lightning Article
 description = Article content type configurations.
 core = 7.x
 package = Lightning

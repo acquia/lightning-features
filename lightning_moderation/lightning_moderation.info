@@ -1,4 +1,4 @@
-name = lightning Moderation
+name = Lightning Moderation
 description = Workflow configurations for content creation.
 core = 7.x
 package = Lightning

@@ -1,4 +1,4 @@
-name = lightning Metatags
+name = Lightning Metatags
 description = Metatag setup and configuration.
 core = 7.x
 package = Lightning
