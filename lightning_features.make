@@ -251,6 +251,9 @@ projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
 projects[panelizer][download][revision] = "c8fb90b"
 projects[panelizer][download][branch] = "7.x-3.x"
+Update the plugin attached to an existing handler
+; http://drupal.org/node/2206961
+projects[panelizer][patch][2206961] = "http://drupal.org/files/issues/2206961-update-the-plugin.patch"
 
 projects[panels][version] = "3.x-dev"
 projects[panels][type] = "module"
