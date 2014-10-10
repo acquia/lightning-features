@@ -394,7 +394,12 @@ projects[webform_alt_ui][subdir] = "contrib"
 projects[webform_alt_ui][download][type] = "git"
 projects[webform_alt_ui][download][revision] = "0cfa6d0"
 projects[webform_alt_ui][download][branch] = "master"
+; Make dev versions of modules involved to get this working.
+; http://drupal.org/node/2022773
 projects[webform_alt_ui][patch][2022773] = "http://drupal.org/files/webform_alt_ui-form_builder_compat-2022773-3.patch"
+; webform_alt_ui_install assumes comment module is enabled.
+; http://drupal.org/node/2354259
+projects[webform_alt_ui][patch][2354259] = "http://drupal.org/files/issues/webform_alt_ui-install-comment-closed-0.patch"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
