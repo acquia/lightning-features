@@ -48,6 +48,10 @@ projects[colorbox][download][type] = "git"
 projects[colorbox][download][revision] = "ce90f5d"
 projects[colorbox][download][branch] = "7.x-1.x"
 
+projects[composer_manager][version] = "1.7"
+projects[composer_manager][type] = "module"
+projects[composer_manager][subdir] = "contrib"
+
 projects[context_admin][version] = "1.x-dev"
 projects[context_admin][type] = "module"
 projects[context_admin][subdir] = "contrib"
