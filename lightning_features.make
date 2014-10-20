@@ -16,6 +16,10 @@ projects[bean_tax][version] = "2.3"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
+projects[behatrunner][version] = "1.0-beta3"
+projects[behatrunner][type] = "module"
+projects[behatrunner][subdir] = "contrib"
+
 projects[breakpoints][version] = "1.3"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
