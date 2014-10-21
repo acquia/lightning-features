@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * lightning_landing.features.taxonomy.inc
+ * lightning_identifiers.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function lightning_landing_taxonomy_default_vocabularies() {
+function lightning_identifiers_taxonomy_default_vocabularies() {
   return array(
     'identifiers' => array(
       'name' => 'Identifiers',

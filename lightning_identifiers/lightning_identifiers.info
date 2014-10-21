@@ -1,0 +1,10 @@
+name = Lightning Identifiers
+description = Taxonomy for marketing campaign identifiers.
+core = 7.x
+package = Lightning
+version = 7.x-1.0
+project = lightning_identifiers
+dependencies[] = features
+dependencies[] = taxonomy
+datestamp = 1411763263
+features[taxonomy][] = identifiers
