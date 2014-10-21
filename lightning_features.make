@@ -16,7 +16,7 @@ projects[bean_tax][version] = "2.3"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
-projects[behatrunner][version] = "1.x-dev"
+projects[behatrunner][version] = "1.0-beta3"
 projects[behatrunner][type] = "module"
 projects[behatrunner][subdir] = "contrib"
 ; Remove PHP memory_limit ini_set on hook_install as it causes failures
