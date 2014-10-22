@@ -130,7 +130,7 @@ projects[fieldable_panels_panes][version] = "1.x-dev"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][revision] = "b9628af"
+projects[fieldable_panels_panes][download][revision] = "bfef4bc"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 
 projects[file_entity][version] = "2.x-dev"
