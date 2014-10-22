@@ -1,4 +1,6 @@
 lightning-features
 ==================
 
-Decoupled components used by the Lightning distribution for Drupal. -- [Created 2014-10-09 by brantwynn aka brant.wynn@acquia.com via github.acquia.com]
+Decoupled components used by the Lightning distribution for Drupal.
+
+See lightning_features.make for a detailed list of dependent modules and libraries.
