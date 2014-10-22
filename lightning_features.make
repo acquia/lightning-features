@@ -264,6 +264,10 @@ projects[options_element][download][type] = "git"
 projects[options_element][download][revision] = "33fa8a7"
 projects[options_element][download][branch] = "git"
 
+projects[pathauto][version] = "1.2"
+projects[pathauto][type] = "module"
+projects[pathauto][subdir] = "contrib"
+
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
