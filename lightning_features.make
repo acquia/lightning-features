@@ -222,6 +222,10 @@ projects[media_preview_slider][download][type] = "git"
 projects[media_preview_slider][download][branch] = "7.x-1.x"
 projects[media_preview_slider][download][url] = "http://git.drupal.org/sandbox/Brian14/2222597.git"
 
+projects[module_filter][version] = "2.0-alpha2"
+projects[module_filter][type] = "module"
+projects[module_filter][subdir] = "contrib"
+
 projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
 projects[multiform][subdir] = "contrib"
