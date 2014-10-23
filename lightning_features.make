@@ -341,6 +341,10 @@ projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
+projects[rules][version] = "2.7"
+projects[rules][type] = "module"
+projects[rules][subdir] = "contrib"
+
 projects[simple_gmap][version] = "1.2"
 projects[simple_gmap][type] = "module"
 projects[simple_gmap][subdir] = "contrib"
@@ -358,6 +362,10 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
+
+projects[token][version] = "1.5"
+projects[token][type] = "module"
+projects[token][subdir] = "contrib"
 
 projects[taxonomy_entity_index][version] = "1.0-beta7"
 projects[taxonomy_entity_index][type] = "module"
