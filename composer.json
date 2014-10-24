@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "drupal/drupal-extension": "~1.0.1"
+    }
+}
