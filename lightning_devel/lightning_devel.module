@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_devel feature.
+ */
+
+include_once 'lightning_devel.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_devel_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_devel enabled ' . $component . ' component');
+}
+
