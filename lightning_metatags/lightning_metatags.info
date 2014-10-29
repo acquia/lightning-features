@@ -7,5 +7,3 @@ project = lightning_metatags
 dependencies[] = metatag
 datestamp = 1411763263
 features[features_api][] = api:2
-features[user_permission][] = administer meta tags
-features[user_permission][] = edit meta tags

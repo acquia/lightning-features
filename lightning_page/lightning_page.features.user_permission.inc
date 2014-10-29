@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_user_default_permissions().
+ * Implements hook_defaultcontent_user_default_permissions().
  */
-function lightning_page_user_default_permissions() {
+function lightning_page_defaultcontent_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'create page content'.

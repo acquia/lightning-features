@@ -77,6 +77,16 @@ projects[demonstratie_panels][version] = "1.x-dev"
 projects[demonstratie_panels][type] = "module"
 projects[demonstratie_panels][subdir] = "contrib"
 
+projects[defaultconfig][version] = "1.x-dev"
+projects[defaultconfig][subdir] = "module"
+projects[defaultconfig][subdir] = "contrib"
+projects[defaultconfig][download][type] = "git"
+projects[defaultconfig][download][revision] = "a62d216"
+projects[defaultconfig][download][branch] = "7.x-1.x"
+; Fatal error when adding a permission that doesn't exist
+; http://drupal.org/node/2008178
+projects[defaultconfig][patch][2008178] = "http://drupal.org/files/issues/defaultconfig-rebuild-2008178-9.patch"
+
 projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"

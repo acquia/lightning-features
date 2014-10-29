@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_roles
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = role_export
 dependencies[] = system
