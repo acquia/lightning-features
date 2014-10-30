@@ -383,6 +383,9 @@ projects[sps][download][branch] = "7.x-1.x"
 ; UX improvements on page level IIB
 ; http://drupal.org/node/1733490
 projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490-3.patch"
+; sps_entity_create() throws errors
+; http://drupal.org/node/2288873
+projects[sps][patch][2288873] = "http://drupal.org/files/issues/sps-undefiend-method-create-3.patch"
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
