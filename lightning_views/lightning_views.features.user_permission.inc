@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_defaultcontent_user_default_permissions().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function lightning_views_defaultcontent_user_default_permissions() {
+function lightning_views_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access all views'.

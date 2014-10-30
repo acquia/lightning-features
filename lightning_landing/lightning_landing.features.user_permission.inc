@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_defaultcontent_user_default_permissions().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function lightning_landing_defaultcontent_user_default_permissions() {
+function lightning_landing_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'administer panelizer node landing content'.

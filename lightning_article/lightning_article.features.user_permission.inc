@@ -5,9 +5,9 @@
  */
 
 /**
- * Implements hook_defaultcontent_user_default_permissions().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function lightning_article_defaultcontent_user_default_permissions() {
+function lightning_article_defaultconfig_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'create article content'.
@@ -15,6 +15,7 @@ function lightning_article_defaultcontent_user_default_permissions() {
     'name' => 'create article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'node',
   );
@@ -24,6 +25,7 @@ function lightning_article_defaultcontent_user_default_permissions() {
     'name' => 'delete any article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'node',
   );
@@ -33,6 +35,7 @@ function lightning_article_defaultcontent_user_default_permissions() {
     'name' => 'delete own article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'node',
   );
@@ -42,6 +45,7 @@ function lightning_article_defaultcontent_user_default_permissions() {
     'name' => 'edit any article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'node',
   );
@@ -51,6 +55,7 @@ function lightning_article_defaultcontent_user_default_permissions() {
     'name' => 'edit own article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'node',
   );
