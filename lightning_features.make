@@ -16,9 +16,12 @@ projects[bean_tax][version] = "2.3"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
-projects[behatrunner][version] = "1.0-beta3"
+projects[behatrunner][version] = "1.x-dev"
 projects[behatrunner][type] = "module"
 projects[behatrunner][subdir] = "contrib"
+projects[behatrunner][download][type] = "git"
+projects[behatrunner][download][revision] = "3d74d9b"
+projects[behatrunner][download][branch] = "7.x"
 ; Remove PHP memory_limit ini_set on hook_install as it causes failures
 ; http://drupal.org/node/2360825
 projects[behatrunner][patch][2360825] = "http://drupal.org/files/issues/behatrunner-memory_limit-0.patch"
