@@ -15,6 +15,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'access all webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'webform',
   );
@@ -24,6 +25,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'access own webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'webform',
   );
@@ -33,6 +35,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'access own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'webform',
   );
@@ -42,6 +45,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'create webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'node',
   );
@@ -51,6 +55,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'delete all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'webform',
   );
@@ -60,6 +65,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'delete any webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'node',
   );
@@ -69,6 +75,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'delete own webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'node',
   );
@@ -78,6 +85,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'delete own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'webform',
   );
@@ -87,6 +95,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'edit all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'webform',
   );
@@ -96,6 +105,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'edit any webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'reviewer' => 'reviewer',
     ),
     'module' => 'node',
   );
@@ -114,6 +124,7 @@ function lightning_forms_defaultconfig_user_default_permissions() {
     'name' => 'edit own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'curator' => 'curator',
     ),
     'module' => 'webform',
   );
