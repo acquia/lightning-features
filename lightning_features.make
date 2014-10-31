@@ -472,6 +472,13 @@ projects[workbench_moderation_buttons][subdir] = "contrib"
 projects[workbench_moderation_buttons][download][type] = "git"
 projects[workbench_moderation_buttons][download][revision] = "4a488f7"
 projects[workbench_moderation_buttons][download][branch] = "7.x-1.x"
+; PHP Parse error: syntax error, unexpected '$key'
+; http://drupal.org/node/2353111
+projects[workbench_moderation_buttons][patch][2353111] = "http://drupal.org/files/issues/workbench_moderation_buttons-PHP_parse-2353111-1.patch"
+; Form always thinks current state is "draft"
+; http://drupal.org/node/2365863
+projects[workbench_moderation_buttons][patch][2365863] = "http://drupal.org/files/issues/workbench_moderation_buttons-default_state-2365863-1.patch"
+
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
