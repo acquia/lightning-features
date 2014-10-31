@@ -220,14 +220,11 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "b2ba2da"
+projects[media][download][revision] = "f5db1d1"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
-; Media dialog appears underneath the Ctools modal dialog with latest jQuery UI
-; http://drupal.org/node/2272567
-projects[media][patch][2272567] = "http://www.drupal.org/files/issues/media-dialog-zindex-2272567-1.patch"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
@@ -475,15 +472,12 @@ projects[workbench_moderation_buttons][subdir] = "contrib"
 projects[workbench_moderation_buttons][download][type] = "git"
 projects[workbench_moderation_buttons][download][revision] = "5ee2a30"
 projects[workbench_moderation_buttons][download][branch] = "7.x-1.x"
-; Remove Current State button, change Save button to show current state value
-; http://drupal.org/node/2338863
-projects[workbench_moderation_buttons][patch][2338863] = "http://drupal.org/files/issues/workbench-moderation-buttons-2338863-4.patch"
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
 projects[workbench_moderation_notes][subdir] = "contrib"
 projects[workbench_moderation_notes][download][type] = "git"
-projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
+projects[workbench_moderation_notes][download][revision] = "4a488f7"
 projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
 
 projects[xautoload][version] = "4.5"
@@ -498,7 +492,7 @@ libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.4.3_edit.zip"
 
 libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
 
 libraries[jsonpath][download][type] = "get"
 libraries[jsonpath][download][url] = "https://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
