@@ -225,6 +225,9 @@ projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
+; Media WYSIWYG broken Quickedit module compatibility
+; http://drupal.org/node/2331293
+projects[media][patch][2331293] = "http://drupal.org/files/issues/media_wysiwyg_quickedit-2331293-6.patch"
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
