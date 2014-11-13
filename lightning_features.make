@@ -482,13 +482,15 @@ projects[workbench_moderation_buttons][patch][2353111] = "http://drupal.org/file
 ; http://drupal.org/node/2365863
 projects[workbench_moderation_buttons][patch][2365863] = "http://drupal.org/files/issues/workbench_moderation_buttons-default_state-2365863-1.patch"
 
-
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
 projects[workbench_moderation_notes][subdir] = "contrib"
 projects[workbench_moderation_notes][download][type] = "git"
 projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
 projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
+; Incorrect status message "...no published revision of this site"
+; http://drupal.org/node/2045407
+projects[workbench_moderation_notes][patch][] = "http://drupal.org/files/workbench_moderation_notes-no_live_node_alert-2045407-1.patch"
 
 projects[xautoload][version] = "4.5"
 projects[xautoload][type] = "module"
