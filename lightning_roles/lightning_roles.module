@@ -1,21 +1,14 @@
 <?php
+
 /**
  * @file
  * Code for the lightning_roles feature.
  */
 
-include_once 'lightning_roles.features.inc';
-
-/**
- *  Implements hook_post_features_enable_feature().
- */
-function lightning_roles_post_features_enable_feature($component) {
-  // Log components as they are enabled.
-  watchdog('component', 'lightning_roles enabled ' . $component . ' component');
-}
-
 /**
  * Implements hook_behat_info().
+ *
+ * @todo See https://www.drupal.org/node/2375619 for behatrunner port.
  */
 function lightning_roles_behat_info() {
   $info = array(
@@ -25,4 +18,3 @@ function lightning_roles_behat_info() {
   );
   return $info;
 }
-
