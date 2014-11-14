@@ -10,7 +10,6 @@ dependencies[] = form_builder
 dependencies[] = node
 dependencies[] = options
 dependencies[] = webform
-dependencies[] = webform_alt_ui
 datestamp = 1411763263
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

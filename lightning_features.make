@@ -413,10 +413,10 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "d7bc9f9"
+projects[views][download][revision] = "82634af"
 projects[views][download][branch] = "7.x-3.x"
 
-projects[views_autocomplete_filters][version] = "1.0-beta2"
+projects[views_autocomplete_filters][version] = "1.1"
 projects[views_autocomplete_filters][type] = "module"
 projects[views_autocomplete_filters][subdir] = "contrib"
 
@@ -424,33 +424,23 @@ projects[views_field_view][version] = "1.x-dev"
 projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
 projects[views_field_view][download][type] = "git"
-projects[views_field_view][download][revision] = "db93080"
+projects[views_field_view][download][revision] = "bb6cfea"
 projects[views_field_view][download][branch] = "7.x-1.x"
 
-projects[views_bulk_operations][version] = "3.2"
+projects[views_bulk_operations][version] = "3.x-dev"
 projects[views_bulk_operations][type] = "module"
 projects[views_bulk_operations][subdir] = "contrib"
+projects[views_bulk_operations][download][type] = "git"
+projects[views_bulk_operations][download][revision] = "3e27b0b"
+projects[views_bulk_operations][download][branch] = "7.x-3.x"
 
-projects[views_load_more][version] = "1.1"
+projects[views_load_more][version] = "1.5"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.0-rc5"
+projects[webform][version] = "4.1"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
-
-projects[webform_alt_ui][version] = "1.x-dev"
-projects[webform_alt_ui][type] = "module"
-projects[webform_alt_ui][subdir] = "contrib"
-projects[webform_alt_ui][download][type] = "git"
-projects[webform_alt_ui][download][revision] = "0cfa6d0"
-projects[webform_alt_ui][download][branch] = "master"
-; Make dev versions of modules involved to get this working.
-; http://drupal.org/node/2022773
-projects[webform_alt_ui][patch][2022773] = "http://drupal.org/files/webform_alt_ui-form_builder_compat-2022773-3.patch"
-; webform_alt_ui_install assumes comment module is enabled.
-; http://drupal.org/node/2354259
-projects[webform_alt_ui][patch][2354259] = "http://drupal.org/files/issues/webform_alt_ui-install-comment-closed-0.patch"
 
 projects[workbench][version] = "1.x-dev"
 projects[workbench][type] = "module"
