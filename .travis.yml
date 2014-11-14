@@ -33,7 +33,7 @@ install:
   # Download Drush Composer extension
   - git clone --branch 8.x-1.x http://git.drupal.org/project/composer.git ~/.drush/composer
   # Download Drupal
-  - drush dl drupal --default-major=7 -y
+  - drush dl drupal --default-major=8 -y
   - mv drupal-* drupal
   # Move composer.json into the standard profile
   - mv composer.json drupal/profiles/standard/.
@@ -48,28 +48,13 @@ install:
   - drush si standard --db-url=mysql://root:@localhost/drupal -y
 
 before_script:
-  # Enable the Lightning Features
-  - drush en lightning_* -y
-  # Disable dblog to reduce MySQL load
-  - drush dis dblog -y
-  # Enable Composer Manager, updating dependencies via source
-  - drush vset composer_manager_autobuild_file 0
-  - drush vset composer_manager_autobuild_packages 0
-  - drush en composer_manager -y
-  - drush composer-manager install -n --prefer-source
-  # Enable BehatRunner, dependencies loading from cache
-  - drush vset composer_manager_autobuild_file 1
-  - drush vset composer_manager_autobuild_packages 1
-  - drush en behatrunner -l http://127.0.0.1:8080 -y
-  # Clear caches
-  - drush cc all
   # Run the lightweight http server
   - drush runserver --server=builtin 8080 &
   - sleep 4
 
 script:
   # Run any module provided Behat tests
-  - drush brun -l http://127.0.0.1:8080 -v
+  - drush status -v
 
 notifications:
   slack:
