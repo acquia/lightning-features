@@ -187,11 +187,8 @@ projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
 projects[iib][subdir] = "contrib"
 projects[iib][download][type] = "git"
-projects[iib][download][revision] = "17a55eb"
+projects[iib][download][revision] = "513fa9d"
 projects[iib][download][branch] = "7.x-1.x"
-; Integrate IIB with the Navbar module and improve Toolbar integration
-; http://drupal.org/node/1737036
-projects[iib][patch][1737036] = "http://drupal.org/files/issues/iib-navbar-toolbar-1737036-51.patch"
 
 projects[jquery_update][version] = "2.4"
 projects[jquery_update][type] = "module"
