@@ -1,85 +1,57 @@
 language: php
-
 cache:
   bundler: true
   apt: true
   directories:
-    - vendor
-
+  - vendor
 php:
-  - 5.5
-
+- 5.5
 mysql:
   database: drupal
   username: root
   encoding: utf8
-
 install:
-  # Run environmental updates
-  - sudo apt-get update > /dev/null
-  # Update composer
-  - composer selfupdate
-  # Configure MySQL for Drupal
-  - mysql -e 'SET GLOBAL wait_timeout = 5400;'
-  - mysql -e "SHOW VARIABLES LIKE 'wait_timeout'"
-  # Configure php.ini settings
-  - echo 'max_execution_time = 120' >> drupal.php.ini;
-  - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
-  - phpenv config-add drupal.php.ini
-  - phpenv rehash
-  # Install Drush 6
-  - composer global require drush/drush:6.*
-  - export PATH="$HOME/.composer/vendor/bin:$PATH"
-  # Download Drush Composer extension
-  - git clone --branch 8.x-1.x http://git.drupal.org/project/composer.git ~/.drush/composer
-  # Download Drupal
-  - drush dl drupal --default-major=7 -y
-  - mv drupal-* drupal
-  # Move composer.json into the standard profile
-  - mv composer.json drupal/profiles/standard/.
-  # Move Lightning Features code into sites/all
-  - mkdir -p drupal/sites/all/modules/contrib/lightning_features
-  - mv lightning_* drupal/sites/all/modules/contrib/lightning_features/. 
-  - ls -l
-  - cd drupal
-  # Run the makefile to compile dependencies 
-  - drush make --no-core sites/all/modules/contrib/lightning_features/lightning_features.make -y
-  # Install Drupal Standard profile
-  - drush si standard --db-url=mysql://root:@localhost/drupal -y
-
+- sudo apt-get update > /dev/null
+- composer selfupdate
+- mysql -e 'SET GLOBAL wait_timeout = 5400;'
+- mysql -e "SHOW VARIABLES LIKE 'wait_timeout'"
+- echo 'max_execution_time = 120' >> drupal.php.ini;
+- echo 'sendmail_path = /bin/true' >> drupal.php.ini;
+- phpenv config-add drupal.php.ini
+- phpenv rehash
+- composer global require drush/drush:6.*
+- export PATH="$HOME/.composer/vendor/bin:$PATH"
+- git clone --branch 8.x-1.x http://git.drupal.org/project/composer.git ~/.drush/composer
+- drush dl drupal --default-major=7 -y
+- mv drupal-* drupal
+- mv composer.json drupal/profiles/standard/.
+- mkdir -p drupal/sites/all/modules/contrib/lightning_features
+- mv lightning_* drupal/sites/all/modules/contrib/lightning_features/.
+- ls -l
+- cd drupal
+- drush make --no-core sites/all/modules/contrib/lightning_features/lightning_features.make -y
+- drush si standard --db-url=mysql://root:@localhost/drupal -y
 before_script:
-  # Enable the Lightning Features
-  - drush en lightning_* -y
-  # Disable dblog to reduce MySQL load
-  - drush dis dblog -y
-  # Enable Composer Manager, updating dependencies via source
-  - drush vset composer_manager_autobuild_file 0
-  - drush vset composer_manager_autobuild_packages 0
-  - drush en composer_manager -y
-  - drush composer-manager install -n --prefer-source
-  # Enable BehatRunner, dependencies loading from cache
-  - drush vset composer_manager_autobuild_file 1
-  - drush vset composer_manager_autobuild_packages 1
-  - drush en behatrunner -l http://127.0.0.1:8080 -y
-  # Clear caches
-  - drush cc all
-  # Run the lightweight http server
-  - drush runserver --server=builtin 8080 &
-  - sleep 4
-
+- drush en lightning_* -y
+- drush dis dblog -y
+- drush vset composer_manager_autobuild_file 0
+- drush vset composer_manager_autobuild_packages 0
+- drush en composer_manager -y
+- drush composer-manager install -n --prefer-source
+- drush vset composer_manager_autobuild_file 1
+- drush vset composer_manager_autobuild_packages 1
+- drush en behatrunner -l http://127.0.0.1:8080 -y
+- drush cc all
+- drush runserver --server=builtin 8080 &
+- sleep 4
 script:
-  # Run any module provided Behat tests
-  - drush brun -l http://127.0.0.1:8080 -v
-
+- drush brun -l http://127.0.0.1:8080 -v
 notifications:
   slack:
-    rooms:
-      - acquia:KkTwsMNJshR8hV4VvPbZs2J8#lightning
-
+    secure: FLlgKwSonE7A1O9mguUmTQwiRo03adA6xsNx/Cd537xPq0RVE7+kUdFXlh7l6ff3y5Zamk7QcPpqmDa10zSqQxLqDdfmZqOPK7Ug8SEYGpRxHBzCxOV0dhBperkxPWaxgfOGG7INxItFrXASYMrjC38SrVF8IFi6M3XV80LS9kY=
 matrix:
   fast_finish: true
-
 after_failure:
-  - sudo chmod -Rv 777 build/logs/*
-  - bundle install --without development
-  - travis-artifacts upload --path build/logs --target-path artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
+- sudo chmod -Rv 777 build/logs/*
+- bundle install --without development
+- travis-artifacts upload --path build/logs --target-path artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
