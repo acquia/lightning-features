@@ -24,7 +24,6 @@ install:
 - git clone --branch 8.x-1.x http://git.drupal.org/project/composer.git ~/.drush/composer
 - drush dl drupal --default-major=8 -y
 - mv drupal-* drupal
-- mv composer.json drupal/profiles/standard/.
 - mkdir -p drupal/sites/all/modules/contrib/lightning_features
 - mv lightning_* drupal/sites/all/modules/contrib/lightning_features/.
 - ls -l
