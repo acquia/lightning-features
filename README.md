@@ -21,3 +21,8 @@ See lightning_features.make for a detailed list of dependent modules and librari
 
 #### lightning_tags
 * Tags taxonomy vocabulary exists
+
+#### lightning_filter
+
+* Text formats exist
+* Text formats have appropriate feature-defined filters.
