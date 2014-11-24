@@ -318,7 +318,7 @@ projects[picture][download][type] = "git"
 projects[picture][download][revision] = "3d9fe6c"
 projects[picture][download][branch] = "7.x-1.x"
 
-projects[plupload][version] = "1.6"
+projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
