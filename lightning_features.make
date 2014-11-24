@@ -173,15 +173,9 @@ projects[focal_point][version] = "1.0-beta1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
-projects[form_builder][version] = "1.x-dev"
+projects[form_builder][version] = "1.6"
 projects[form_builder][type] = "module"
 projects[form_builder][subdir] = "contrib"
-projects[form_builder][download][type] = "git"
-projects[form_builder][download][revision] = "3d904df"
-projects[form_builder][download][branch] = "7.x-1.x"
-; The form editing part rolls to hide, can not be edited
-; http://drupal.org/node/1987332
-projects[form_builder][patch][1987332] = "http://drupal.org/files/rolls-past-editing-form-1987332-4.patch"
 
 projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
