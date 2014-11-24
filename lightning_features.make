@@ -65,12 +65,9 @@ projects[context_admin][download][type] = "git"
 projects[context_admin][download][revision] = "15a8390"
 projects[context_admin][download][branch] = "7.x-1.x"
 
-projects[ctools][version] = "1.x-dev"
+projects[ctools][version] = "1.5"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][download][type] = "git"
-projects[ctools][download][revision] = "ae66d65"
-projects[ctools][download][branch] = "7.x-1.x"
 
 projects[date][version] = "2.8"
 projects[date][type] = "module"
