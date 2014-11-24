@@ -189,11 +189,11 @@ projects[libraries][version] = "2.2"
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
 
-projects[link][version] = "1.2"
+projects[link][version] = "1.3"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
-projects[linkit][version] = "3.1"
+projects[linkit][version] = "3.2"
 projects[linkit][type] = "module"
 projects[linkit][subdir] = "contrib"
 
@@ -239,7 +239,7 @@ projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
 projects[multiform][subdir] = "contrib"
 
-projects[metatag][version] = "1.0-rc2"
+projects[metatag][version] = "1.4"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
 
