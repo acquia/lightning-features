@@ -14,3 +14,15 @@ function lightning_moderation_post_features_enable_feature($component) {
   watchdog('component', 'lightning_moderation enabled ' . $component . ' component');
 }
 
+/**
+ * Implements hook_behat_info().
+ */
+function lightning_moderation_behat_info() {
+  $info = array(
+    'paths' => array(
+      'features' => 'features',
+    ),
+  );
+
+  return $info;
+}
