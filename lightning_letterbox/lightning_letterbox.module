@@ -25,3 +25,15 @@ function lightning_admin_entity_info_alter(&$entity_info) {
   );
 }
 
+/**
+ * Implements hook_behat_info().
+ */
+function lightning_letterbox_behat_info() {
+  $info = array(
+    'paths' => array(
+      'features' => 'features',
+    ),
+  );
+
+  return $info;
+}
