@@ -426,7 +426,7 @@ projects[views_load_more][version] = "1.5"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.1"
+projects[webform][version] = "4.2"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
