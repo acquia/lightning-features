@@ -252,9 +252,9 @@ projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
 projects[navbar][patch][1954912] = "http://drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
-; JSON Error caused in Views when navbar.tableheader is not loaded
-; http://drupal.org/node/2263205
-projects[navbar][patch][2263205] = "http://drupal.org/files/issues/navbar-tableheader-views.patch"
+; tableHeaderOffset not set / Sticky header overlayed by navbar
+; http://drupal.org/node/1937754
+projects[navbar][patch][1937754] = "http://drupal.org/files/issues/navbar-fix-table-header-1937754-30_0.patch"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
