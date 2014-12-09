@@ -4,8 +4,6 @@
  * Code for the lightning_cache feature.
  */
 
-include_once 'lightning_cache.features.inc';
-
 /**
  *  Implements hook_post_features_enable_feature().
  */
