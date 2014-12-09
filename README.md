@@ -17,10 +17,14 @@ See lightning_features.make for a detailed list of dependent modules and librari
 
 * Checks to ensure breakpoints were created
 
+#### lightning_cache
+
+* Checks to ensure Views Content Cache is enabled
+
 #### lightning_filter
 
 * Text formats exist
-* Text formats have appropriate feature-defined filters.
+* Text formats have appropriate feature-defined filters
 
 #### lightning_forms
 
@@ -31,7 +35,7 @@ See lightning_features.make for a detailed list of dependent modules and librari
 #### lightning_fpp
 
 * Checks for FPP types
-* Checks for fields on FPP types.
+* Checks for fields on FPP types
 
 #### lightning_identifiers
 
@@ -72,5 +76,5 @@ See lightning_features.make for a detailed list of dependent modules and librari
 
 #### lightning_wysiwyg
 
-* Check for Linkit exists
+* Check Linkit exists
 * Linkit sanity check
