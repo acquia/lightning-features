@@ -1,0 +1,28 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_cache feature.
+ */
+
+include_once 'lightning_cache.features.inc';
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_cache_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_cache enabled ' . $component . ' component');
+}
+
+/**
+ * Implements hook_behat_info().
+ */
+function lightning_cache_behat_info() {
+  $info = array(
+    'paths' => array(
+      'features' => 'features',
+    ),
+  );
+
+  return $info;
+}
