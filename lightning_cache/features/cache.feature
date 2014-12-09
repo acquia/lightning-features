@@ -13,7 +13,7 @@ Feature: Lightning Cache
     And I follow "Enable"
     Then I visit "/admin/structure/views/view/archive/edit"
     And I follow "views-default-cache"
-    And I select "Content-based" from "edit-cache-type-views-content-cache"
+    And I select "views_content_cache" from "edit-cache-type-views-content-cache"
     And I press "Apply"
     Then I should see "Cache segments"
     And I press "Apply"
