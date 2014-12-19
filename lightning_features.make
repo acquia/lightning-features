@@ -265,14 +265,11 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "3c5a242"
+projects[navbar][download][revision] = "2075217"
 projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
 projects[navbar][patch][1954912] = "http://drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
-; tableHeaderOffset not set / Sticky header overlayed by navbar
-; http://drupal.org/node/1937754
-projects[navbar][patch][1937754] = "http://drupal.org/files/issues/navbar-fix-table-header-1937754-30_0.patch"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
