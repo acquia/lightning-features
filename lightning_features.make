@@ -196,11 +196,8 @@ projects[imageinfo_cache][version] = "3.x-dev"
 projects[imageinfo_cache][type] = "module"
 projects[imageinfo_cache][subdir] = "contrib"
 projects[imageinfo_cache][download][type] = "git"
-projects[imageinfo_cache][download][revision] = "49262b7"
+projects[imageinfo_cache][download][revision] = "9dc4d63"
 projects[imageinfo_cache][download][branch] = "7.x-3.x"
-; #imageinfo_cache_effect_callback missing throws exception
-; http://drupal.org/node/2395075
-projects[imageinfo_cache][patch][2395075] = "http://drupal.org/files/issues/imageinfo_cache-exception-0.patch"
 
 projects[jquery_update][version] = "2.4"
 projects[jquery_update][type] = "module"
