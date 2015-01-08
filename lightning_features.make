@@ -418,6 +418,9 @@ projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
 projects[views][download][revision] = "82634af"
 projects[views][download][branch] = "7.x-3.x"
+; Call to a member function init_display() on a non-object...
+; http://drupal.org/node/1685144
+projects[views][patch][1685114] = "http://drupal.org/files/views-1685144-localization-bug_1.patch"
 
 projects[views_autocomplete_filters][version] = "1.1"
 projects[views_autocomplete_filters][type] = "module"
