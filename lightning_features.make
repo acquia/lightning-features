@@ -211,7 +211,7 @@ projects[link][version] = "1.3"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
-projects[linkit][version] = "3.2"
+projects[linkit][version] = "3.3"
 projects[linkit][type] = "module"
 projects[linkit][subdir] = "contrib"
 
