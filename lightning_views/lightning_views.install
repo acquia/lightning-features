@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for lightning_views module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_views_install() {
+  // Enable Views UI on installation.
+  module_enable(array('views_ui'));
+}
+
