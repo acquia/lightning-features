@@ -8,33 +8,35 @@
  * Helper function to define our custom Fielable Panels Panes.
  */
 function _lightning_fpp_fpp_types() {
+  $icon_path = drupal_get_path('module', 'lightning_fpp') . '/images/';
   $types = array(
     'raw_html' => array(
       'title' => 'HTML',
-      'icon' => 'icon_html.png',
+      'icon' => $icon_path . 'icon_html.png',
       'path' => 'raw-html',
     ),
     'quick_links' => array(
       'title' => 'links',
-      'icon' => 'icon_link.png',
+      'icon' => $icon_path . 'icon_link.png',
       'path' => 'quick-links',
     ),
     'media_pane' => array(
       'title' => 'media',
-      'icon' => 'icon_media.png',
+      'icon' => $icon_path . 'icon_media.png',
       'path' => 'media',
     ),
     'map' => array(
       'title' => 'map',
-      'icon' => 'icon_map.png',
+      'icon' => $icon_path . 'icon_map.png',
       'path' => 'map',
     ),
     'text' => array(
       'title' => 'text',
-      'icon' => 'icon_text.png',
+      'icon' => $icon_path . 'icon_text.png',
       'path' => 'text',
     ),
   );
+  drupal_alter('lightning_fpp_types', $types);
   return $types;
 }
 
