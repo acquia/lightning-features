@@ -107,9 +107,6 @@ projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
 projects[ember_support][download][type] = "git"
 projects[ember_support][download][branch] = "7.x-1.x"
-; Additional UX enhancements to Media thumbnails and the bulk file editing page
-; http://drupal.org/node/2410407
-projects[ember_support][patch][2410407] = "http://drupal.org/files/issues/add-remaining-media-ux-improvements-2410407-1.patch"
 
 projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
