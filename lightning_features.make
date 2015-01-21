@@ -45,7 +45,7 @@ projects[ckeditor][download][revision] = "875a4b1"
 projects[ckeditor][download][branch] = "7.x-1.x"
 ; CKEditor accomodate latest Media changes
 ; http://drupal.org/node/2159403
-projects[ckeditor][patch][2159403] = "http://drupal.org/files/issues/make_ckeditor_plugin-2159403-107.patch"
+projects[ckeditor][patch][2159403] = "http://drupal.org/files/issues/make_ckeditor_plugin-2159403-141.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -107,6 +107,9 @@ projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
 projects[ember_support][download][type] = "git"
 projects[ember_support][download][branch] = "7.x-1.x"
+; Additional UX enhancements to Media thumbnails and the bulk file editing page
+; http://drupal.org/node/2410407
+projects[ember_support][patch][2410407] = "http://drupal.org/files/issues/add-remaining-media-ux-improvements-2410407-1.patch"
 
 projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
@@ -229,7 +232,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "6258a32"
+projects[media][download][revision] = "1e1aade"
 projects[media][download][branch] = "7.x-2.x"
 ; Media WYSIWYG broken Quickedit module compatibility
 ; http://drupal.org/node/2331293
