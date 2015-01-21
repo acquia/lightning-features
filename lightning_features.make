@@ -12,9 +12,12 @@ projects[bean][download][type] = "git"
 projects[bean][download][revision] = "2d0f262"
 projects[bean][download][branch] = "7.x-1.x"
 
-projects[bean_tax][version] = "2.5"
+projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
+projects[bean_tax][download][type] = "git"
+projects[bean_tax][download][revision] = "00bc072"
+projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[behatrunner][version] = "1.x-dev"
 projects[behatrunner][type] = "module"
