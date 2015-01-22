@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_moderation
 dependencies[] = ctools
+dependencies[] = diff
 dependencies[] = features
 dependencies[] = nra
 dependencies[] = revision_scheduler
