@@ -202,7 +202,7 @@ projects[imageinfo_cache][download][type] = "git"
 projects[imageinfo_cache][download][revision] = "9dc4d63"
 projects[imageinfo_cache][download][branch] = "7.x-3.x"
 
-projects[jquery_update][version] = "2.4"
+projects[jquery_update][version] = "2.5"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -369,7 +369,7 @@ projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
-projects[rules][version] = "2.7"
+projects[rules][version] = "2.8"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
