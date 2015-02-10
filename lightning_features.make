@@ -196,11 +196,8 @@ projects[imageinfo_cache][version] = "3.x-dev"
 projects[imageinfo_cache][type] = "module"
 projects[imageinfo_cache][subdir] = "contrib"
 projects[imageinfo_cache][download][type] = "git"
-projects[imageinfo_cache][download][revision] = "9dc4d63"
+projects[imageinfo_cache][download][revision] = "bcbaa4d"
 projects[imageinfo_cache][download][branch] = "7.x-3.x"
-; Features issue with imageinfo_cache_effect_router
-; http://drupal.org/node/2403347
-projects[imageinfo_cache][patch][2403347] = "http://drupal.org/files/issues/imageinfo_cache-2403347-1.patch"
 
 projects[jquery_update][version] = "2.5"
 projects[jquery_update][type] = "module"
