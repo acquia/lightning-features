@@ -413,7 +413,7 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "82634af"
+projects[views][download][revision] = "f4e8b47"
 projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object...
 ; http://drupal.org/node/1685144
