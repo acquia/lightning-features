@@ -192,12 +192,9 @@ projects[iib][download][type] = "git"
 projects[iib][download][revision] = "513fa9d"
 projects[iib][download][branch] = "7.x-1.x"
 
-projects[imageinfo_cache][version] = "3.x-dev"
+projects[imageinfo_cache][version] = "3.5"
 projects[imageinfo_cache][type] = "module"
 projects[imageinfo_cache][subdir] = "contrib"
-projects[imageinfo_cache][download][type] = "git"
-projects[imageinfo_cache][download][revision] = "bcbaa4d"
-projects[imageinfo_cache][download][branch] = "7.x-3.x"
 
 projects[jquery_update][version] = "2.5"
 projects[jquery_update][type] = "module"
