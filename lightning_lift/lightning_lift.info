@@ -1,0 +1,16 @@
+name = Lightning Lift
+description = Acquia Lift and required dependencies.
+core = 7.x
+package = Lightning
+version = 7.x-1.0
+project = lightning_lift
+dependencies[] = acquia_lift
+dependencies[] = acquia_lift_profiles
+dependencies[] = personalize
+dependencies[] = personalize_blocks
+dependencies[] = personalize_elements
+dependencies[] = personalize_fields
+dependencies[] = personalize_url_context
+dependencies[] = visitor_actions
+dependencies[] = visitor_actions_ui
+features[features_api][] = api:2
