@@ -182,7 +182,7 @@ projects[httprl][version] = "1.x-dev"
 projects[httprl][type] = "module"
 projects[httprl][subdir] = "contrib"
 projects[httprl][download][type] = "git"
-projects[httprl][download][revision] = "67757a3"
+projects[httprl][download][revision] = "78bc6ad"
 projects[httprl][download][branch] = "7.x-1.x"
 
 projects[iib][version] = "1.x-dev"
