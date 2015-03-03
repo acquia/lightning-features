@@ -332,11 +332,11 @@ projects[quickedit][version] = "1.x-dev"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
 projects[quickedit][download][type] = "git"
-projects[quickedit][download][revision] = "28a314d"
+projects[quickedit][download][revision] = "bafb1b5"
 projects[quickedit][download][branch] = "7.x-1.x"
 ; Remove data-quickedit-field-id for personalized fields.
 ; http://drupal.org/node/2424613#comment-9613695
-projects[quickedit][patch][2424613] = "http://drupal.org/files/issues/quick_edit-personalize-2424613-1.patch"
+projects[quickedit][patch][2424613] = "http://drupal.org/files/issues/quick_edit-personalize-2424613-4.patch"
 
 projects[quickedit_tab][version] = "1.x-dev"
 projects[quickedit_tab][type] = "module"
