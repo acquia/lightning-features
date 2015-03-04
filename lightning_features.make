@@ -106,7 +106,7 @@ projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 projects[entity][download][type] = "git"
-projects[entity][download][revision] = "4d2cc6f"
+projects[entity][download][revision] = "4d76c5c"
 projects[entity][download][branch] = "7.x-1.x"
 
 projects[entityreference][version] = "1.x-dev"
@@ -407,7 +407,7 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "f4e8b47"
+projects[views][download][revision] = "ab35ae9"
 projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object...
 ; http://drupal.org/node/1685144
