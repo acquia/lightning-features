@@ -508,3 +508,6 @@ libraries[plupload][patch][1903850] = "http://drupal.org/files/issues/plupload-1
 
 libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
+
+; Lightning Lift
+includes[lightning_lift] = lightning_lift/lightning_lift.make
