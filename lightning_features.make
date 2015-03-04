@@ -301,7 +301,7 @@ projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
 projects[panopoly_magic][download][type] = "git"
-projects[panopoly_magic][download][revision] = "1135fea"
+projects[panopoly_magic][download][revision] = "094c1a9"
 projects[panopoly_magic][download][branch] = "7.x-1.x"
 
 projects[panopoly_theme][version] = "1.x-dev"
