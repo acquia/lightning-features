@@ -5,12 +5,9 @@ projects[better_formats][version] = "1.0-beta1"
 projects[better_formats][type] = "module"
 projects[better_formats][subdir] = "contrib"
 
-projects[bean][version] = "1.x-dev"
+projects[bean][version] = "1.9"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
-projects[bean][download][type] = "git"
-projects[bean][download][revision] = "2d0f262"
-projects[bean][download][branch] = "7.x-1.x"
 
 projects[bean_tax][version] = "2.x-dev"
 projects[bean_tax][type] = "module"
