@@ -9,6 +9,7 @@ dependencies[] = bean_tax
 dependencies[] = block
 dependencies[] = ctools
 dependencies[] = entity
+dependencies[] = field_ui
 dependencies[] = features
 dependencies[] = magic_beans
 dependencies[] = strongarm
