@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_base
 dependencies[] = features
+dependencies[] = field_ui
 dependencies[] = text
 features[features_api][] = api:2
 features[field_base][] = body

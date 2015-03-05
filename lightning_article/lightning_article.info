@@ -10,6 +10,7 @@ dependencies[] = lightning_base
 dependencies[] = lightning_image
 dependencies[] = lightning_tags
 dependencies[] = features
+dependencies[] = field_ui
 dependencies[] = node
 dependencies[] = path
 dependencies[] = strongarm
