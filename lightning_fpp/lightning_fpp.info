@@ -8,6 +8,7 @@ dependencies[] = better_formats
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
+dependencies[] = field_ui
 dependencies[] = fieldable_panels_panes
 dependencies[] = file
 dependencies[] = file_entity
