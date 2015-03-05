@@ -294,7 +294,7 @@ projects[pathauto][subdir] = "contrib"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "c8fb90b"
+projects[panelizer][download][revision] = "4557c94"
 projects[panelizer][download][branch] = "7.x-3.x"
 
 projects[panels][version] = "3.x-dev"
