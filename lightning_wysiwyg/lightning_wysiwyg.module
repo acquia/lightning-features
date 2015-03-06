@@ -37,3 +37,13 @@ function lightning_wysiwyg_behat_info() {
 
   return $info;
 }
+
+/**
+ * Implements hook_entity_embed_alter().
+ */
+function lightning_wysiwyg_entity_embed_alter(&$build, $entity, $context) {
+  // Remove the contextual links on all entites that provide them.
+  if (isset($build['#contextual_links'])) {
+    unset($build['#contextual_links']);
+  }
+}
