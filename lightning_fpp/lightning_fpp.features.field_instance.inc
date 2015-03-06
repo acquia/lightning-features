@@ -142,7 +142,8 @@ function lightning_fpp_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
-          'oembed' => 'oembed',
+          'vimeo' => 'vimeo',
+          'youtube' => 'youtube',
         ),
         'allowed_types' => array(
           'audio' => 'audio',
@@ -155,6 +156,7 @@ function lightning_fpp_field_default_field_instances() {
           'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 'media_internet',
           'upload' => 'upload',
+          'youtube' => 'youtube',
         ),
         'progress_indicator' => 'throbber',
       ),

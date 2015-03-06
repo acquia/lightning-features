@@ -29,7 +29,7 @@ function lightning_filter_filter_default_formats() {
         'weight' => 1,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<strong> <em> <ol> <ul> <li> <blockquote> <img> <video> <table> <td> <tr> <tbody> <a> <p> <drupal-entity>',
+          'allowed_html' => '<strong> <em> <ol> <ul> <li> <blockquote> <img> <video> <table> <td> <tr> <tbody> <a> <p>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
@@ -39,13 +39,8 @@ function lightning_filter_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
-      'entity_embed' => array(
-        'weight' => 3,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'filter_align' => array(
-        'weight' => 4,
+      'media_filter' => array(
+        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),
@@ -77,13 +72,8 @@ function lightning_filter_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
-      'entity_embed' => array(
+      'media_filter' => array(
         'weight' => 2,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'filter_align' => array(
-        'weight' => 3,
         'status' => 1,
         'settings' => array(),
       ),

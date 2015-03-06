@@ -54,35 +54,49 @@ function lightning_edit_field_attach_view_alter(&$output, $context) {
 
         // Add the Media browser.
         // This is a copy of media_wysiwyg_pre_render_text_format().
-        if (module_exists('entity_embed')) {
-          ctools_include('export');
+        if (module_exists('media_wysiwyg')) {
+          $tagmap = _media_wysiwyg_generate_tagMap($item['value']);
 
-          $embed_buttons = ctools_export_crud_load_all('entity_embed');
-
-          $buttons = array();
-
-          foreach ($embed_buttons as $embed_button) {
-            $buttons[$embed_button->name] = array(
-              'id' => check_plain($embed_button->name),
-              'name' => check_plain($embed_button->name),
-              'label' => check_plain($embed_button->button_label),
-              'entity_type' => check_plain($embed_button->entity_type),
-              'image' => check_plain(_entity_embed_button_image($embed_button->button_icon_fid)),
+          if (isset($tagmap)) {
+            $element[$delta]['#attached']['js'][] = array(
+              'data' => array(
+                'tagmap' => $tagmap,
+              ),
+              'type' => 'setting',
             );
           }
 
-          $element['#attached']['library'][] = array('entity_embed', 'drupal.dialog.ajax');
+          // Load the media browser library.
+          module_load_include('inc', 'media', 'includes/media.browser');
+          $javascript = media_browser_js();
 
-          $element['#attached']['js'][] = array(
+          foreach ($javascript as $key => $definitions) {
+            foreach ($definitions as $definition) {
+              $element[$delta]['#attached'][$key][] = $definition;
+            }
+          }
+
+          // Add wysiwyg-specific settings.
+          $settings = array('wysiwyg_allowed_attributes' => variable_get('media_wysiwyg_wysiwyg_allowed_attributes', _media_wysiwyg_wysiwyg_allowed_attributes_default()));
+          $element[$delta]['#attached']['js'][] = array(
             'data' => array(
-              'entity_embed' => array(
-                'DrupalEntity_dialogTitleAdd' => t('Insert entity'),
-                'DrupalEntity_dialogTitleEdit' => t('Edit entity'),
-                'DrupalEntity_buttons' => $buttons,
-              ),
+              'media' => $settings,
             ),
             'type' => 'setting',
           );
+
+          // Add filter handling.
+          $element[$delta]['#attached']['js'][] = drupal_get_path('module', 'media_wysiwyg') . '/js/media_wysiwyg.filter.js';
+
+          // Add CKEditor-specific JS.
+          if (module_exists('ckeditor')) {
+            $element[$delta]['#attached']['js'][] = array(
+              'data' => drupal_get_path('module', 'media_wysiwyg') . '/wysiwyg_plugins/media_ckeditor/library.js',
+              'type' => 'file',
+              'scope' => 'footer',
+              'weight' => -20,
+            );
+          }
         }
       }
     }
