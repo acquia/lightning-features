@@ -269,6 +269,9 @@ projects[migrate][subdir] = "contrib"
 projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][type] = "module"
 projects[migrate_extras][subdir] = "contrib"
+; Add support for UUID module for 7.x
+; http://drupal.org/node/1870886
+projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
 
 projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
