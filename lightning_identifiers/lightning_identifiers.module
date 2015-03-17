@@ -4,8 +4,6 @@
  * Code for the lightning_identifiers feature.
  */
 
-include_once 'lightning_identifiers.features.inc';
-
 /**
  *  Implements hook_post_features_enable_feature().
  */

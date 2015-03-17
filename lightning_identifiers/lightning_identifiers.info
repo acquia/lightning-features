@@ -7,4 +7,6 @@ project = lightning_identifiers
 dependencies[] = features
 dependencies[] = taxonomy
 datestamp = 1411763263
+features[features_api][] = api:2
 features[taxonomy][] = identifiers
+mtime = 1418775026

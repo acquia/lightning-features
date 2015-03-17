@@ -12,4 +12,3 @@ function lightning_fpp_ctools_plugin_api($module = NULL, $api = NULL) {
     return array("version" => "1");
   }
 }
-
