@@ -9,12 +9,9 @@ projects[bean][version] = "1.9"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
 
-projects[bean_tax][version] = "2.x-dev"
+projects[bean_tax][version] = "2.6"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
-projects[bean_tax][download][type] = "git"
-projects[bean_tax][download][revision] = "458d14e"
-projects[bean_tax][download][branch] = "7.x-2.x"
 
 projects[behatrunner][version] = "1.x-dev"
 projects[behatrunner][type] = "module"
