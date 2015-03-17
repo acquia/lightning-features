@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_devel
 dependencies[] = features
+dependencies[] = dblog
 dependencies[] = devel
 dependencies[] = diff
 datestamp = 1408404197
