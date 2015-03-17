@@ -204,6 +204,12 @@ projects[imageinfo_cache][version] = "3.5"
 projects[imageinfo_cache][type] = "module"
 projects[imageinfo_cache][subdir] = "contrib"
 
+projects[import][version] = "1.x-dev"
+projects[import][type] = "module"
+projects[import][subdir] = "contrib"
+projects[import][download][type] = "git"
+projects[import][download][branch] = "7.x-1.x"
+
 projects[jquery_update][version] = "2.5"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
@@ -248,17 +254,25 @@ projects[media_preview_slider][download][type] = "git"
 projects[media_preview_slider][download][branch] = "7.x-1.x"
 projects[media_preview_slider][download][url] = "http://git.drupal.org/sandbox/Brian14/2222597.git"
 
+projects[metatag][version] = "1.4"
+projects[metatag][type] = "module"
+projects[metatag][subdir] = "contrib"
+
 projects[module_filter][version] = "2.0-alpha2"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
+projects[migrate][version] = "2.6"
+projects[migrate][type] = "module"
+projects[migrate][subdir] = "contrib"
+
+projects[migrate_extras][version] = "2.5"
+projects[migrate_extras][type] = "module"
+projects[migrate_extras][subdir] = "contrib"
+
 projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
 projects[multiform][subdir] = "contrib"
-
-projects[metatag][version] = "1.4"
-projects[metatag][type] = "module"
-projects[metatag][subdir] = "contrib"
 
 projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
