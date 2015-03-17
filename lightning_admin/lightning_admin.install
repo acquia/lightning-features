@@ -1,0 +1,29 @@
+
+<?php
+
+/**
+ * @file
+ * Installation routines for lightning_admin feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_admin_install() {
+  // Set jQuery version to 1.10
+  variable_set('jquery_update_jquery_version', '1.10');
+
+  // Set admin jQuery version to 1.7
+  variable_set('jquery_update_jquery_admin_version', '1.7');
+
+  // Set other jQuery options
+  variable_set('jquery_update_compression_type', 'min');
+  variable_set('jquery_update_jquery_cdn', 'none');
+
+  // Use the source version of Modernizr since the build process can't produce
+  // a minified version from the library.
+  $variants = variable_get('navbar_libraries_variants', array());
+  $variants['modernizr'] = 'source';
+  variable_set('navbar_libraries_variants', $variants);
+}
+
