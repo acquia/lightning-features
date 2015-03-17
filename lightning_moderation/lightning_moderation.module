@@ -7,6 +7,24 @@
 include_once 'lightning_moderation.features.inc';
 
 /**
+ * Implements hook_migrate_api().
+ */
+function lightning_moderation_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'groups' => array(
+      'lightning' => array(
+        'title' => t('Lightning'),
+      ),
+    ),
+    'migrations' => array(
+      'LightningModerationNodes' => array('class_name' => 'LightningModerationNodes', 'group_name' => 'lightning'),
+    ),
+  );
+  return $api;
+}
+
+/**
  *  Implements hook_post_features_enable_feature().
  */
 function lightning_moderation_post_features_enable_feature($component) {
