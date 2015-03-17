@@ -22,11 +22,20 @@ function lightning_admin_drush_command() {
   );
 
   $items['lightning-disable'] = array(
-    'description' => 'Disables the Lightning feature',
+    'description' => 'Disables and Uninstalls the Lightning feature',
     'arguments' => array(
       'module' => 'The name of the features module',
     ),
     'aliases' => array('ld'),
+    'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
+  );
+
+  $items['lightning-reset'] = array(
+    'description' => 'Disables, Uninstalls and Enables the Lightning feature',
+    'arguments' => array(
+      'module' => 'The name of the features module',
+    ),
+    'aliases' => array('lr'),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_FULL,
   );
 
@@ -92,5 +101,21 @@ function drush_lightning_admin_lightning_disable($module) {
 
   // Return status.
   drupal_set_message(t('@module disabled and uninstalled.', array('@module' => $module)));
+}
+
+
+/**
+ * Resets a Lightning Feature.
+ *
+ * @param string $module
+ *   The machine name of the feature.
+ */
+function drush_lightning_admin_lightning_reset($module) {
+  // Disable and uninstall the Feature.
+  drush_lightning_admin_lightning_disable($module);
+  // Re-enable the Feature.
+  drush_lightning_admin_lightning_enable($module);
+  // Set status.
+  drupal_set_message(t('@module reset completed successfully.', array('@module' => $module)));
 }
 
