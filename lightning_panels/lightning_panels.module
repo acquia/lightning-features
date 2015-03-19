@@ -29,11 +29,21 @@ function lightning_panels_pre_features_rebuild($component) {
  */
 function lightning_panels_node_update($node) {
   if (!empty($node->old_vid)) {
-    $old_did = db_query("SELECT did FROM {panelizer_entity} WHERE entity_id = :nid AND revision_id = :oldvid ORDER BY revision_id DESC",
-        array(":nid" => $node->nid, ":oldvid" => $node->old_vid))
-      ->fetchField();
-    if (!empty($old_did) && !empty($node->panelizer['page_manager']) && empty($node->panelizer['page_manager']->did)) {
-      $node->panelizer['page_manager']->did = $old_did;
+    $results = db_select('panelizer_entity', 'pe')
+      ->fields('pe', array('did', 'view_mode'))
+      ->condition('pe.entity_type', 'node')
+      ->condition('pe.entity_id', $node->nid)
+      ->condition('pe.revision_id', $node->old_vid)
+      ->isNull('pe.name')
+      ->execute();
+    foreach ($results as $result) {
+      if ($result->did) {
+        $node->panelizer[$result->view_mode]->did = $result->did;
+        $node->panelizer[$result->view_mode]->display_is_modified = TRUE;
+      }
+      else {
+        // No custom display found, fallback to defaults.
+      }
     }
   }
 }
