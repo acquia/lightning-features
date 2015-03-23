@@ -159,7 +159,7 @@ projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
 projects[fieldable_panels_panes][download][revision] = "f513a15"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
-projects[fieldable_panels_panes][patch][1986334] = "https://www.drupal.org/files/issues/1986334-9.patch"
+projects[fieldable_panels_panes][patch][1986334] = "https://www.drupal.org/files/issues/1986334-10.patch"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
