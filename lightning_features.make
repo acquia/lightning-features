@@ -159,7 +159,9 @@ projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
 projects[fieldable_panels_panes][download][revision] = "f513a15"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
-projects[fieldable_panels_panes][patch][1986334] = "https://www.drupal.org/files/issues/1986334-10.patch"
+;Allow a particular revision of a fieldable panels pane to be placed in a panelized page
+;http://www.drupal.org/node/1986334
+projects[fieldable_panels_panes][patch][1986334] = "http://www.drupal.org/files/issues/1986334-10.patch"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
@@ -315,7 +317,9 @@ projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
 projects[panelizer][download][revision] = "7f28657"
 projects[panelizer][download][branch] = "7.x-3.x"
-projects[panelizer][patch][2457113] = "https://www.drupal.org/files/issues/2457113-12.patch"
+;Better Revision Handling inside and outside of Workbench Moderation
+;http://www.drupal.org/node/2457113
+projects[panelizer][patch][2457113] = "http://www.drupal.org/files/issues/2457113-17.patch"
 
 projects[panels][version] = "3.5"
 projects[panels][type] = "module"
