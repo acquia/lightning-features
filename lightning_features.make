@@ -319,7 +319,7 @@ projects[panelizer][download][revision] = "7f28657"
 projects[panelizer][download][branch] = "7.x-3.x"
 ;Better Revision Handling inside and outside of Workbench Moderation
 ;http://www.drupal.org/node/2457113
-projects[panelizer][patch][2457113] = "http://www.drupal.org/files/issues/2457113-17.patch"
+projects[panelizer][patch][2457113] = "http://www.drupal.org/files/issues/2457113-18.patch"
 
 projects[panels][version] = "3.5"
 projects[panels][type] = "module"
