@@ -124,7 +124,7 @@ projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][download][type] = "git"
-projects[entityreference][download][revision] = "dc4196b"
+projects[entityreference][download][revision] = "c4bb9b0"
 projects[entityreference][download][branch] = "7.x-1.x"
 
 projects[entityreference_prepopulate][version] = "1.5"
@@ -142,12 +142,9 @@ projects[fape][version] = "1.2"
 projects[fape][type] = "module"
 projects[fape][subdir] = "contrib"
 
-projects[features][version] = "2.x-dev"
+projects[features][version] = "2.4"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][download][type] = "git"
-projects[features][download][revision] = "9f4ecc7"
-projects[features][download][branch] = "7.x-2.x"
 
 projects[field_group][version] = "1.x-dev"
 projects[field_group][type] = "module"
@@ -160,8 +157,11 @@ projects[fieldable_panels_panes][version] = "1.x-dev"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][revision] = "bfef4bc"
+projects[fieldable_panels_panes][download][revision] = "f513a15"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
+;Allow a particular revision of a fieldable panels pane to be placed in a panelized page
+;http://www.drupal.org/node/1986334
+projects[fieldable_panels_panes][patch][1986334] = "http://www.drupal.org/files/issues/1986334-10.patch"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
@@ -315,15 +315,15 @@ projects[pathauto][subdir] = "contrib"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "4557c94"
+projects[panelizer][download][revision] = "7f28657"
 projects[panelizer][download][branch] = "7.x-3.x"
+;Better Revision Handling inside and outside of Workbench Moderation
+;http://www.drupal.org/node/2457113
+projects[panelizer][patch][2457113] = "http://www.drupal.org/files/issues/2457113-18.patch"
 
-projects[panels][version] = "3.x-dev"
+projects[panels][version] = "3.5"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
-projects[panels][download][type] = "git"
-projects[panels][download][revision] = "bcda4a6"
-projects[panels][download][branch] = "7.x-3.x"
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
@@ -485,15 +485,9 @@ projects[workbench][download][type] = "git"
 projects[workbench][download][revision] = "6856e4a"
 projects[workbench][download][branch] = "7.x-1.x"
 
-projects[workbench_moderation][version] = "1.x-dev"
+projects[workbench_moderation][version] = "1.4"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
-projects[workbench_moderation][download][type] = "git"
-projects[workbench_moderation][download][revision] = "b38ac3e"
-projects[workbench_moderation][download][branch] = "7.x-1.x"
-; Panelizer is incompatible with moderation
-; http://www.drupal.org/node/1402860
-projects[workbench_moderation][patch][1402860] = "http://drupal.org/files/issues/workbench_moderation-panelizer_revisions-1402860-59.patch"
 
 projects[workbench_moderation_buttons][version] = "1.x-dev"
 projects[workbench_moderation_buttons][type] = "module"
