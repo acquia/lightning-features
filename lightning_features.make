@@ -324,6 +324,9 @@ projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113-18
 projects[panels][version] = "3.5"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
+; Fix IPE JS alert (Panelizer is Incompatible with Moderation)
+; http://drupal.org/node/1402860#comment-9729091
+projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch"
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
