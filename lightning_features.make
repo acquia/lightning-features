@@ -124,7 +124,7 @@ projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][download][type] = "git"
-projects[entityreference][download][revision] = "c4bb9b0"
+projects[entityreference][download][revision] = "dc4196b"
 projects[entityreference][download][branch] = "7.x-1.x"
 
 projects[entityreference_prepopulate][version] = "1.5"
