@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for lightning_sps module.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function lightning_sps_enable() {
+  if (module_exists('lightning_moderation')) {
+    module_enable(array('nra_workbench_moderation'));
+  }
+}
+

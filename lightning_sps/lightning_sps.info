@@ -11,7 +11,6 @@ dependencies[] = field_ui
 dependencies[] = features
 dependencies[] = iib
 dependencies[] = nra
-dependencies[] = nra_workbench_moderation
 datestamp = 1408404197
 features[features_api][] = api:2
 features[field_base][] = field_collection
