@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for lightning_moderation module.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function lightning_moderation_enable() {
+  // Workbench Moderation requires a node_access rebuild post-install.
+  node_access_rebuild(TRUE);
+}
+
