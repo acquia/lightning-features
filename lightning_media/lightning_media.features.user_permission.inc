@@ -39,6 +39,15 @@ function lightning_media_defaultconfig_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: 'administer media oembed'.
+  $permissions['administer media oembed'] = array(
+    'name' => 'administer media oembed',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media_oembed',
+  );
+
   // Exported permission: 'import media'.
   $permissions['import media'] = array(
     'name' => 'import media',
