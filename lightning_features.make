@@ -491,6 +491,9 @@ projects[workbench][download][branch] = "7.x-1.x"
 projects[workbench_moderation][version] = "1.4"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
+; Workbench Moderation IIB Integration should be optional
+; http://drupal.org/node/2462453
+projects[workbench_moderation][patch][2462453] = "http://drupal.org/files/issues/workbench_moderation-iib-var-2462453-1.patch"
 
 projects[workbench_moderation_buttons][version] = "1.x-dev"
 projects[workbench_moderation_buttons][type] = "module"
@@ -507,7 +510,7 @@ projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
 projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
 ; Incorrect status message "...no published revision of this site"
 ; http://drupal.org/node/2045407
-projects[workbench_moderation_notes][patch][] = "http://drupal.org/files/workbench_moderation_notes-no_live_node_alert-2045407-1.patch"
+projects[workbench_moderation_notes][patch][2045407] = "http://drupal.org/files/workbench_moderation_notes-no_live_node_alert-2045407-1.patch"
 
 projects[xautoload][version] = "4.5"
 projects[xautoload][type] = "module"

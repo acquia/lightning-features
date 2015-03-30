@@ -11,5 +11,7 @@
 function lightning_moderation_enable() {
   // Workbench Moderation requires a node_access rebuild post-install.
   node_access_rebuild(TRUE);
+  // Disable IIB integration for Workbench Moderation by default.
+  variable_set('workbench_moderation_iib', FALSE);
 }
 
