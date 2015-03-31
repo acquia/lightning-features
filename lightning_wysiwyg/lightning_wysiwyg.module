@@ -39,6 +39,19 @@ function lightning_wysiwyg_behat_info() {
 }
 
 /**
+ * Implements hook_entity_preembed().
+ */
+function lightning_wysiwyg_entity_preembed($entity, $context) {
+  $entity_type = $context['data-entity-type'];
+
+  // Remove the file filename to prevent it from being displayed within the
+  // editor.
+  if ($entity_type == 'file') {
+    $entity->filename = '';
+  }
+}
+
+/**
  * Implements hook_entity_embed_alter().
  */
 function lightning_wysiwyg_entity_embed_alter(&$build, $entity, $context) {
