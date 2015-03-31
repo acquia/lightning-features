@@ -39,11 +39,8 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "a1f89be"
+projects[ckeditor][download][revision] = "24e805a"
 projects[ckeditor][download][branch] = "7.x-1.x"
-; CKEditor accomodate latest Media changes
-; http://drupal.org/node/2159403
-projects[ckeditor][patch][2159403] = "http://drupal.org/files/issues/make_ckeditor_plugin-2159403-166.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
