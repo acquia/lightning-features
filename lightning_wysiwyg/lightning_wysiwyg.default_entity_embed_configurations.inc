@@ -23,3 +23,12 @@ function lightning_wysiwyg_default_entity_embed_configuration() {
 
   return $configurations;
 }
+
+/**
+ * Implements hook_default_entity_embed_configuration_alter().
+ */
+function lightning_wysiwyg_default_entity_embed_configuration_alter(&$configurations) {
+  if (!empty($configurations['file'])) {
+    $configurations['file']->button_icon_fid = variable_get('lightning_wysiwyg_entity_embed_icon_fid', 0);
+  }
+}

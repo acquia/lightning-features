@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the lightning_wysiwyg module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_wysiwyg_install() {
+  $filename = 'entity_embed_file.png';
+  $destination = 'public://lightning-wysiwyg';
+
+  // Load the file's contents.
+  $path = drupal_get_path('module', 'lightning_wysiwyg') . '/images/' . $filename;
+  $data = file_get_contents($path);
+
+  // Create a managed file.
+  file_prepare_directory($destination, FILE_CREATE_DIRECTORY);
+  $file = file_save_data($data, $destination . '/' . $filename, FILE_EXISTS_REPLACE);
+
+  // Store the file's ID.
+  variable_set('lightning_wysiwyg_entity_embed_icon_fid', $file->fid);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function lightning_wysiwyg_uninstall() {
+  // Delete the Entity Embed file icon.
+  $fid = variable_get('lightning_wysiwyg_entity_embed_icon_fid', FALSE);
+  if ($fid) {
+    $file = file_load($fid);
+
+    if ($file) {
+      file_delete($file);
+    }
+  }
+
+  // Delete the folder the icon was stored in.
+  $banner_folder = 'public://lightning-wysiwyg';
+  file_unmanaged_delete_recursive($banner_folder);
+
+  // Remove the storage variable.
+  variable_del('lightning_wysiwyg_entity_embed_icon_fid');
+}
