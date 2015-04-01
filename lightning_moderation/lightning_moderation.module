@@ -44,3 +44,16 @@ function lightning_moderation_behat_info() {
 
   return $info;
 }
+
+/**
+ * Implements hook_block_info_alter().
+ */
+function lightning_moderation_block_info_alter(&$blocks, $theme, $code_blocks) {
+  // Check for offcanvas region.
+  $regions = system_region_list($theme);
+  if (isset($regions['offcanvas'])) {
+    // Move Workbench Moderation Block to offcanvas.
+    $blocks['workbench']['block']['region'] = 'offcanvas';
+  }
+}
+
