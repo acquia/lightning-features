@@ -39,11 +39,8 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "8499587"
+projects[ckeditor][download][revision] = "24e805a"
 projects[ckeditor][download][branch] = "7.x-1.x"
-; CKEditor accomodate latest Media changes
-; http://drupal.org/node/2159403
-projects[ckeditor][patch][2159403] = "http://drupal.org/files/issues/make_ckeditor_plugin-2159403-166.patch"
 
 projects[collections][version] = "1.x-dev"
 projects[collections][type] = "module"
@@ -120,6 +117,13 @@ projects[entity][download][type] = "git"
 projects[entity][download][revision] = "4d76c5c"
 projects[entity][download][branch] = "7.x-1.x"
 
+projects[entity_embed][version] = "1.x-dev"
+projects[entity_embed][type] = "module"
+projects[entity_embed][subdir] = "contrib"
+projects[entity_embed][download][type] = "git"
+projects[entity_embed][download][revision] = "b7f1e17"
+projects[entity_embed][download][branch] = "7.x-1.x"
+
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
@@ -167,7 +171,7 @@ projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "7040fe2"
+projects[file_entity][download][revision] = "54a45a3"
 projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[file_entity_link][version] = "1.0-alpha3"
@@ -237,15 +241,16 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "1e1aade"
+projects[media][download][revision] = "b88290c"
 projects[media][download][branch] = "7.x-2.x"
 
-projects[media_youtube][version] = "2.x-dev"
+projects[media_oembed][version] = "2.2"
+projects[media_oembed][type] = "module"
+projects[media_oembed][subdir] = "contrib"
+
+projects[media_youtube][version] = "2.0-rc5"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
-projects[media_youtube][download][type] = "git"
-projects[media_youtube][download][revision] = "187283f"
-projects[media_youtube][download][branch] = "7.x-2.x"
 
 projects[media_preview_slider][version] = "1.x-dev"
 projects[media_preview_slider][type] = "module"
@@ -365,9 +370,15 @@ projects[quickedit][subdir] = "contrib"
 projects[quickedit][download][type] = "git"
 projects[quickedit][download][revision] = "bafb1b5"
 projects[quickedit][download][branch] = "7.x-1.x"
+; Assign filter types to Entity Embed filters.
+; https://www.drupal.org/node/2458517#comment-9754317
+projects[quickedit][patch][2458517] = "http://drupal.org/files/issues/entity-embed-filter-types-2458517-1.patch"
 ; Remove data-quickedit-field-id for personalized fields.
 ; http://drupal.org/node/2424613#comment-9613695
 projects[quickedit][patch][2424613] = "http://drupal.org/files/issues/quick_edit-personalize-2424613-4.patch"
+; Don't load external CKEditor plugins until CKEditor integration improves.
+; https://www.drupal.org/node/2459541
+projects[quickedit][patch][2459541] = "http://drupal.org/files/issues/ignore-remove-external-plugins.patch"
 
 projects[quickedit_tab][version] = "1.x-dev"
 projects[quickedit_tab][type] = "module"
@@ -525,6 +536,18 @@ libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/arch
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.4.3_edit.zip"
+
+libraries[ckeditor_lineutils][download][type] = "get"
+libraries[ckeditor_lineutils][download][url] = "http://download.ckeditor.com/lineutils/releases/lineutils_4.4.3.zip"
+libraries[ckeditor_lineutils][type] = "libraries"
+libraries[ckeditor_lineutils][subdir] = "ckeditor/plugins"
+libraries[ckeditor_lineutils][directory_name] = "lineutils"
+
+libraries[ckeditor_widget][download][type] = "get"
+libraries[ckeditor_widget][download][url] = "http://download.ckeditor.com/widget/releases/widget_4.4.3.zip"
+libraries[ckeditor_widget][type] = "libraries"
+libraries[ckeditor_widget][subdir] = "ckeditor/plugins"
+libraries[ckeditor_widget][directory_name] = "widget"
 
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"

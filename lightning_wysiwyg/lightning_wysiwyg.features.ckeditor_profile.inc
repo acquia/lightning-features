@@ -17,7 +17,7 @@ function lightning_wysiwyg_ckeditor_profile_defaults() {
     [\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
     [\'Cut\',\'Copy\',\'Paste\',\'-\',\'Scayt\'],
     [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\',\'RemoveFormat\'],
-    [\'Media\',\'Table\'],[\'linkit\',\'Unlink\'],
+    [\'file\',\'Table\'],[\'linkit\',\'Unlink\'],
     [\'Source\']
 ]',
         'expand' => 't',
@@ -84,17 +84,21 @@ function lightning_wysiwyg_ckeditor_profile_defaults() {
             ),
             'default' => 't',
           ),
-          'media' => array(
-            'name' => 'media',
-            'desc' => 'Plugin for inserting images from Drupal media module',
-            'path' => '%base_path%' . drupal_get_path('module', 'media') . '/modules/media_wysiwyg/wysiwyg_plugins/media_ckeditor/',
+          'drupalentity' => array(
+            'name' => 'drupalentity',
+            'desc' => 'Plugin for embedding entities',
+            'path' => '%base_path%' . drupal_get_path('module', 'entity_embed') . '/js/plugins/drupalentity/',
+            'default' => 'f',
             'buttons' => array(
-              'Media' => array(
-                'icon' => 'images/icon.gif',
-                'label' => 'Add media',
+              'file' => array(
+                'label' => 'File',
+                'icon' => 'entity.png',
+              ),
+              'node' => array(
+                'label' => 'Content',
+                'icon' => 'entity.png',
               ),
             ),
-            'default' => 'f',
           ),
         ),
       ),
@@ -117,7 +121,7 @@ function lightning_wysiwyg_ckeditor_profile_defaults() {
     [\'Source\'],
     [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'Scayt\'],
     [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\',\'RemoveFormat\'],
-    [\'Image\',\'Media\',\'Table\',\'HorizontalRule\',\'Iframe\'],
+    [\'Image\',\'file\',\'Table\',\'HorizontalRule\',\'Iframe\'],
     [\'Maximize\'],
     \'/\',
     [\'Format\'],
@@ -191,17 +195,21 @@ function lightning_wysiwyg_ckeditor_profile_defaults() {
             ),
             'default' => 't',
           ),
-          'media' => array(
-            'name' => 'media',
-            'desc' => 'Plugin for inserting images from Drupal media module',
-            'path' => '%base_path%' . drupal_get_path('module', 'media') . '/modules/media_wysiwyg/wysiwyg_plugins/media_ckeditor/',
+          'drupalentity' => array(
+            'name' => 'drupalentity',
+            'desc' => 'Plugin for embedding entities',
+            'path' => '%base_path%' . drupal_get_path('module', 'entity_embed') . '/js/plugins/drupalentity/',
+            'default' => 'f',
             'buttons' => array(
-              'Media' => array(
-                'icon' => 'images/icon.gif',
-                'label' => 'Add media',
+              'file' => array(
+                'label' => 'File',
+                'icon' => 'entity.png',
+              ),
+              'node' => array(
+                'label' => 'Content',
+                'icon' => 'entity.png',
               ),
             ),
-            'default' => 'f',
           ),
         ),
       ),
