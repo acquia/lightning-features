@@ -334,7 +334,7 @@ projects[panels][subdir] = "contrib"
 projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch"
 ; IPE Insufficient for working with Panelizer Revisioning
 ; https://www.drupal.org/node/2462331#comment-9778921
-projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-4.patch"
+projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-7.patch"
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
