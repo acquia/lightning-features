@@ -267,7 +267,7 @@ projects[module_filter][version] = "2.0-alpha2"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
-projects[migrate][version] = "2.6"
+projects[migrate][version] = "2.7"
 projects[migrate][type] = "module"
 projects[migrate][subdir] = "contrib"
 
