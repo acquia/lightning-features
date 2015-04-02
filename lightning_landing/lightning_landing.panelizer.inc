@@ -30,7 +30,7 @@ function lightning_landing_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = '';
   $display = new panels_display();
-  $display->layout = 'brown';
+  $display->layout = 'demonstratie_layout_landing';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -59,6 +59,15 @@ function lightning_landing_panelizer_defaults() {
       'footercolumn1' => NULL,
       'footercolumn2' => NULL,
       'footercolumn3' => NULL,
+      'header' => NULL,
+      'primary_features' => NULL,
+      'secondary_features' => NULL,
+      'tertiary_features' => NULL,
+      'quaternary_features' => NULL,
+      'primary_supplements' => NULL,
+      'secondary_supplements' => NULL,
+      'tertiary_supplements' => NULL,
+      'footer' => NULL,
     ),
   );
   $display->cache = array();
