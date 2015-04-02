@@ -186,7 +186,7 @@ projects[focal_point][version] = "1.0-beta1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
-projects[form_builder][version] = "1.6"
+projects[form_builder][version] = "1.7"
 projects[form_builder][type] = "module"
 projects[form_builder][subdir] = "contrib"
 
@@ -405,7 +405,7 @@ projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
-projects[rules][version] = "2.8"
+projects[rules][version] = "2.9"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
@@ -430,7 +430,7 @@ projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 
-projects[token][version] = "1.5"
+projects[token][version] = "1.6"
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
 
@@ -491,7 +491,7 @@ projects[views_load_more][version] = "1.5"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.5"
+projects[webform][version] = "4.7"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
