@@ -4,6 +4,7 @@ core = 7.x
 package = Lightning
 version = 7.x-1.0
 project = lightning_filter
+dependencies[] = entity_embed
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = system

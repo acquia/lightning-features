@@ -141,8 +141,8 @@ function lightning_fpp_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
-          'public' => 'public',
           'oembed' => 'oembed',
+          'public' => 'public',
         ),
         'allowed_types' => array(
           'audio' => 'audio',
