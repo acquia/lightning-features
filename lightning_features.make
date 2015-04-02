@@ -336,12 +336,9 @@ projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-
 ; https://www.drupal.org/node/2462331#comment-9778921
 projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-7.patch"
 
-projects[panopoly_magic][version] = "1.x-dev"
+projects[panopoly_magic][version] = "1.20"
 projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
-projects[panopoly_magic][download][type] = "git"
-projects[panopoly_magic][download][revision] = "cae055c"
-projects[panopoly_magic][download][branch] = "7.x-1.x"
 
 projects[panopoly_theme][version] = "1.x-dev"
 projects[panopoly_theme][type] = "module"
