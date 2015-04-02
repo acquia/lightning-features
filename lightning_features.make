@@ -263,7 +263,7 @@ projects[metatag][version] = "1.4"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
 
-projects[module_filter][version] = "2.0-alpha2"
+projects[module_filter][version] = "2.0"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
