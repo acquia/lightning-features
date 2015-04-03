@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_blocks
 dependencies[] = bean
+dependencies[] = bean_admin_ui
 dependencies[] = bean_tax
 dependencies[] = block
 dependencies[] = block_class
