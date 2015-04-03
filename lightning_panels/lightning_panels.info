@@ -13,7 +13,6 @@ dependencies[] = page_manager
 dependencies[] = panelizer
 dependencies[] = panels
 dependencies[] = panels_ipe
-dependencies[] = panopoly_magic
 dependencies[] = strongarm
 datestamp = 1411763263
 features[ctools][] = page_manager:pages_default:1
