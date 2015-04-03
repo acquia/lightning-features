@@ -22,3 +22,33 @@ function lightning_panels_pre_features_rebuild($component) {
     drupal_static_reset('panelizer_entity_plugin_get_handler');
   }
 }
+
+/**
+ * Implements hook_panels_ipe_button_alter().
+ */
+function lightning_panels_panels_ipe_button_alter(&$button, $op, $cache_key) {
+  list($module, $argument) = explode(':', $cache_key, 2);
+  if ($module == 'panelizer') {
+    list($entity_type, $entity_id, $view_mode, $revision_id) = explode(':', $argument);
+    $cache = panelizer_panels_cache_get($argument);
+    $entity = $cache->display->context['panelizer']->data;
+    list($entity_id, $revision_id, $bundle) = entity_extract_ids($entity_type, $entity);
+    $handler = panelizer_handler_load($entity_type);
+    $button['#access'] = $handler->panelizer_access($op, $bundle, $view_mode);
+  }
+}
+
+/**
+ * Implements hook_panelizer_access_alter().
+ */
+function lightning_panels_panelizer_access_alter(&$panelizer_access, $options) {
+  if (in_array($options['op'], array('panels-ipe-startedit', 'panels-ipe-change-layout')) && module_exists('workbench_moderation')) {
+    $item = menu_get_item();
+    if ($item['path'] == 'node/%') {
+      $node = menu_get_object();
+      if (workbench_moderation_node_moderated($node)) {
+        $panelizer_access = array();
+      }
+    }
+  }
+}
