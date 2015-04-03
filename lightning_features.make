@@ -8,6 +8,9 @@ projects[better_formats][subdir] = "contrib"
 projects[bean][version] = "1.9"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
+; Bean insists we use a tagged release of Entity API
+; http://drupal.org/node/2465267
+projects[bean][patch][2465267] = "http://drupal.org/files/issues/bean-entity-api-version-0.patch"
 
 projects[bean_tax][version] = "2.6"
 projects[bean_tax][type] = "module"
