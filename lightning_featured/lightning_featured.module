@@ -1,0 +1,35 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_featured feature.
+ */
+
+include_once 'lightning_featured.features.inc';
+
+
+/**
+ *  Implements hook_post_features_enable_feature().
+ */
+function lightning_featured_post_features_enable_feature($component) {
+  // Log components as they are enabled.
+  watchdog('component', 'lightning_featured enabled ' . $component . ' component');
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function lightning_featured_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['featured'] = array(
+    'label' => t('Featured'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['user']['view modes']['featured'] = array(
+    'label' => t('Featured'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['taxonomy_term']['view modes']['featured'] = array(
+    'label' => t('Featured'),
+    'custom settings' => TRUE,
+  );
+}
+

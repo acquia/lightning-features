@@ -1,0 +1,11 @@
+name = Lightning Featured
+description = Adds 'Featured' view mode for nodes, taxonomy terms and users.
+core = 7.x
+package = Lightning
+version = 7.x-1.0
+project = lightning_featured
+dependencies[] = node
+dependencies[] = taxonomy
+dependencies[] = user
+datestamp = 1408404197
+features[features_api][] = api:2
