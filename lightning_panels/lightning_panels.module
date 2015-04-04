@@ -46,7 +46,7 @@ function lightning_panels_panelizer_access_alter(&$panelizer_access, $options) {
     $item = menu_get_item();
     if ($item['path'] == 'node/%') {
       $node = menu_get_object();
-      if (workbench_moderation_node_moderated($node)) {
+      if (workbench_moderation_node_moderated($node) && isset($node->workbench_moderation['published'])) {
         $panelizer_access = array();
       }
     }
