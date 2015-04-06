@@ -328,6 +328,9 @@ projects[panelizer][download][branch] = "7.x-3.x"
 ; Better Revision Handling inside and outside of Workbench Moderation
 ; http://drupal.org/node/2457113
 projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113-18.patch"
+; Add hook_panelizer_access_alter() for the new hook_panelizer_access()
+; https://www.drupal.org/node/2465333#comment-9791101
+projects[panelizer][patch][2465333] = "http://www.drupal.org/files/issues/2465333-1.patch"
 
 projects[panels][version] = "3.5"
 projects[panels][type] = "module"
@@ -338,6 +341,9 @@ projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-
 ; IPE Insufficient for working with Panelizer Revisioning
 ; https://www.drupal.org/node/2462331#comment-9778921
 projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-7.patch"
+; Allow modules to alter IPE buttons w/o hook_page_alter implementation
+; https://www.drupal.org/node/2465193#comment-9791045
+projects[panels][patch][2465193] = "http://www.drupal.org/files/issues/2465193-1.patch"
 
 projects[panopoly_magic][version] = "1.20"
 projects[panopoly_magic][type] = "module"
