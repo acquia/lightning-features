@@ -39,6 +39,21 @@ function lightning_panels_panels_ipe_button_alter(&$button, $op, $cache_key) {
 }
 
 /**
+ * Implements hook_panelizer_access().
+ */
+function lightning_panels_panelizer_access($op, $entity_type, $bundle, $view_mode) {
+  $ops = array(
+    'panels-ipe-startedit' => 'content',
+    'panels-ipe-change-layout' => 'layout',
+  );
+  // Since no permissions exist explicitly for the IPE buttons, we substitute
+  // the normal layout/content permission checks for this entity bundle.
+  if (!empty($ops[$op])) {
+    return user_access("administer panelizer $entity_type $bundle {$ops[$op]}");
+  }
+}
+
+/**
  * Implements hook_panelizer_access_alter().
  */
 function lightning_panels_panelizer_access_alter(&$panelizer_access, $options) {
