@@ -45,7 +45,7 @@ function lightning_article_defaultconfig_user_default_permissions() {
     'name' => 'edit any article content',
     'roles' => array(
       'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
+      'curator' => 'curator',
     ),
     'module' => 'node',
   );
