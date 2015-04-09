@@ -1,14 +1,14 @@
 api = 2
 core = 7.x
 
-projects[acquia_lift][version] = "1.0-rc11"
+projects[acquia_lift][version] = "1.0-rc12"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 ; Lift forces max width on .ctools-modal-content but not .modal-content
 ; http://drupal.org/node/2406855
 projects[acquia_lift][patch][2406855] = "http://drupal.org/files/issues/acquia-lift-ctools-modal-content-css-0.patch"
 
-projects[personalize][version] = "1.0-rc9"
+projects[personalize][version] = "1.0-rc10"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
 ; Personalized Fields break preview inside Panels
