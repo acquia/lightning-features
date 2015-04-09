@@ -9,7 +9,7 @@
  * Implements hook_install().
  */
 function lightning_panels_install() {
-  // Enable Panopoly Magic on installation.
-  module_enable(array('panopoly_magic'));
+  // Enable Panels Preview on installation.
+  module_enable(array('panels_preview'));
 }
 
