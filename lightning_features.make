@@ -345,6 +345,12 @@ projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-7
 ; https://www.drupal.org/node/2465193#comment-9791045
 projects[panels][patch][2465193] = "http://www.drupal.org/files/issues/2465193-1.patch"
 
+projects[panels_preview][version] = "1.x-dev"
+projects[panels_preview][type] = "module"
+projects[panels_preview][subdir] = "contrib"
+projects[panels_preview][download][type] = "git"
+projects[panels_preview][download][branch] = "7.x-1.x"
+
 projects[panopoly_magic][version] = "1.20"
 projects[panopoly_magic][type] = "module"
 projects[panopoly_magic][subdir] = "contrib"
