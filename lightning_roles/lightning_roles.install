@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Installation routines for lightning_roles module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_roles_install() {
+  // Add shortcut sets for each role we've added
+  $shortcutperrole = array();
+  $roles = user_roles();
+
+  // Define shortcut sets
+  $shortcut_sets = array(
+    'administrator' => array(
+      'node/add/landing' => 'Add Landing Page',
+      'admin/reports/status' => 'Status Report',
+      'admin/config/development/performance' => 'Performance',
+      'admin/structure/pages' => 'Pages',
+      'admin/structure/block' => 'Blocks',
+      'admin/structure/views' => 'Views'
+    ),
+    'marketer' => array(
+      'node/add/landing' => 'Add Landing Page',
+      'admin/workbench/create' => 'Add Content',
+      'admin/content' => 'Find Content',
+      'admin/workbench/needs-review' => 'Needs Review',
+      'admin/workbench/drafts' => 'My Drafts',
+    ),
+    'reviewer' => array(
+      'admin/workbench/needs-review' => 'Needs Review',
+      'admin/content' => 'Find Content',
+      'admin/workbench/content/all' => 'Recent Content',
+      'admin/workbench/create' => 'Add Content',
+    ),
+    'curator' => array(
+      'admin/workbench/create' => 'Add Content',
+      'admin/workbench/content/all' => 'Recent Content',
+      'admin/content' => 'Find Content',
+      'admin/people' => 'Users'
+    ),
+  );
+
+  // Create all shortcut sets and assemble shortcutperrole variable
+  foreach ($shortcut_sets as $role => $shortcuts) {
+    // Create the shortcut set class
+    $shortcut_set = new stdClass();
+    $shortcut_set->title = ucfirst($role);
+    $shortcut_set->links = array();
+    // For each path/title pair, create a new link
+    foreach ($shortcuts as $path => $name) {
+      $shortcut_set->links[] = array(
+        'link_path' => $path,
+        'link_title' => $name
+      );
+    }
+    // Save the shortcut set
+    shortcut_set_save($shortcut_set);
+    // Find the role ID for this role
+    $rid = array_search($role, $roles);
+    // Update the shortcutperrole variable
+    $shortcutperrole[$rid] = $shortcut_set->set_name;
+  }
+
+  // Set the shortcutperrole variable
+  variable_set('shortcutperrole', $shortcutperrole);
+}

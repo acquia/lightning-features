@@ -9,6 +9,7 @@ dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = role_export
 dependencies[] = system
+dependencies[] = shortcutperrole
 datestamp = 1408404197
 features[features_api][] = api:2
 features[user_role][] = curator
