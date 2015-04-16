@@ -16,7 +16,7 @@ function lightning_fpp_entity_info_alter(&$entity_info) {
   $fpp_types = _lightning_fpp_fpp_types();
   foreach ($fpp_types as $type => $info) {
     $entity_info['fieldable_panels_pane']['bundles'][$type] = array(
-      'label' => t('Add @title', array('@title' => $info['title'])),
+      'label' => t('@title', array('@title' => ucwords($info['title']))),
       'pane category' => t('Custom'),
       'pane top level' => TRUE,
       'pane icon' => $info['icon'],
