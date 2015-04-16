@@ -7,14 +7,6 @@
 include_once 'lightning_blocks.features.inc';
 
 /**
- *  Implements hook_post_features_enable_feature().
- */
-function lightning_blocks_post_features_enable_feature($component) {
-  // Log components as they are enabled.
-  watchdog('component', 'lightning_blocks enabled ' . $component . ' component');
-}
-
-/**
  * Implements hook_entity_info_alter().
  */
 function lightning_blocks_entity_info_alter(&$entity_info) {

@@ -7,14 +7,6 @@
 include_once 'lightning_panels.features.inc';
 
 /**
- *  Implements hook_post_features_enable_feature().
- */
-function lightning_panels_post_features_enable_feature($component) {
-  // Log components as they are enabled.
-  watchdog('component', 'lightning_panels enabled ' . $component . ' component');
-}
-
-/**
  * Implements hook_pre_features_rebuild().
  */
 function lightning_panels_pre_features_rebuild($component) {

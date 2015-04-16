@@ -5,14 +5,6 @@
  */
 
 /**
- *  Implements hook_post_features_enable_feature().
- */
-function lightning_identifiers_post_features_enable_feature($component) {
-  // Log components as they are enabled.
-  watchdog('component', 'lightning_identifiers enabled ' . $component . ' component');
-}
-
-/**
  * Implements hook_behat_info().
  */
 function lightning_identifiers_behat_info() {
