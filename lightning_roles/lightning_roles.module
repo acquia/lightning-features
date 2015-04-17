@@ -7,32 +7,6 @@
 include_once 'lightning_roles.features.inc';
 
 /**
- *  Implements hook_post_features_enable_feature().
- */
-function lightning_roles_post_features_enable_feature($component) {
-  // After enabling user roles, set the shortcutperrole variable to match newly added rids
-  if ($component == 'user_role') {
-    // Load current shortcutperrole variable, which doesn't have role ids set (yet)
-    $old_shotcutperrole = variable_get('shortcutperrole');
-    $roles = user_roles();
-
-    // Load shortcut sets
-    $shortcut_sets = lightning_roles_get_shortcut_sets();
-
-    $shortcutperrole = array();
-    foreach ($shortcut_sets as $role => $shortcuts) {
-      // Find the role ID for this role
-      $rid = array_search($role, $roles);
-      // Update the shortcutperrole variable to use real role ids
-      $shortcutperrole[$rid] = $old_shotcutperrole[$role];
-    }
-
-    // Set the shortcutperrole variable
-    variable_set('shortcutperrole', $shortcutperrole);
-  }
-}
-
-/**
  * Implements hook_behat_info().
  */
 function lightning_roles_behat_info() {
@@ -42,44 +16,4 @@ function lightning_roles_behat_info() {
     ),
   );
   return $info;
-}
-
-/**
- * Helper function to return all shortcutperrole shortcut sets included with the module.
- */
-function lightning_roles_get_shortcut_sets() {
-  $shortcut_sets = array(
-    'administrator' => array(
-      'node/add/landing' => 'Add Landing Page',
-      'admin/reports/status' => 'Status Report',
-      'admin/config/development/performance' => 'Performance',
-      'admin/structure/pages' => 'Pages',
-      'admin/structure/block' => 'Blocks',
-      'admin/structure/views' => 'Views'
-    ),
-    'curator' => array(
-      'node/add/landing' => 'Add Landing Page',
-      'admin/workbench/create' => 'Add Content',
-      'admin/content' => 'Find Content',
-      'admin/workbench/needs-review' => 'Needs Review',
-      'admin/workbench/drafts' => 'My Drafts',
-      'admin/structure/block' => 'Blocks',
-      'admin/structure/views' => 'Views'
-    ),
-    'reviewer' => array(
-      'admin/workbench/create' => 'Add Content',
-      'admin/workbench/needs-review' => 'Needs Review',
-      'admin/content' => 'Find Content',
-      'admin/workbench/content/all' => 'Recent Content',
-      'admin/structure/pages' => 'Pages',
-      'admin/structure/block' => 'Blocks'
-    ),
-    'marketer' => array(
-      'admin/workbench/create' => 'Add Content',
-      'admin/workbench/content/all' => 'Recent Content',
-      'admin/content' => 'Find Content',
-      'admin/people' => 'Users'
-    ),
-  );
-  return $shortcut_sets;
 }

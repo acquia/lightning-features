@@ -1,0 +1,96 @@
+<?php
+/**
+ * @file
+ * Code for the lightning_shortcuts feature.
+ */
+
+/**
+ * Implements hook_user_role_insert.
+ * It's possible that some roles will not be available on install, this hook handles that case.
+ */
+function lightning_shortcuts_user_role_insert($role) {
+  // Get defined shortcut sets
+  $shortcut_sets = lightning_shortcuts_get_shortcut_sets();
+
+  // Check to see if this role is part of that set
+  if (isset($shortcut_sets[$role->name])) {
+    // Add this role/set to the shortcutperrole variable
+    $shortcutperrole = variable_get('shortcutperrole', array());
+
+    // Save the relevant shortcut set
+    $shortcut_set = lightning_shortcuts_save_shortcut_set($role->name, $shortcut_sets[$role->name]);
+
+    // Associate this role id with our shortcut set and save
+    $shortcutperrole[$role->rid] = $shortcut_set->set_name;
+    variable_set('shortcutperrole', $shortcutperrole);
+  }
+}
+
+/**
+* Helper function to programmatically save a shortcut set
+ *
+ * @param string $title The shortcut title
+ * @param array $shortcuts An associative array of shortcuts in the format $path => $display_name
+ *
+ * @return Object The new shortcut set
+*/
+function lightning_shortcuts_save_shortcut_set($title, $shortcuts) {
+  // Create the shortcut set class
+  $shortcut_set = new stdClass();
+  $shortcut_set->title = ucfirst($title);
+  $shortcut_set->links = array();
+
+  // For each path/title pair, create a new link
+  foreach ($shortcuts as $path => $name) {
+    $shortcut_set->links[] = array(
+      'link_path' => $path,
+      'link_title' => $name
+    );
+  }
+
+  // Save the shortcut set
+  shortcut_set_save($shortcut_set);
+  return $shortcut_set;
+}
+
+/**
+ * Helper function to return all shortcutperrole shortcut sets included with the module.
+ *
+ * @return array An array representing role-based shortcut sets
+ */
+function lightning_shortcuts_get_shortcut_sets() {
+  $shortcut_sets = array(
+    'administrator' => array(
+      'node/add/landing' => 'Add Landing Page',
+      'admin/reports/status' => 'Status Report',
+      'admin/config/development/performance' => 'Performance',
+      'admin/structure/pages' => 'Pages',
+      'admin/structure/block' => 'Blocks',
+      'admin/structure/views' => 'Views'
+    ),
+    'curator' => array(
+      'node/add/landing' => 'Add Landing Page',
+      'admin/workbench/create' => 'Add Content',
+      'admin/content' => 'Find Content',
+      'admin/workbench/needs-review' => 'Needs Review',
+      'admin/workbench/drafts' => 'My Drafts',
+      'admin/structure/block' => 'Blocks',
+      'admin/structure/views' => 'Views'
+    ),
+    'reviewer' => array(
+      'admin/workbench/create' => 'Add Content',
+      'admin/workbench/needs-review' => 'Needs Review',
+      'admin/content' => 'Find Content',
+      'admin/workbench/content/all' => 'Recent Content',
+      'admin/structure/pages' => 'Pages',
+      'admin/structure/block' => 'Blocks'
+    ),
+    'marketer' => array(
+      'admin/workbench/create' => 'Add Content',
+      'admin/workbench/content/all' => 'Recent Content',
+      'admin/content' => 'Find Content',
+      'admin/people' => 'Users'
+    ),
+  );
+  return $shortcut_sets;
+}

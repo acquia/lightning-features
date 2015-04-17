@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ * Installation routines for lightning_shortcuts module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_shortcuts_install() {
+  // Get defined shortcut sets
+  $shortcut_sets = lightning_shortcuts_get_shortcut_sets();
+
+  // Load roles
+  $roles = user_roles();
+
+  // Add shortcut sets for each role we've added
+  $shortcutperrole = array();
+  foreach ($shortcut_sets as $role => $shortcuts) {
+    // Ensure that this role id exists before moving forward
+    if ($rid = array_search($role, $roles)) {
+      // Save the relevant shortcut set
+      $shortcut_set = lightning_shortcuts_save_shortcut_set($role, $shortcuts);
+
+      // Update the shortcutperrole variable
+      $shortcutperrole[$rid] = $shortcut_set->set_name;
+    }
+  }
+
+  // Set the shortcutperrole variable
+  variable_set('shortcutperrole', $shortcutperrole);
+}
