@@ -542,6 +542,10 @@ projects[xautoload][version] = "4.5"
 projects[xautoload][type] = "module"
 projects[xautoload][subdir] = "contrib"
 
+projects[shortcutperrole][version] = "1.2"
+projects[shortcutperrole][type] = "module"
+projects[shortcutperrole][subdir] = "contrib"
+
 ; Libraries
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.1.0.zip"
