@@ -328,9 +328,6 @@ projects[panelizer][download][branch] = "7.x-3.x"
 ; Better Revision Handling inside and outside of Workbench Moderation
 ; http://drupal.org/node/2457113
 projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113-26.patch"
-; Undefined index: table in PanelizerEntityDefault->hook_views_data_alter()
-; http://drupal.org/node/2474631
-projects[panelizer][patch][2474631] = "http://drupal.org/files/issues/panelizer_views-alter-table-0.patch"
 
 projects[panels][version] = "3.5"
 projects[panels][type] = "module"
