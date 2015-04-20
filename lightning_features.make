@@ -323,14 +323,14 @@ projects[pathauto][subdir] = "contrib"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "7f28657"
+projects[panelizer][download][revision] = "b696d13"
 projects[panelizer][download][branch] = "7.x-3.x"
 ; Better Revision Handling inside and outside of Workbench Moderation
 ; http://drupal.org/node/2457113
-projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113-18.patch"
-; Add hook_panelizer_access_alter() for the new hook_panelizer_access()
-; https://www.drupal.org/node/2465333#comment-9791101
-projects[panelizer][patch][2465333] = "http://www.drupal.org/files/issues/2465333-1.patch"
+projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113-26.patch"
+; Undefined index: table in PanelizerEntityDefault->hook_views_data_alter()
+; http://drupal.org/node/2474631
+projects[panelizer][patch][2474631] = "http://drupal.org/files/issues/panelizer_views-alter-table-0.patch"
 
 projects[panels][version] = "3.5"
 projects[panels][type] = "module"
