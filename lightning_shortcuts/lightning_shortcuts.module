@@ -27,13 +27,13 @@ function lightning_shortcuts_user_role_insert($role) {
 }
 
 /**
-* Helper function to programmatically save a shortcut set
+ * Helper function to programmatically save a shortcut set
  *
  * @param string $title The shortcut title
  * @param array $shortcuts An associative array of shortcuts in the format $path => $display_name
  *
  * @return Object The new shortcut set
-*/
+ */
 function lightning_shortcuts_save_shortcut_set($title, $shortcuts) {
   // Create the shortcut set class
   $shortcut_set = new stdClass();
@@ -66,7 +66,8 @@ function lightning_shortcuts_get_shortcut_sets() {
       'admin/config/development/performance' => 'Performance',
       'admin/structure/pages' => 'Pages',
       'admin/structure/block' => 'Blocks',
-      'admin/structure/views' => 'Views'
+      'admin/structure/views' => 'Views',
+      'admin/config/lightning/clear-cache' => 'Clear Caches'
     ),
     'curator' => array(
       'node/add/landing' => 'Add Landing Page',
@@ -93,4 +94,25 @@ function lightning_shortcuts_get_shortcut_sets() {
     ),
   );
   return $shortcut_sets;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function lightning_shortcuts_menu() {
+  // Add a new page callback to clear caches from a GET request
+  $items['admin/config/lightning/clear-cache'] = array(
+    'page callback' => 'lightning_shortcuts_clear_cache',
+    'access arguments' => array('administer site configuration') ,
+  );
+  return $items;
+}
+
+/**
+ * Page callback - Clear all caches and redirect to homepage
+ */
+function lightning_shortcuts_clear_cache() {
+  drupal_flush_all_caches();
+  drupal_set_message('All caches have been cleared.');
+  drupal_goto('<front>');
 }
