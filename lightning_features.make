@@ -11,6 +11,10 @@ projects[bean][subdir] = "contrib"
 ; Bean insists we use a tagged release of Entity API
 ; http://drupal.org/node/2465267
 projects[bean][patch][2465267] = "http://drupal.org/files/issues/bean-entity-api-version-0.patch"
+; Bean's panelizer integration does not correctly use views_data_alter
+; http://drupal.org/node/2474631
+projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-4.patch"
+
 
 projects[bean_tax][version] = "2.6"
 projects[bean_tax][type] = "module"
