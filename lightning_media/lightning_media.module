@@ -7,6 +7,15 @@
 include_once 'lightning_media.features.inc';
 
 /**
+ * Implements hook_file_default_types_alter().
+ */
+function lightning_media_file_default_types_alter(&$types) {
+  if (isset($types['document'])) {
+    $types['document']->mimetypes[] = 'text/oembed';
+  }
+}
+
+/**
  * Implements hook_entity_info_alter().
  */
 function lightning_media_entity_info_alter(&$entity_info) {

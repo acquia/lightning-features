@@ -247,10 +247,10 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "3fc13e9"
+projects[media][download][revision] = "a2b8ae2"
 projects[media][download][branch] = "7.x-2.x"
 
-projects[media_oembed][version] = "2.2"
+projects[media_oembed][version] = "2.3"
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
 

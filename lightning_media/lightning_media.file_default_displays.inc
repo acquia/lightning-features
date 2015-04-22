@@ -26,7 +26,9 @@ function lightning_media_file_default_displays() {
   $file_display->name = 'audio__media_browser__file_field_media_large_icon';
   $file_display->weight = 49;
   $file_display->status = TRUE;
-  $file_display->settings = '';
+  $file_display->settings = array(
+    'image_style' => 'media_browser',
+  );
   $file_displays['audio__media_browser__file_field_media_large_icon'] = $file_display;
 
   $file_display = new stdClass();
@@ -53,7 +55,9 @@ function lightning_media_file_default_displays() {
   $file_display->name = 'document__media_browser__file_field_media_large_icon';
   $file_display->weight = 49;
   $file_display->status = TRUE;
-  $file_display->settings = '';
+  $file_display->settings = array(
+    'image_style' => 'media_browser',
+  );
   $file_displays['document__media_browser__file_field_media_large_icon'] = $file_display;
 
   $file_display = new stdClass();
@@ -92,7 +96,9 @@ function lightning_media_file_default_displays() {
   $file_display->name = 'image__media_browser__file_field_media_large_icon';
   $file_display->weight = 49;
   $file_display->status = TRUE;
-  $file_display->settings = '';
+  $file_display->settings = array(
+    'image_style' => 'media_browser',
+  );
   $file_displays['image__media_browser__file_field_media_large_icon'] = $file_display;
 
   $file_display = new stdClass();
@@ -119,7 +125,9 @@ function lightning_media_file_default_displays() {
   $file_display->name = 'video__media_browser__file_field_media_large_icon';
   $file_display->weight = 49;
   $file_display->status = TRUE;
-  $file_display->settings = '';
+  $file_display->settings = array(
+    'image_style' => 'media_browser',
+  );
   $file_displays['video__media_browser__file_field_media_large_icon'] = $file_display;
 
   $file_display = new stdClass();
