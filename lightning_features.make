@@ -247,7 +247,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "b88290c"
+projects[media][download][revision] = "3fc13e9"
 projects[media][download][branch] = "7.x-2.x"
 
 projects[media_oembed][version] = "2.2"
