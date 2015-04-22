@@ -116,3 +116,42 @@ function lightning_shortcuts_clear_cache() {
   drupal_set_message('All caches have been cleared.');
   drupal_goto('<front>');
 }
+
+/**
+ * Implements hook_navbar_alter() to merge shortut sets for users with multiple roles.
+ */
+function lightning_shortcuts_navbar_alter(&$items) {
+  // This variable will track paths we already have links to
+  $hrefs = array();
+
+  // Load the default set
+  $shortcut_set = shortcut_current_displayed_set();
+  $merged_set = menu_tree($shortcut_set->set_name);
+
+  // Set initial value for the $href variable
+  foreach ($merged_set as $id => $link) {
+    $hrefs[] = $link['#href'];
+  }
+
+  // Load all shortcuts associated with this account
+  if ($shortcutperrole = variable_get('shortcutperrole')) {
+    global $user;
+    // For each role, merge in the associated shortcut set (if one exists)
+    foreach ($user->roles as $rid => $title) {
+      // Check to see if this shortcut_set exists
+      if (isset($shortcutperrole[$rid])) {
+        // Check to see if each shortcut doesn't already exist in our set
+        foreach (menu_tree($shortcutperrole[$rid]) as $id => $link) {
+          if (!in_array($link['#href'], $hrefs)) {
+            // Log this path for future links
+            $hrefs[] = $link['#href'];
+            $merged_set[$id] = $link;
+          }
+        }
+      }
+    }
+  }
+
+  // Update the shortcut tray with our new set
+  $items['shortcuts']['tray']['shortcuts'] = $merged_set;
+}
