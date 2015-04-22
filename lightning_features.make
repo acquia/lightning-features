@@ -78,7 +78,7 @@ projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 ; When Ctools modal is open, disable the page scroll behind the modal
 ; http://drupal.org/node/2475417
-projects[ctools][patches][2475417] = "http://drupal.org/files/issues/fix-background-scroll-2475417-4.patch"
+projects[ctools][patch][2475417] = "http://drupal.org/files/issues/fix-background-scroll-2475417-4.patch"
 
 projects[date][version] = "2.8"
 projects[date][type] = "module"
