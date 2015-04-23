@@ -128,8 +128,9 @@ function lightning_shortcuts_navbar_alter(&$items) {
   $shortcut_set = shortcut_current_displayed_set();
   $merged_set = menu_tree($shortcut_set->set_name);
 
-  // Set initial value for the $href variable
-  foreach ($merged_set as $id => $link) {
+  // Set initial values for the $href variable
+  foreach (element_children($merged_set) as $id) {
+    $link = $merged_set[$id];
     $hrefs[] = $link['#href'];
   }
 
@@ -141,7 +142,10 @@ function lightning_shortcuts_navbar_alter(&$items) {
       // Check to see if this shortcut_set exists
       if (isset($shortcutperrole[$rid])) {
         // Check to see if each shortcut doesn't already exist in our set
-        foreach (menu_tree($shortcutperrole[$rid]) as $id => $link) {
+        $shortcut_set = menu_tree($shortcutperrole[$rid]);
+        foreach (element_children($shortcut_set) as $id) {
+          $link = $shortcut_set[$id];
+          // Make sure duplicate links aren't added
           if (!in_array($link['#href'], $hrefs)) {
             // Log this path for future links
             $hrefs[] = $link['#href'];
