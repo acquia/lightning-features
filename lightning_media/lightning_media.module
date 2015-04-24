@@ -6,3 +6,44 @@
 
 include_once 'lightning_media.features.inc';
 
+/**
+ * Implements hook_file_default_types_alter().
+ */
+function lightning_media_file_default_types_alter(&$types) {
+  if (isset($types['document'])) {
+    $types['document']->mimetypes[] = 'text/oembed';
+  }
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function lightning_media_entity_info_alter(&$entity_info) {
+  if (isset($entity_info['file'])) {
+    $entity_info['file']['view modes']['media_browser'] = array(
+      'label' => t('Media browser'),
+      'custom settings' => TRUE,
+    );
+  }
+}
+
+/**
+ * Implements hook_media_browser_params_alter().
+ */
+function lightning_media_media_browser_params_alter(&$stored_params) {
+  $stored_params['view_mode'] = 'media_browser';
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function lightning_media_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'image_styles_alter') {
+    if (module_exists('ember_support') && function_exists('ember_support_image_styles_alter')) {
+      unset($implementations['ember_support']);
+    }
+    if (module_exists('media_preview_slider') && function_exists('media_preview_slider_image_styles_alter')) {
+      unset($implementations['media_preview_slider']);
+    }
+  }
+}
