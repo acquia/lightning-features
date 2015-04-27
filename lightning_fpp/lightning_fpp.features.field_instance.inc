@@ -146,7 +146,7 @@ function lightning_fpp_field_default_field_instances() {
         ),
         'allowed_types' => array(
           'audio' => 'audio',
-          'document' => 0,
+          'document' => 'document',
           'image' => 'image',
           'video' => 'video',
         ),
