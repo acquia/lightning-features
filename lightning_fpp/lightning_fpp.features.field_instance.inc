@@ -10,6 +10,52 @@
 function lightning_fpp_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'fieldable_panels_pane-content-field_content'
+  $field_instances['fieldable_panels_pane-content-field_content'] = array(
+    'bundle' => 'content',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'fieldable_panels_pane',
+    'field_name' => 'field_content',
+    'label' => 'Content',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => -4,
+    ),
+  );
+
   // Exported field_instance: 'fieldable_panels_pane-map-field_map_address'
   $field_instances['fieldable_panels_pane-map-field_map_address'] = array(
     'bundle' => 'map',
@@ -334,6 +380,7 @@ function lightning_fpp_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
+  t('Content');
   t('HTML');
   t('Information');
   t('Links');

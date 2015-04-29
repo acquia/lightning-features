@@ -13,6 +13,14 @@ function lightning_fpp_default_fieldable_panels_pane_type() {
   $fieldable_panels_pane_type = new stdClass();
   $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
   $fieldable_panels_pane_type->api_version = 1;
+  $fieldable_panels_pane_type->name = 'content';
+  $fieldable_panels_pane_type->title = 'Content';
+  $fieldable_panels_pane_type->description = 'A widget that inserts one or more pieces of content embeded in order of list weight.';
+  $export['content'] = $fieldable_panels_pane_type;
+
+  $fieldable_panels_pane_type = new stdClass();
+  $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
+  $fieldable_panels_pane_type->api_version = 1;
   $fieldable_panels_pane_type->name = 'map';
   $fieldable_panels_pane_type->title = 'Map';
   $fieldable_panels_pane_type->description = 'A widget that easily allows insertion of a Google Map embed based on an address.';

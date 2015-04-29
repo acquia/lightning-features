@@ -10,6 +10,11 @@
 function _lightning_fpp_fpp_types() {
   $icon_path = drupal_get_path('module', 'lightning_fpp') . '/images/';
   $types = array(
+    'content' => array(
+      'title' => 'Content',
+      'icon' => $icon_path . 'icon_content.png',
+      'path' => 'content',
+    ),
     'raw_html' => array(
       'title' => 'HTML',
       'icon' => $icon_path . 'icon_html.png',
