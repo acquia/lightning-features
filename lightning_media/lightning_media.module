@@ -47,3 +47,40 @@ function lightning_media_module_implements_alter(&$implementations, $hook) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function lightning_media_form_entity_embed_dialog_form_alter(&$form, &$form_state, $form_id) {
+  // View mode configuration is only available during the embedding step.
+  if ($form_state['step'] == 'embed') {
+    $values = isset($form_state['values']) ? $form_state['values'] : array();
+
+    // Initialize entity element with form attributes, if present.
+    $entity_element = empty($values['attributes']) ? array() : $values['attributes'];
+
+    // The default values are set directly from \Drupal::request()->request,
+    // provided by the editor plugin opening the dialog.
+    if (empty($form_state['entity_element'])) {
+      $form_state['entity_element'] = isset($input['editor_object']) ? $input['editor_object'] : array();
+    }
+
+    $entity_element += $form_state['entity_element'];
+
+    // Create a whitelist of allowed view modes.
+    $whitelist = array('teaser', 'full');
+
+    $options = array();
+
+    $entity_info = entity_get_info($entity_element['data-entity-type']);
+
+    foreach ($entity_info['view modes'] as $view_mode => $info) {
+      // Remove any view modes that aren't in the whitelist.
+      if (in_array($view_mode, $whitelist)) {
+        $options[$view_mode] = check_plain($info['label']);
+      }
+    }
+
+    $form['attributes']['data-view-mode']['#options'] = $options;
+  }
+}
