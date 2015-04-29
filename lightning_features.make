@@ -477,12 +477,9 @@ projects[ux_elements][download][branch] = "master"
 ; http://drupal.org/node/1224568
 projects[ux_elements][patch][1224568] = "http://drupal.org/files/issues/1224568-ux_elements_redeclare.patch"
 
-projects[views][version] = "3.x-dev"
+projects[views][version] = "3.11"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
-projects[views][download][type] = "git"
-projects[views][download][revision] = "ab35ae9"
-projects[views][download][branch] = "7.x-3.x"
 ; Call to a member function init_display() on a non-object...
 ; http://drupal.org/node/1685144
 projects[views][patch][1685114] = "http://drupal.org/files/views-1685144-localization-bug_1.patch"
