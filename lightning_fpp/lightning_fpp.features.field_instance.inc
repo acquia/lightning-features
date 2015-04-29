@@ -45,13 +45,15 @@ function lightning_fpp_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'inline_entity_form',
       'settings' => array(
+        'fields' => array(),
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
+        'type_settings' => array(),
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'inline_entity_form',
       'weight' => -4,
     ),
   );

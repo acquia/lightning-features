@@ -16,6 +16,7 @@ dependencies[] = file
 dependencies[] = file_entity
 dependencies[] = filter
 dependencies[] = image
+dependencies[] = inline_entity_form
 dependencies[] = link
 dependencies[] = media
 dependencies[] = media_internet
