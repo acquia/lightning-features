@@ -230,6 +230,13 @@ projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
 projects[import][download][branch] = "7.x-1.x"
 
+projects[inline_entity_form][version] = "1.x-dev"
+projects[inline_entity_form][type] = "module"
+projects[inline_entity_form][subdir] = "contrib"
+projects[inline_entity_form][download][type] = "git"
+projects[inline_entity_form][download][revision] = "47ffa63"
+projects[inline_entity_form][download][branch] = "7.x-1.x"
+
 projects[jquery_update][version] = "2.5"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
