@@ -21,5 +21,3 @@ function lightning_panels_ctools_plugin_api($module = NULL, $api = NULL) {
     return array("version" => "1");
   }
 }
-
-
