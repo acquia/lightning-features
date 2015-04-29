@@ -48,10 +48,14 @@ function lightning_fpp_field_default_field_instances() {
       'module' => 'inline_entity_form',
       'settings' => array(
         'fields' => array(),
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-        'type_settings' => array(),
+        'type_settings' => array(
+          'allow_existing' => 1,
+          'delete_references' => 0,
+          'label_plural' => 'content',
+          'label_singular' => 'content',
+          'match_operator' => 'CONTAINS',
+          'override_labels' => 1,
+        ),
       ),
       'type' => 'inline_entity_form',
       'weight' => -4,
