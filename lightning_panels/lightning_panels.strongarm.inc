@@ -7,7 +7,7 @@
 /**
  * Implements hook_strongarm().
  */
-function lightning_panels_strongarm() {
+function lightning_panels_defaultconfig_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
