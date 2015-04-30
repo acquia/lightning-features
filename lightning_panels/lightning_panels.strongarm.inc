@@ -408,7 +408,7 @@ function lightning_panels_defaultconfig_strongarm() {
     'entity_field_extra' => 'entity_field_extra',
     'block' => 'block',
     'fieldable_panels_pane' => 'fieldable_panels_pane',
-    'views' => 'views',
+    'views' => '0',
     'views_panes' => 'views_panes',
     'other' => 'other',
     'context_admin' => 0,
