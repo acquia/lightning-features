@@ -85,7 +85,7 @@ function lightning_fpp_form_alter(&$form, &$form_state, $form_id) {
     $form['reusable']['#type'] = 'fieldset';
     $form['reusable']['#process'] = array('ctools_dependent_process');
     $form['reusable']['#id'] = 'reusable-settings';
-    $form['reusable']['category']['#value'] = t("Reusable @name", array('@name' => $fpp_info['title']));
+    $form['reusable']['category']['#value'] = t("Reusable panes");
     $form['reusable']['category']['#type'] = 'value';
     $form['reusable']['admin_description']['#access'] = FALSE;
     // Set the proper dependencies for the reusable markup
