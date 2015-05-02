@@ -17,9 +17,11 @@ projects[visitor_actions][type] = "module"
 projects[visitor_actions][subdir] = "contrib"
 
 ; Libraries
-libraries[d3][destination] = "libraries"
-libraries[d3][download][type] = "get"
-libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
+;libraries[d3][destination] = "libraries"
+;libraries[d3][download][type] = "get"
+;libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
+; Note: D3 not whitelisted, must be downloaded manually.
+; https://www.drupal.org/node/2481947
 
 libraries[qtip][destination] = "libraries"
 libraries[qtip][download][type] = "get"
