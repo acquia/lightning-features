@@ -597,5 +597,8 @@ libraries[plupload][patch][1903850] = "http://drupal.org/files/issues/plupload-1
 libraries[underscore][download][type] = "get"
 libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
 
+libraries[tablesaw][download][type] = "get"
+libraries[tablesaw][download][url] = "https://github.com/filamentgroup/tablesaw/releases/download/v1.0.4/tablesaw-1.0.4.zip"
+
 ; Lightning Lift
 includes[lightning_lift] = lightning_lift/lightning_lift.make

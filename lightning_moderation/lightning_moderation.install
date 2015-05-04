@@ -13,6 +13,8 @@ function lightning_moderation_enable() {
   node_access_rebuild(TRUE);
   // Disable IIB integration for Workbench Moderation by default.
   variable_set('workbench_moderation_iib', FALSE);
+  // Enable ember-support Tablesaw integration by default
+  variable_set('ember_support_workbench_mobile', TRUE);
   // Enable Workbench Moderation add-ons individually and optionally.
   $dependencies = array('workbench_moderation_buttons', 'workbench_moderation_notes');
   foreach ($dependencies as $module) {
