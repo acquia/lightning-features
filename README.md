@@ -9,11 +9,13 @@ See lightning_features.make for a detailed list of dependent modules and librari
 If you downloaded the Lightning Demo from http://drupal.org/project/lightning
 
 `cd profiles/lightning/modules/contrib/lightning_features`
+
 `sh update.sh`
 
 If you built your own profile using Lightning Features: you must keep lightning_features and the contrib it provides in profiles/[my-profile]/modules/contrib otherwise the update.sh script will not run correctly.
 
 `cd profiles/[my-profile]/modules/contrib/lightning_features`
+
 `sh update.sh`
 
 ### Behat Tests
