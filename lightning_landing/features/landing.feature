@@ -25,9 +25,3 @@ Feature: Lightning Landing
     And I should see "field_landing_identifiers"
     And I should see "field_landing_tags"
     And I should see "metatags"
-
-  @api
-  Scenario: Ensure Panelizer turned on
-    Given I am logged in as a user with the "administrator" role
-    When I go to "/admin/config/content/panelizer"
-    Then the checkbox "edit-entities-node-landing-0-status" should be checked
