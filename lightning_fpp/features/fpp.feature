@@ -6,11 +6,12 @@ Feature: Lightning Fieldable Panel Panes
     Given I am logged in as a user with the "administrator" role
     When I visit "/admin/structure/fieldable-panels-panes"
     Then I should see "fieldable_panels_pane"
+    And I should see "content"
     And I should see "raw_html"
     And I should see "quick_links"
     And I should see "media_pane"
     And I should see "map"
-    And I should see "Machine name: text"
+    And I should see "text"
 
   @api
   Scenario: Check for HTML Fields
