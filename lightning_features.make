@@ -539,7 +539,7 @@ projects[workbench_moderation_buttons][version] = "1.x-dev"
 projects[workbench_moderation_buttons][type] = "module"
 projects[workbench_moderation_buttons][subdir] = "contrib"
 projects[workbench_moderation_buttons][download][type] = "git"
-projects[workbench_moderation_buttons][download][revision] = "0b50592"
+projects[workbench_moderation_buttons][download][revision] = "f1de408"
 projects[workbench_moderation_buttons][download][branch] = "7.x-1.x"
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
