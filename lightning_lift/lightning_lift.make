@@ -11,6 +11,9 @@ projects[personalize][subdir] = "contrib"
 ; Personalized Fields break preview inside Panels
 ; http://drupal.org/node/2303111
 projects[personalize][patch][2303111] = "http://drupal.org/files/issues/personalize-panels-fix-2303111-4.patch"
+; Personalized Fields do not allow friendly option set labels
+; https://www.drupal.org/node/2484261
+projects[personalize][patch][2484261] = "https://www.drupal.org/files/issues/personalize-fields-os-label.patch"
 
 projects[visitor_actions][version] = "1.0-rc4"
 projects[visitor_actions][type] = "module"
