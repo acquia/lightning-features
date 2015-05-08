@@ -361,6 +361,9 @@ projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-7
 ; Allow modules to alter IPE buttons w/o hook_page_alter implementation
 ; https://www.drupal.org/node/2465193#comment-9791045
 projects[panels][patch][2465193] = "http://www.drupal.org/files/issues/2465193-1.patch"
+; Fix for obscure Workbench block bug
+; https://www.drupal.org/node/2485837
+projects[panels][patch][2485837] = "https://www.drupal.org/files/issues/panels-ipe-workbench-block-2485837-1.patch"
 
 projects[panels_preview][version] = "1.x-dev"
 projects[panels_preview][type] = "module"
@@ -408,6 +411,9 @@ projects[quickedit][patch][2424613] = "http://drupal.org/files/issues/quick_edit
 ; Don't load external CKEditor plugins until CKEditor integration improves.
 ; https://www.drupal.org/node/2459541
 projects[quickedit][patch][2459541] = "http://drupal.org/files/issues/ignore-remove-external-plugins.patch"
+; Fix for obscure Workbench block bug
+; https://www.drupal.org/node/2485871
+projects[quickedit][patch][2485871] = "https://www.drupal.org/files/issues/quickedit-workbench-block-ajax-2485871-1.patch"
 
 projects[quickedit_tab][version] = "1.x-dev"
 projects[quickedit_tab][type] = "module"
@@ -534,6 +540,9 @@ projects[workbench_moderation][subdir] = "contrib"
 ; Workbench Moderation IIB Integration should be optional
 ; http://drupal.org/node/2462453
 projects[workbench_moderation][patch][2462453] = "http://drupal.org/files/issues/workbench_moderation-iib-var-2462453-1.patch"
+; Add AJAX callback for refreshing the Workbench Block
+; https://www.drupal.org/node/2485713
+projects[workbench_moderation][patch][2485713] = "https://www.drupal.org/files/issues/workbench-moderation-ajax-block-2485713-3_0.patch"
 
 projects[workbench_moderation_buttons][version] = "1.x-dev"
 projects[workbench_moderation_buttons][type] = "module"
