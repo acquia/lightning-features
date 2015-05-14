@@ -5,7 +5,7 @@
  */
 
 /**
- * Helper function to define our custom Fielable Panels Panes.
+ * Helper function to define our custom Fieldable Panels Panes.
  */
 function _lightning_fpp_fpp_types() {
   $icon_path = drupal_get_path('module', 'lightning_fpp') . '/images/';
@@ -28,7 +28,7 @@ function _lightning_fpp_fpp_types() {
     'media_pane' => array(
       'title' => 'media',
       'icon' => $icon_path . 'icon_media.png',
-      'path' => 'media',
+      'path' => 'media-pane',
     ),
     'map' => array(
       'title' => 'map',
@@ -63,7 +63,7 @@ function lightning_fpp_form_alter(&$form, &$form_state, $form_id) {
 
     // Add a custom pre-render method to deal with "Content Settings" fieldset.
     $form['#pre_render'][] = 'lightning_fpp_fieldable_panel_pane_pre_render';
-    
+
     // Remove the revisioning information
     $form['revision']['revision']['#type'] = 'value';
     $form['revision']['log']['#access'] = FALSE;
@@ -101,7 +101,7 @@ function lightning_fpp_form_alter(&$form, &$form_state, $form_id) {
 }
 
 /**
- * Implement the "Content Settings" fieldset in a pre-render. 
+ * Implement the "Content Settings" fieldset in a pre-render.
  * This fixes issues with image caused by initially doing this in a form_alter.
  *
  * @see http://drupal.org/node/1567704
