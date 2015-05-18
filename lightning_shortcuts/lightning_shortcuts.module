@@ -80,19 +80,21 @@ function lightning_shortcuts_get_shortcut_sets() {
     ),
   );
 
-  // Add Landing Page shortcut where applicable.
-  if (module_exists('lightning_landing')) {
-    foreach ($shortcut_sets as $role => $shortcuts) {
+  // Add some other shortcuts accordingly.
+  foreach ($shortcut_sets as $role => $shortcuts) {
+    // Add Landing Page shortcut where applicable.
+    if (module_exists('lightning_landing')) {
       $shortcut_sets[$role]['node/add/landing'] = 'Add Landing Page';
     }
-  }
-
-  // Add Workbench shortcuts where applicable.
-  if (module_exists('lightning_moderation')) {
-    foreach ($shortcut_sets as $role => $shortcuts) {
+    // Add Workbench shortcuts where applicable.
+    if (module_exists('lightning_moderation')) {
       $shortcut_sets[$role]['admin/workbench/needs-review'] = 'Needs Review';
       $shortcut_sets[$role]['admin/workbench/drafts'] = 'My Drafts';
       $shortcut_sets[$role]['admin/workbench/content/all'] = 'Recent Content';
+    }
+    // Add Views shortcut where applicable.
+    if (module_exists('lightning_views')) {
+      $shortcut_sets[$role]['admin/structure/views'] = 'Views';
     }
   }
 
