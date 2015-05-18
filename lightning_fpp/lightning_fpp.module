@@ -43,3 +43,17 @@ function lightning_fpp_behat_info() {
 
   return $info;
 }
+
+/**
+ * Implements hook_migrate_api().
+ */
+function lightning_fpp_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'LightningFPPContent' => array('class_name' => 'LightningFPPContent'),
+      'LightningFPPContentNodes' => array('class_name' => 'LightningFPPContentNodes'),
+    ),
+  );
+  return $api;
+}
