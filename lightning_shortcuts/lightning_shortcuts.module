@@ -61,38 +61,41 @@ function lightning_shortcuts_save_shortcut_set($title, $shortcuts) {
 function lightning_shortcuts_get_shortcut_sets() {
   $shortcut_sets = array(
     'administrator' => array(
-      'node/add/landing' => 'Add Landing Page',
+      'node/add' => 'Add Content',
       'admin/reports/status' => 'Status Report',
       'admin/config/development/performance' => 'Performance',
-      'admin/structure/pages' => 'Pages',
-      'admin/structure/block' => 'Blocks',
-      'admin/structure/views' => 'Views',
       'admin/config/lightning/clear-cache' => 'Clear Caches'
     ),
     'curator' => array(
-      'node/add/landing' => 'Add Landing Page',
-      'admin/workbench/create' => 'Add Content',
+      'node/add' => 'Add Content',
       'admin/content' => 'Find Content',
-      'admin/workbench/needs-review' => 'Needs Review',
-      'admin/workbench/drafts' => 'My Drafts',
-      'admin/structure/block' => 'Blocks',
-      'admin/structure/views' => 'Views'
     ),
     'reviewer' => array(
-      'admin/workbench/create' => 'Add Content',
-      'admin/workbench/needs-review' => 'Needs Review',
+      'node/add' => 'Add Content',
       'admin/content' => 'Find Content',
-      'admin/workbench/content/all' => 'Recent Content',
-      'admin/structure/pages' => 'Pages',
-      'admin/structure/block' => 'Blocks'
     ),
     'marketer' => array(
-      'admin/workbench/create' => 'Add Content',
-      'admin/workbench/content/all' => 'Recent Content',
+      'node/add' => 'Add Content',
       'admin/content' => 'Find Content',
-      'admin/people' => 'Users'
     ),
   );
+
+  // Add Landing Page shortcut where applicable.
+  if (module_exists('lightning_landing')) {
+    foreach ($shortcut_sets as $role => $shortcuts) {
+      $shortcut_sets[$role]['node/add/landing'] = 'Add Landing Page';
+    }
+  }
+
+  // Add Workbench shortcuts where applicable.
+  if (module_exists('lightning_moderation')) {
+    foreach ($shortcut_sets as $role => $shortcuts) {
+      $shortcut_sets[$role]['admin/workbench/needs-review'] = 'Needs Review';
+      $shortcut_sets[$role]['admin/workbench/drafts'] = 'My Drafts';
+      $shortcut_sets[$role]['admin/workbench/content/all'] = 'Recent Content';
+    }
+  }
+
   return $shortcut_sets;
 }
 
