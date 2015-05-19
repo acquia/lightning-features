@@ -40,7 +40,10 @@ class LightningFPPContent extends Migration {
     $this->destination = new MigrateDestinationFieldablePanelsPanes('content');
 
     $source_migration = isset($arguments['source_migration']) ? $arguments['source_migration'] : 'LightningFPPContentNodes';
-    $this->addFieldMapping('field_content', 'Content')->separator(',')->sourceMigration($source_migration);;
+    $this->addFieldMapping('field_content', 'Content')->separator(',')->sourceMigration($source_migration);
+
+    // Add optional mapping for UUID
+    $this->addFieldMapping('uuid', 'UUID');
 
     $this->addFieldMapping('title', 'Title');
     $this->addFieldMapping('category', 'Category')->defaultValue('Reusable panes');
