@@ -48,3 +48,5 @@ features[fieldable_panels_pane_type][] = quick_links
 features[fieldable_panels_pane_type][] = raw_html
 features[fieldable_panels_pane_type][] = text
 features[filter][] = raw_html
+files[] = lightning_fpp.nodes.article.inc
+files[] = lightning_fpp.fpp.content.inc
