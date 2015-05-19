@@ -1,11 +1,11 @@
 api = 2
 core = 7.x
 
-projects[acquia_lift][version] = "1.0-rc12"
+projects[acquia_lift][version] = "1.0-rc13"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
-projects[personalize][version] = "1.0-rc10"
+projects[personalize][version] = "1.0-rc11"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
 ; Personalized Fields break preview inside Panels
