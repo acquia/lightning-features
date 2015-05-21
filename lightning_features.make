@@ -202,7 +202,7 @@ projects[focal_point][version] = "1.0-beta1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
-projects[form_builder][version] = "1.7"
+projects[form_builder][version] = "1.9"
 projects[form_builder][type] = "module"
 projects[form_builder][subdir] = "contrib"
 
