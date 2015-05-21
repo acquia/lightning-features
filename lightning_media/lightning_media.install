@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Installation routines for the lightning_media feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function lightning_media_install() {
+  // Enable the media preview slider by default
+  variable_set('ember_support_media_slider', TRUE);
+}
