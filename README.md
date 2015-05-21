@@ -1,5 +1,6 @@
 lightning-features
 ==================
+[![Build Status](https://travis-ci.org/acquia/lightning-features.svg?branch=7.x-1.x)](https://travis-ci.org/acquia/lightning-features)
 
 Decoupled components used by the Lightning distribution for Drupal.
 
