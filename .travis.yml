@@ -29,7 +29,7 @@ install:
 - mv lightning_* drupal/sites/all/modules/contrib/lightning_features/.
 - ls -l
 - cd drupal
-- drush make --no-core sites/all/modules/contrib/lightning_features/lightning_features.make -y
+- drush make --no-core sites/all/modules/contrib/lightning_features/lightning_features.make  -y
 - drush si standard --db-url=mysql://root:@localhost/drupal -y
 before_script:
 - drush en lightning_* -y
@@ -39,8 +39,8 @@ before_script:
 - sleep 4
 script:
 - drush uli -l http://127.0.0.1:8080 -v
-notifications:
-  slack:
-    secure: qYAAGggrJev5pQe6+9ZlMcXmeP9XI/xH9x6k84fGKpYa8PQ6NLfBAcz1+ibBkXtDycaKKGQ4ny3YCOQJcCkGkISrLsN+3nFJN8f/TxGRVER456wweCQsDyIoXiNkI4e5mjmZMsz/dyw2DYF9fcBe7z8ka5N33IP7cyIWcRcAkRgOxqfkuFIaeU9RSMbua9n/E50IW7M3w3d4mpWt4zWOR2uwumqlYFTnrUNUna9iYCsfD9axqrY89PH11/NLRO/qNITAMabikyqbW/Wmu6GLb8iHt8TpX+daLHa98R0ibluRhZ+cSWRGRz6UDLjzcZP9OU9B8OvWs6ZnN5JFc2zthNiEUsfrOz9HVXrKuY60Uc8YOt3wa2yR1kJIu8EgBca62mUTunn6L6dGjCY2BfriVntgutwlfWvdzF0bd5JafYBEMexSqGsQr3YJhAIQfbauzltzX1rkDkoVb87sWC+Yx8WKojq8zkdSrsa2YuWJ4UNGpqbtc9HAei48juVvnqssuyt4CA/q7+B1dTgfflAcA0CeGJ6Lxmvdc+T72BrRzQZIpXuqfSQFrXdKDlh/H7PYRTnX8L7e9xaQnJ7XDxoncutmdkB1nsUST+38/xfG4PG3phgOH19fIuTk1jtA9iVTDaDEXpUWdwvks4lKsOPfh0LdcuJBodKvdqaJMIyPXrs=
 matrix:
   fast_finish: true
+notifications:
+  slack:
+    secure: g1Uzxs0sKhsqC+/V+I8xYkysVVYRrn9H/mS9xRT1xWaPX+NIGk4SJpdlHNbiI9oqbkI7H+QjD337q2QKhIqRshXrwRVUFo9pGl8NOsQW04iW5Uc7nE7Xdpao6JZbrh9FAWZfZeJOlDi/ojDJhyQNSYdMfLlAiI/1dmbVsks018zqsj9rzBcTsl0NkwImbnoRmbs2uol6M71nm7R3+Fisr37OnQ8NEERRUShWolGboN3cfI1SnM8nI1IahIqM1Gp7lJdh/ku12Jwj/WmT3UQ3OqQRB5SR1UeFQ+Hn+O6UH2quxF4cnrdETaMuZauvt3+/3D/ye4hxt1bWrlBQimuJPGRAZLLG5aySHBMMYKojrbWQKuarILdrV7M+FaTC+J1HetnEJGR7eC+os+faDwAE7+92AxCjno/vd6HpC8oslJFA1Qs7jlRyVgoDmYj0ikOse03cw3lCenJwrFgILyWRDbJE55j7ZwISjKRdM6seYsR6h5UJ1E0PhAw9iiYw6HEn1Qq8Fy3+fYAgNni45Hlsk3ykmSBVomUpbceeTAnw4EU5HB1lKQU+ZlMTWUF3TiL75tMKrmjgzk7sHLHlI7cK1J30S1P8CANkcA/CWNChoeojb9NbbUaomv+ChjkawHyRLwaSxKOLyuuOmnCyxfO2ovCGw0z/kluJlLjpau9mabc=
