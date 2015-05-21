@@ -21,6 +21,12 @@ If you built your own profile using Lightning Features: you must keep lightning_
 
 ### Behat Tests
 
+Run tests from the command line:
+
+`sh run-tests.sh http://lightning.local`
+
+Replace [http://lightning.local] with the site environment url to test against.
+
 #### lightning_article
 
 * Article content type exists

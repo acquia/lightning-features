@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+# ---------------------------------------------------------
 # Enables composer manager and behatrunner then runs tests.
-# Requires @site-url argument.
+# Requires @site-url argument for current environment.
+# ---------------------------------------------------------
 
-# Usage:  sh run-tests.sh [http://lightning.local]
+# Usage:  sh run-tests.sh http://lightning.local
 echo "Running tests on environment: $1"
 drush vset composer_manager_autobuild_file 0
 drush vset composer_manager_autobuild_packages 0
