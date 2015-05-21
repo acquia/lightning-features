@@ -41,10 +41,6 @@ script:
 - drush uli -l http://127.0.0.1:8080 -v
 notifications:
   slack:
-    secure: FLlgKwSonE7A1O9mguUmTQwiRo03adA6xsNx/Cd537xPq0RVE7+kUdFXlh7l6ff3y5Zamk7QcPpqmDa10zSqQxLqDdfmZqOPK7Ug8SEYGpRxHBzCxOV0dhBperkxPWaxgfOGG7INxItFrXASYMrjC38SrVF8IFi6M3XV80LS9kY=
+    secure: qYAAGggrJev5pQe6+9ZlMcXmeP9XI/xH9x6k84fGKpYa8PQ6NLfBAcz1+ibBkXtDycaKKGQ4ny3YCOQJcCkGkISrLsN+3nFJN8f/TxGRVER456wweCQsDyIoXiNkI4e5mjmZMsz/dyw2DYF9fcBe7z8ka5N33IP7cyIWcRcAkRgOxqfkuFIaeU9RSMbua9n/E50IW7M3w3d4mpWt4zWOR2uwumqlYFTnrUNUna9iYCsfD9axqrY89PH11/NLRO/qNITAMabikyqbW/Wmu6GLb8iHt8TpX+daLHa98R0ibluRhZ+cSWRGRz6UDLjzcZP9OU9B8OvWs6ZnN5JFc2zthNiEUsfrOz9HVXrKuY60Uc8YOt3wa2yR1kJIu8EgBca62mUTunn6L6dGjCY2BfriVntgutwlfWvdzF0bd5JafYBEMexSqGsQr3YJhAIQfbauzltzX1rkDkoVb87sWC+Yx8WKojq8zkdSrsa2YuWJ4UNGpqbtc9HAei48juVvnqssuyt4CA/q7+B1dTgfflAcA0CeGJ6Lxmvdc+T72BrRzQZIpXuqfSQFrXdKDlh/H7PYRTnX8L7e9xaQnJ7XDxoncutmdkB1nsUST+38/xfG4PG3phgOH19fIuTk1jtA9iVTDaDEXpUWdwvks4lKsOPfh0LdcuJBodKvdqaJMIyPXrs=
 matrix:
   fast_finish: true
-after_failure:
-- sudo chmod -Rv 777 build/logs/*
-- bundle install --without development
-- travis-artifacts upload --path build/logs --target-path artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
