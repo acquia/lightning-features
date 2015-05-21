@@ -371,20 +371,6 @@ projects[panels_preview][subdir] = "contrib"
 projects[panels_preview][download][type] = "git"
 projects[panels_preview][download][branch] = "7.x-1.x"
 
-projects[panopoly_magic][version] = "1.20"
-projects[panopoly_magic][type] = "module"
-projects[panopoly_magic][subdir] = "contrib"
-
-projects[panopoly_theme][version] = "1.x-dev"
-projects[panopoly_theme][type] = "module"
-projects[panopoly_theme][subdir] = "contrib"
-projects[panopoly_theme][download][type] = "git"
-projects[panopoly_theme][download][revision] = "d409deb"
-projects[panopoly_theme][download][branch] = "7.x-1.x"
-; Remove makefile from Panopoly Theme
-; http://drupal.org/node/1904766
-projects[panopoly_theme][patch][1904766] = "http://drupal.org/files/issues/panopoly_theme-makefile-free-1904766-13.patch"
-
 projects[picture][version] = "1.x-dev"
 projects[picture][type] = "module"
 projects[picture][subdir] = "contrib"
