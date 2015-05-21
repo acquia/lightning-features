@@ -29,14 +29,14 @@ install:
 - mv lightning_* drupal/sites/all/modules/contrib/lightning_features/.
 - ls -l
 - cd drupal
-- drush make --no-core sites/all/modules/contrib/lightning_features/lightning_features.make  -y
+- drush make --no-core sites/all/modules/contrib/lightning_features/lightning_features.make -y
 - drush si standard --db-url=mysql://root:@localhost/drupal -y
 before_script:
 - drush en lightning_* -y
 - drush dis dblog -y
 - drush cc all
 - drush runserver --server=builtin 8080 &
-- sleep 4
+- until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do sleep 0.2; done
 script:
 - drush uli -l http://127.0.0.1:8080 -v
 matrix:
