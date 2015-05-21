@@ -21,7 +21,7 @@ install:
 - phpenv rehash
 - composer global require drush/drush:6.*
 - export PATH="$HOME/.composer/vendor/bin:$PATH"
-- git clone --branch 8.x-1.x git@github.com:drupalprojects/composer.git ~/.drush/composer
+- git clone --branch 8.x-1.x http://git.drupal.org/project/composer.git ~/.drush/composer
 - drush dl drupal --default-major=7 -y
 - mv drupal-* drupal
 - mv composer.json drupal/profiles/standard/.
@@ -34,18 +34,11 @@ install:
 before_script:
 - drush en lightning_* -y
 - drush dis dblog -y
-- drush vset composer_manager_autobuild_file 0
-- drush vset composer_manager_autobuild_packages 0
-- drush en composer_manager -y
-- travis_wait drush composer-manager install -n --prefer-source
-- drush vset composer_manager_autobuild_file 1
-- drush vset composer_manager_autobuild_packages 1
-- travis_wait drush en behatrunner -l http://127.0.0.1:8080 -y
 - drush cc all
 - drush runserver --server=builtin 8080 &
 - sleep 4
 script:
-- drush brun -l http://127.0.0.1:8080 -v
+- drush uli -l http://127.0.0.1:8080 -v
 notifications:
   slack:
     secure: FLlgKwSonE7A1O9mguUmTQwiRo03adA6xsNx/Cd537xPq0RVE7+kUdFXlh7l6ff3y5Zamk7QcPpqmDa10zSqQxLqDdfmZqOPK7Ug8SEYGpRxHBzCxOV0dhBperkxPWaxgfOGG7INxItFrXASYMrjC38SrVF8IFi6M3XV80LS9kY=
