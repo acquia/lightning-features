@@ -13,7 +13,6 @@ dependencies[] = media
 dependencies[] = media_bulk_upload
 dependencies[] = media_internet
 dependencies[] = media_oembed
-dependencies[] = media_preview_slider
 dependencies[] = multiform
 dependencies[] = plupload
 datestamp = 1408404197
