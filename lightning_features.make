@@ -275,13 +275,6 @@ projects[media_youtube][version] = "2.0-rc5"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
 
-projects[media_preview_slider][version] = "1.x-dev"
-projects[media_preview_slider][type] = "module"
-projects[media_preview_slider][subdir] = "contrib"
-projects[media_preview_slider][download][type] = "git"
-projects[media_preview_slider][download][branch] = "7.x-1.x"
-projects[media_preview_slider][download][url] = "http://git.drupal.org/sandbox/Brian14/2222597.git"
-
 projects[metatag][version] = "1.4"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
