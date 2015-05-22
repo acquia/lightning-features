@@ -15,7 +15,7 @@ projects[bean][patch][2465267] = "http://drupal.org/files/issues/bean-entity-api
 ; http://drupal.org/node/2474631
 projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-10.patch"
 
-projects[bean_tax][version] = "2.6"
+projects[bean_tax][version] = "2.7"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
