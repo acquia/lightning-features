@@ -271,7 +271,7 @@ projects[media_oembed][version] = "2.3"
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
 
-projects[media_youtube][version] = "2.0-rc5"
+projects[media_youtube][version] = "3.0"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
 
