@@ -127,8 +127,6 @@ projects[draggableviews][download][branch] = "7.x-2.x"
 projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
-projects[ember_support][download][type] = "git"
-projects[ember_support][download][branch] = "7.x-1.x"
 
 projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
@@ -516,12 +514,9 @@ projects[workbench_moderation][patch][2462453] = "http://drupal.org/files/issues
 ; https://www.drupal.org/node/2485713
 projects[workbench_moderation][patch][2485713] = "http://www.drupal.org/files/issues/workbench-moderation-ajax-block-2485713-6.patch"
 
-projects[workbench_moderation_buttons][version] = "1.x-dev"
+projects[workbench_moderation_buttons][version] = "1.x-alpha1"
 projects[workbench_moderation_buttons][type] = "module"
 projects[workbench_moderation_buttons][subdir] = "contrib"
-projects[workbench_moderation_buttons][download][type] = "git"
-projects[workbench_moderation_buttons][download][revision] = "f1de408"
-projects[workbench_moderation_buttons][download][branch] = "7.x-1.x"
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
