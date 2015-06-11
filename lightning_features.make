@@ -357,11 +357,9 @@ projects[panels][patch][2465193] = "http://www.drupal.org/files/issues/2465193-1
 ; https://www.drupal.org/node/2485837
 projects[panels][patch][2485837] = "http://www.drupal.org/files/issues/panels-ipe-workbench-block-2485837-1.patch"
 
-projects[panels_preview][version] = "1.x-dev"
+projects[panels_preview][version] = "1.0-alpha2"
 projects[panels_preview][type] = "module"
 projects[panels_preview][subdir] = "contrib"
-projects[panels_preview][download][type] = "git"
-projects[panels_preview][download][branch] = "7.x-1.x"
 
 projects[picture][version] = "1.x-dev"
 projects[picture][type] = "module"
