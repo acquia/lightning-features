@@ -228,7 +228,6 @@ projects[imageinfo_cache][version] = "3.5"
 projects[imageinfo_cache][type] = "module"
 projects[imageinfo_cache][subdir] = "contrib"
 
-projects[import][version] = "1.0-alpha1"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 
