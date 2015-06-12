@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[acquia_lift][version] = "1.0-rc16"
+projects[acquia_lift][version] = "1.0-rc15"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
