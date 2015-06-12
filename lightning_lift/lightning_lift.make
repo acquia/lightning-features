@@ -12,7 +12,7 @@ projects[personalize][subdir] = "contrib"
 ; http://drupal.org/node/2303111
 projects[personalize][patch][2303111] = "http://drupal.org/files/issues/personalize-panels-fix-2303111-4.patch"
 
-projects[visitor_actions][version] = "1.0"
+projects[visitor_actions][version] = "1.0-rc4"
 projects[visitor_actions][type] = "module"
 projects[visitor_actions][subdir] = "contrib"
 
