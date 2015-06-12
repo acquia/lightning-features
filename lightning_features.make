@@ -111,7 +111,7 @@ projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
 ; Work around ctools z-index issues.
 ; http://drupal.org/node/2505107
-projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-2.patch"
+projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-3.patch"
 
 projects[diff][version] = "3.2"
 projects[diff][type] = "module"
