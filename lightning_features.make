@@ -106,7 +106,7 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "1.0-alpha1"
+projects[dialog][version] = "2.0-alpha1"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
 ; Work around ctools z-index issues.
