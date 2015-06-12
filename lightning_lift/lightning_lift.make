@@ -5,7 +5,7 @@ projects[acquia_lift][version] = "1.0-rc15"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
-projects[personalize][version] = "1.0-rc13"
+projects[personalize][version] = "1.0-rc12"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
 ; Personalized Fields break preview inside Panels
