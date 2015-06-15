@@ -169,7 +169,7 @@ projects[field_group][version] = "1.x-dev"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 projects[field_group][download][type] = "git"
-projects[field_group][download][revision] = "9cdde2b"
+projects[field_group][download][revision] = "630410c"
 projects[field_group][download][branch] = "7.x-1.x"
 
 projects[fieldable_panels_panes][version] = "1.x-dev"
