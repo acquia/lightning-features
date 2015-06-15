@@ -515,7 +515,6 @@ projects[workbench_moderation][patch][2462453] = "http://drupal.org/files/issues
 ; https://www.drupal.org/node/2485713
 projects[workbench_moderation][patch][2485713] = "http://www.drupal.org/files/issues/workbench-moderation-ajax-block-2485713-6.patch"
 
-projects[workbench_moderation_buttons][version] = "1.0-alpha3"
 projects[workbench_moderation_buttons][type] = "module"
 projects[workbench_moderation_buttons][subdir] = "contrib"
 
