@@ -1,0 +1,34 @@
+.acquia-lift-active {
+  font-weight: bold;
+}
+.acquia-lift-controls ul.menu,
+.acquia-lift-campaigns,
+.acquia-lift-option-sets,
+.acquia-lift-preview-option-set > ul,
+.acquia-lift-controls ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+.acquia-lift-controls ul.menu li li {
+  margin-left: 1em;
+}
+.acquia-lift-controls ul li.leaf,
+.acquia-lift-controls ul li.expanded {
+  list-style: none;
+}
+.acquia-lift-content-variation-candidate {
+  outline: 1px solid #0BBCFF;
+}
+.acquia-lift-hidden {
+  display: none !important;
+}
+.acquia-lift-controls-dialog {
+  border: 1px solid #aaa
+}
+.navbar-tray-vertical .acquia-lift-personalize-type-count {
+  display: none !important;
+}
+
+.acquia-lift-menu-status-advanced:after {
+  content: '…';
+}

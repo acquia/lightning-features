@@ -1,0 +1,66 @@
+/** Button styles from Ember theme for submit and cancel buttons **/
+input[type="submit"].acquia-lift-submit-button,
+.acquia-lift-cancel-button {
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  margin: 0.2963em;
+  max-width: 100%;
+  overflow: visible;
+  line-height: 1.25em;
+  vertical-align: baseline;
+  border: none;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  /* Reset all button fonts to a similar baseline in webkit. */
+  font: -webkit-small-control;
+  font-family: "Helvetica Neue", helvetica, "Segoe UI", segoe, "Ubuntu", "Droid Sans", "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.70711em 1em;
+  font-size: 1em;
+  height: inherit;
+  display: inline-block;
+}
+
+input[type="submit"].acquia-lift-submit-button:active {
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2963em rgba(221, 221, 221, 0.4);
+}
+
+.acquia-lift-submit-button.action-item-primary-active {
+  color: white;
+  background: #008fdc;
+  text-shadow: 0 1px 0 #002a42;
+}
+
+.acquia-lift-submit-button.action-item-primary-active:hover,
+.acquia-lift-submit-button.action-item-primary-active:active {
+  color: white;
+  background: #58b7ea;
+  text-shadow: 0 1px 0 #1a3646;
+}
+
+.acquia-lift-submit-button.form-button-disabled,
+.acquia-lift-submit-button.form-button-disabled:active,
+.acquia-lift-submit-button.form-button-disabled:hover {
+  color: #bbb;
+  background: #717171;
+  cursor: not-allowed;
+}
+
+.acquia-lift-cancel-button {
+  color: black;
+  background: #dddddd;
+  text-shadow: 0 1px 0 #f4f4f4;
+}
+
+.acquia-lift-cancel-button:hover,
+.acquia-lift-cancel-button:active {
+  color: #303030;
+  background: #e3e3e3;
+  text-shadow: 0 1px 0 #f6f6f6;
+}

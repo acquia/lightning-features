@@ -1,0 +1,516 @@
+<?php
+
+/**
+ * @file
+ * Tests for Acquia Lift Profiles module.
+ */
+
+/**
+ * Tests Acquia Lift Profiles functionality.
+ */
+class ALProfilesWebTest extends DrupalWebTestCase {
+
+  protected $admin_user;
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Acquia Lift Profiles Tests'),
+      'description' => t('Tests basic functionality of Acquia Lift Profiles module.'),
+      'group' => t('Personalize'),
+    );
+  }
+
+  function setUp() {
+    parent::setUp(array('ctools', 'visitor_actions', 'acquia_lift_profiles'));
+    require_once(dirname(__FILE__) . '/acquia_lift_profiles.test_classes.inc');
+    variable_set('user_register', USER_REGISTER_VISITORS);
+    variable_set('user_email_verification', FALSE);
+    $this->admin_user = $this->drupalCreateUser(array('access administration pages', 'administer acquia_lift_profiles configuration', 'administer content types', 'administer nodes', 'bypass node access', 'administer visitor actions'));
+  }
+
+  function testBasicConfig() {
+    $this->drupalLogin($this->admin_user);
+
+    // Verify that the Acquia Lift Web Admin link is the default.
+    $this->assertAcquiaLiftWebAdminLink('http://lift.acquia.com');
+
+    $edit = array(
+      'acquia_lift_profiles_account_name' => 'MYALPROFILESACCOUNT',
+      'acquia_lift_profiles_site_name' => 'MYALPROFILESSITE',
+      'acquia_lift_profiles_api_url' => 'api.example.com',
+      'acquia_lift_profiles_access_key' => 'abc123',
+      'acquia_lift_profiles_secret_key' => 'xyz987',
+      'acquia_lift_profiles_js_path' => 'acquia_lift_profiles.example.com/path/to.js',
+    );
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', $edit, t('Save'));
+
+    // Since this is not a system_settings_form we need to assert that the
+    // variables do in fact get set.
+    foreach (array('acquia_lift_profiles_account_name', 'acquia_lift_profiles_site_name', 'acquia_lift_profiles_api_url', 'acquia_lift_profiles_access_key', 'acquia_lift_profiles_secret_key', 'acquia_lift_profiles_js_path') as $key) {
+      $variable = variable_get($key);
+      $this->assertEqual($edit[$key], $variable);
+    }
+
+    // Now verify that protocols are stripped from configuration URLs.
+    $edit['acquia_lift_profiles_api_url'] = 'http://api.example.com';
+    $edit['acquia_lift_profiles_js_path'] = 'https://acquia_lift_profiles.example.com/path/to.js';
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', $edit, t('Save'));
+
+    $this->assertEqual(variable_get('acquia_lift_profiles_api_url', ''), 'api.example.com');
+    $this->assertEqual(variable_get('acquia_lift_profiles_js_path', ''), 'acquia_lift_profiles.example.com/path/to.js');
+
+    // Assert that the web admin link was also updated.
+    $this->assertAcquiaLiftWebAdminLink('http://api.example.com');
+  }
+
+  function testALProfilesJSSettings() {
+    $this->configureALProfiles();
+
+    // Register as a new user, identity should not be captured.
+    $user_name_1 = $this->randomName();
+    $password_1 = $this->randomName();
+    $new_user_fields = array(
+      'name' => $user_name_1,
+      'mail' => $user_name_1 . '@example.com',
+      'pass[pass1]' => $password_1,
+      'pass[pass2]' => $password_1,
+    );
+    $this->drupalPost('user/register', $new_user_fields, t('Create new account'));
+    $settings = $this->drupalGetSettings();
+    $this->assertFalse($settings['acquia_lift_profiles']['captureIdentity']);
+
+    // Log out and log back in and there still shouldn't be any settings for
+    // capturing identity.
+    $this->drupalLogout();
+    $this->drupalPost('user/login', array('name' => $user_name_1, 'pass' => $password_1), t('Log in'));
+    $settings = $this->drupalGetSettings();
+
+    $this->assertFalse($settings['acquia_lift_profiles']['captureIdentity']);
+    $this->drupalLogout();
+
+    // Login as admin again and set the "capture identity" setting.
+    $this->drupalLogin($this->admin_user);
+    $edit = array(
+      'acquia_lift_profiles_identity[acquia_lift_profiles_capture_identity]' => TRUE,
+    );
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', $edit, t('Save'));
+    $this->drupalLogout();
+    $this->resetAll();
+
+    // Now log in as the first new user and check that we do have settings for
+    // capturing identity.
+    $this->drupalPost('user/login', array('name' => $user_name_1, 'pass' => $password_1), t('Log in'));
+    $settings = $this->drupalGetSettings();
+
+    $this->assertTrue($settings['acquia_lift_profiles']['captureIdentity']);
+    $this->assertEqual(array('form_submit','user_login'), array_keys($settings['acquia_lift_profiles']['serverSideActions']));
+    $this->drupalLogout();
+
+    // Register as another new user, identity should now be captured.
+    $user_name_2 = $this->randomName();
+    $password_2 = $this->randomName();
+    $new_user_fields = array(
+      'name' => $user_name_2,
+      'mail' => $user_name_2 . '@example.com',
+      'pass[pass1]' => $password_2,
+      'pass[pass2]' => $password_2,
+    );
+    $this->drupalPost('user/register', $new_user_fields, t('Create new account'));
+    $settings = $this->drupalGetSettings();
+    $this->assertTrue($settings['acquia_lift_profiles']['captureIdentity']);
+    $this->assertEqual(array('form_submit', 'user_login', 'user_register'), array_keys($settings['acquia_lift_profiles']['serverSideActions']));
+  }
+
+  function testThumbnailImage() {
+    $this->configureALProfiles();
+    $this->drupalLogin($this->admin_user);
+
+    // Create a new article node of this type.
+    $test_image = current($this->drupalGetTestFiles('image'));
+    $edit = array(
+      'title' => $this->randomName(),
+    );
+    $edit['files[field_image_' . LANGUAGE_NONE . '_0]'] = drupal_realpath($test_image->uri);
+    $this->drupalPost('node/add/article', $edit, t('Save'));
+    $nid = $this->getNidFromCurrentUrl();
+
+    $items = field_get_items('node', node_load($nid), 'field_image');
+    $image_uri = $items[0]['uri'];
+
+    // Verify that the image thumbnail is empty in the page context.
+    $this->drupalGet('node/' . $nid);
+    $settings = $this->drupalGetSettings();
+    $this->assertTrue($settings['acquia_lift_profiles']['pageContext']['thumbnail_url'] == '', 'Thumbnail image is blank');
+
+    // Set the thumbnail fields for articles.
+    $edit = array(
+      'acquia_lift_profiles[thumbnail]' => 'field_image|image_image',
+      'acquia_lift_profiles[style]' => 'thumbnail',
+    );
+    $this->drupalPost('admin/structure/types/manage/article', $edit, t('Save content type'));
+
+    // Verify that the thumbnail is set (after stripping off the token).
+    $token_regex = '/\?itok=[a-zA-Z0-9]*/';
+    $thumbnail_image = preg_replace($token_regex, '', image_style_url('thumbnail', $image_uri));
+    $this->drupalGet('node/' . $nid);
+    $settings = $this->drupalGetSettings();
+    $settings_image = preg_replace($token_regex, '', $settings['acquia_lift_profiles']['pageContext']['thumbnail_url']);
+    $this->assertEqual($thumbnail_image, $settings_image);
+
+    // Change the image style.
+    $edit['acquia_lift_profiles[style]'] = 'medium';
+    $this->drupalPost('admin/structure/types/manage/article', $edit, t('Save content type'));
+
+
+    // Verify that the new image style appears in the page context.
+    $this->drupalGet('node/' . $nid);
+    $thumbnail_image = preg_replace($token_regex, '', image_style_url('medium', $image_uri));
+    $this->drupalGet('node/' . $nid);
+    $settings = $this->drupalGetSettings();
+    $settings_image = preg_replace($token_regex, '', $settings['acquia_lift_profiles']['pageContext']['thumbnail_url']);
+    $this->assertEqual($thumbnail_image, $settings_image);
+
+    // Create an article without an image.
+    $edit = array(
+      'title' => $this->randomName(),
+    );
+    $this->drupalPost('node/add/article', $edit, t('Save'));
+    $second_nid = $this->getNidFromCurrentUrl();
+
+    // Verify that the image is blank in the page context.
+    $this->drupalGet('node/' . $second_nid);
+    $settings = $this->drupalGetSettings();
+    $this->assertTrue($settings['acquia_lift_profiles']['pageContext']['thumbnail_url'] == '', 'Thumbnail image is blank');
+
+    // Verify image is not passed on node aggregate pages.
+    $this->drupalGet('node');
+    $settings = $this->drupalGetSettings();
+    $this->assertTrue(!isset($settings['acquia_lift_profiles']['pageContext']['thumbnail_url']), 'Thumbnail image is not set');
+
+    // Remove the thumbnail setting.
+    $edit = array(
+      'acquia_lift_profiles[thumbnail]' => '',
+    );
+    $this->drupalPost('admin/structure/types/manage/article', $edit, t('Save content type'));
+
+    // Verify that no thumbnail is passed in page context.
+    $this->drupalGet('node/' . $nid);
+    $settings = $this->drupalGetSettings();
+    $this->assertTrue($settings['acquia_lift_profiles']['pageContext']['thumbnail_url'] == '', 'Thumbnail image is blank');
+  }
+
+  /**
+   * Tests that available segments are added to the page.
+   */
+  function testSegments() {
+    $this->configureALProfiles();
+    $this->drupalLogin($this->admin_user);
+    $this->drupalGet('');
+    // The dummy http client used during web tests has two segments set up that
+    // will always be returned by a call to getSegments().
+    $test_segments = array('segment1', 'segment2');
+
+    // Test that the segments show up in the js settings.
+    $settings = $this->drupalGetSettings();
+    $this->assertEqual($settings['acquia_lift_profiles']['available_segments'], $test_segments);
+  }
+
+  /**
+   * Tests identity param configuration and js settings.
+   */
+  function testIdentityParams() {
+    $this->configureALProfiles();
+    $this->drupalLogin($this->admin_user);
+    // Test specifying a querystring param to use for capturing identity.
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', array(
+      'acquia_lift_profiles_identity[acquia_lift_profiles_identity_param]' => 'ali',
+    ), t('Save'));
+    $this->drupalLogout();
+
+    // Now visit the site as anon without passing any querystring params.
+    $this->drupalGet('');
+    $settings = $this->drupalGetSettings();
+    $alp_settings = $settings['acquia_lift_profiles'];
+    $this->assertFalse(isset($alp_settings['identity']));
+
+    // Now pass the configured identity param
+    $my_id = 'ohai';
+    $this->drupalGet('', array('query' => array('ali' => $my_id)));
+    $settings = $this->drupalGetSettings();
+    $alp_settings = $settings['acquia_lift_profiles'];
+    $this->assertEqual($alp_settings['identity'], $my_id);
+    $this->assertEqual($alp_settings['identityType'], ACQUIA_LIFT_PROFILES_DEFAULT_IDENTITY_TYPE_DEFAULT);
+
+    // Set the identity type param
+    $this->drupalLogin($this->admin_user);
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', array(
+      'acquia_lift_profiles_identity[acquia_lift_profiles_identity_type_param]' => 'alit',
+    ), t('Save'));
+    $this->drupalLogout();
+
+    // Pass the configured identity param and the identity_type param
+    $my_type = 'socialtastic';
+    $this->drupalGet('', array('query' => array('ali' => $my_id, 'alit' => $my_type)));
+    $settings = $this->drupalGetSettings();
+    $alp_settings = $settings['acquia_lift_profiles'];
+    $this->assertEqual($alp_settings['identity'], $my_id);
+    $this->assertEqual($alp_settings['identityType'], $my_type);
+
+    // Pass the configured identity type param without the identity param
+    $this->drupalGet('', array('query' => array('alit' => $my_type)));
+    $settings = $this->drupalGetSettings();
+    $alp_settings = $settings['acquia_lift_profiles'];
+    $this->assertFalse(isset($alp_settings['identity']));
+    $this->assertFalse(isset($alp_settings['identityType']));
+
+    // Set the default identity type
+    $default_type = 'tknr';
+    $this->drupalLogin($this->admin_user);
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', array(
+      'acquia_lift_profiles_identity[acquia_lift_profiles_default_identity_type]' => $default_type,
+    ), t('Save'));
+    $this->drupalLogout();
+
+    // Pass the configured identity param but without the identity_type param
+    $this->drupalGet('', array('query' => array('ali' => $my_id)));
+    $settings = $this->drupalGetSettings();
+    $alp_settings = $settings['acquia_lift_profiles'];
+    $this->assertEqual($alp_settings['identity'], $my_id);
+    $this->assertEqual($alp_settings['identityType'], $default_type);
+
+    // Pass the configured identity param and with the identity_type param
+    $this->drupalGet('', array('query' => array('ali' => $my_id, 'alit' => $my_type)));
+    $settings = $this->drupalGetSettings();
+    $alp_settings = $settings['acquia_lift_profiles'];
+    $this->assertEqual($alp_settings['identity'], $my_id);
+    $this->assertEqual($alp_settings['identityType'], $my_type);
+  }
+
+  // Tests that configuring events to track in Acquia Lift Profiles makes the required calls to
+  // the Acquia Lift Profiles API.
+  function testSyncEvents() {
+    $this->configureALProfiles();
+    $this->drupalLogin($this->admin_user);
+
+    ALProfilesAPI::setTestInstance();
+    // Create a custom action with a label.
+    $action_name = 'my_action_with_label';
+    $action_label = 'My Friendly Event';
+    $action = array(
+      'machine_name' => $action_name,
+      'label' => $action_label,
+      'plugin' => 'link',
+      'client_side' => 1,
+      'module' => 'visitor_actions',
+      'identifier' => '#some-id',
+      'event' => 'click',
+      'pages' => '',
+      'data' => array(),
+      'limited_use' => 1
+    );
+    visitor_actions_save_action($action);
+
+    // An action with no label should send the machine name as the label to
+    // Lift Web.
+    $new_action_name = 'my_action_without_label';
+    $new_action = $action;
+    unset($new_action['label']);
+    $new_action['machine_name'] = $new_action_name;
+    visitor_actions_save_action($new_action);
+
+    // Check that the expected requests have been made to the Event CRUD API.
+    $requests = DummyALProfilesHttpClient::getLoggedRequests();
+    $this->assertEqual('http://api.example.com/dashboard/rest/TESTACCOUNT/events/my_action_with_label?customerSite=TESTSITE&label=' . rawurlencode($action_label) . '&type=OTHER', $requests[0]['uri']);
+    $this->assertEqual('http://api.example.com/dashboard/rest/TESTACCOUNT/events/my_action_without_label?customerSite=TESTSITE&label=' . $new_action_name . '&type=OTHER', $requests[1]['uri']);
+
+    DummyALProfilesHttpClient::clearLoggedRequests();
+    // Now delete the actions.
+    visitor_actions_delete_action($action_name);
+
+    // Check that the DELETE request has been made to the API.
+    $requests = DummyALProfilesHttpClient::getLoggedRequests();
+    $this->assertEqual('http://api.example.com/dashboard/rest/TESTACCOUNT/events/my_action_with_label?customerSite=TESTSITE', $requests[0]['uri']);
+    $this->assertEqual('delete', $requests[0]['type']);
+
+
+  }
+
+  function testFieldMappings() {
+    $this->configureALProfiles();
+    $this->drupalLogin($this->admin_user);
+    $this->createUserProfileField('test_user_field_1');
+    $this->createUserProfileField('test_user_field_2');
+    $this->resetAll();
+    $edit = array(
+      'acquia_lift_profiles_field_mappings[content_section]' => 'user_profile_context__test_user_field_1',
+      'acquia_lift_profiles_field_mappings[content_keywords]' => 'user_profile_context__test_user_field_2'
+    );
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', $edit, t('Save'));
+    $this->drupalGet('');
+    $settings = $this->drupalGetSettings();
+    $expected = array(
+      'field' => array(
+        'content_section' => 'user_profile_context__test_user_field_1',
+        'content_keywords' => 'user_profile_context__test_user_field_2',
+      )
+    );
+    $this->assertEqual($expected, $settings['acquia_lift_profiles']['mappings']);
+
+    // Confirm that the context value is available in the settings
+    $this->drupalLogout();
+    $regular_user = $this->drupalCreateUser(array('access content'));
+    $pass_raw = $regular_user->pass_raw;
+    unset($regular_user->pass_raw);
+
+    $edit = array(
+      'field_test_user_field_1' => array(
+        'und' => array(
+          array('value' => 'ohai')
+        )
+      )
+    );
+    user_save($regular_user, $edit);
+    $this->resetAll();
+
+    $regular_user->pass_raw = $pass_raw;
+    $this->drupalLogin($regular_user);
+    $this->drupalGet('');
+    $settings = $this->drupalGetSettings();
+    $expected = array(
+      'test_user_field_1' => 'ohai'
+    );
+    $this->assertEqual($expected, $settings['personalize_user_profile_context']);
+  }
+
+  function testUDFMappings() {
+    $this->configureALProfiles();
+    $this->drupalLogin($this->admin_user);
+    $this->createUserProfileField('test_user_field_1');
+    $this->createUserProfileField('test_user_field_2');
+    $this->resetAll();
+    $edit = array(
+      'acquia_lift_profiles_udf_mappings[person][person_udf1]' => 'user_profile_context__test_user_field_1',
+      'acquia_lift_profiles_udf_mappings[touch][touch_udf20]' => 'user_profile_context__test_user_field_2'
+    );
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', $edit, t('Save'));
+    $this->drupalGet('');
+    $settings = $this->drupalGetSettings();
+    $expected = array(
+      'person' => array(
+        'person_udf1' => 'user_profile_context__test_user_field_1',
+      ),
+      'touch' => array(
+        'touch_udf20' => 'user_profile_context__test_user_field_2',
+      )
+    );
+    $this->assertEqual($expected, $settings['acquia_lift_profiles']['mappings']);
+
+    // Confirm that the context value is available in the settings
+    $this->drupalLogout();
+    $regular_user = $this->drupalCreateUser(array('access content'));
+    $pass_raw = $regular_user->pass_raw;
+    unset($regular_user->pass_raw);
+
+    $edit = array(
+      'field_test_user_field_1' => array(
+        'und' => array(
+          array('value' => 'ohai')
+        )
+      )
+    );
+    user_save($regular_user, $edit);
+    $this->resetAll();
+
+    $regular_user->pass_raw = $pass_raw;
+    $this->drupalLogin($regular_user);
+    $this->drupalGet('');
+    $settings = $this->drupalGetSettings();
+    $expected = array(
+      'test_user_field_1' => 'ohai'
+    );
+    $this->assertEqual($expected, $settings['personalize_user_profile_context']);
+  }
+
+  /**
+   * Helper function to configure acquia_lift_profiles settings.
+   */
+  function configureALProfiles() {
+    $this->drupalLogin($this->admin_user);
+
+    $edit = array(
+      'acquia_lift_profiles_account_name' => 'MYALPROFILESACCOUNT',
+      'acquia_lift_profiles_site_name' => 'MYALPROFILESSITE',
+      'acquia_lift_profiles_js_path' => 'acquia_lift_profiles.example.com/path/to.js',
+      'acquia_lift_profiles_api_url' => 'api.example.com',
+      'acquia_lift_profiles_access_key' => 'abc123',
+      'acquia_lift_profiles_secret_key' => 'xyz987',
+    );
+    $this->drupalPost('admin/config/content/personalize/acquia_lift_profiles', $edit, t('Save'));
+    $this->drupalLogout();
+  }
+
+  /**
+   * Creates a user profile field which can be used for targeting.
+   *
+   * @return array
+   *   An associative array representing the field.
+   */
+  protected function createUserProfileField($field_name = NULL) {
+    $field_name = empty($field_name) ? $this->randomName() : $field_name;
+    $field = array(
+      'field_name' => 'field_' . drupal_strtolower($field_name),
+      'type' => 'text',
+      'cardinality' => 1,
+    );
+
+    field_create_field($field);
+    $fieldInstance = array(
+      'field_name' => $field['field_name'],
+      'entity_type' => 'user',
+      'bundle' => 'user',
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+    );
+
+    field_create_instance($fieldInstance);
+    return $field;
+  }
+
+  /**
+   * Helper to grab the nid from the url so that we don't have to make assumptions
+   * about the nid of the node we just created.
+   */
+  protected function getNidFromCurrentUrl() {
+    $url = $this->getUrl();
+    $matches = array();
+    if (preg_match('/node\/(\d+)/', $url, $matches)) {
+      return $matches[1];
+    }
+    return NULL;
+  }
+
+  /**
+   * Helper function to assert that the Acquia Lift Web Admin link is set to a
+   * specific href.
+   *
+   * This can't be tested via the UI because there isn't a way to activate the
+   * Acquia Lift menu, but we can all the menu functions to verify that the href
+   * is updated as expected.
+   *
+   * @param $check_href
+   */
+  protected function assertAcquiaLiftWebAdminLink($check_href) {
+    // Make sure we get a new copy of the data each time we assert.
+    drupal_static_reset('menu_tree_all_data');
+    drupal_static_reset('_menu_build_tree');
+    $menu = menu_tree_all_data('acquia-lift-controls');
+    foreach ($menu as $link) {
+      if ($link['link']['link_path'] === 'http://lift.acquia.com') {
+        $this->assertEqual($link['link']['href'], $check_href);
+        return;
+      }
+    }
+    $this->assertEqual('Link not found', $check_href);
+  }
+}

@@ -1,0 +1,22 @@
+//
+// Set default values for variables.
+//
+
+$border-color: #ccc !default;
+$background-color: #fff !default;
+$background-color-alternate: #eee !default;
+$text-color: #333 !default;
+$text-color-alternate: #fff !default;
+$axis-color: #666 !default;
+$border-size: .1em !default;
+$shadow-opacity: .6 !default;
+$shadow-offset: .2em !default;
+$pointer-size: .5em !default;
+$pointer-shadow-size: ($pointer-size + $shadow-offset) !default;
+$margin-horizontal: -1em !default;
+$winner-color: #85b200 !default;
+$menu-class: navbar-menu !default;
+$navbar-padding-top: .9em !default;
+$navbar-padding-bottom: .75em !default;
+$navbar-line-height: 1.2em !default;
+$handle-label-width: 5em !default;

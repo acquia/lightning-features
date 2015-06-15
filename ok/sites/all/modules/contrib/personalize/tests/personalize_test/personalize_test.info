@@ -1,0 +1,13 @@
+name = Personalize Test
+description = Module for testing base Personalize functionality.
+dependencies[] = personalize
+package = Testing
+core = 7.x
+hidden = TRUE
+
+; Information added by Drupal.org packaging script on 2015-06-11
+version = "7.x-1.0-rc13"
+core = "7.x"
+project = "personalize"
+datestamp = "1434044002"
+

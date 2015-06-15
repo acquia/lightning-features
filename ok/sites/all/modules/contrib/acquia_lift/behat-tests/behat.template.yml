@@ -1,0 +1,10 @@
+imports:
+    - behat.common.yml
+
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://localurl'
+    Drupal\DrupalExtension:
+      drupal:
+        drupal_root: '/Path/to/Drual/Webroot'

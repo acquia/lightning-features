@@ -1,0 +1,98 @@
+/* Styles to override the CTools modals */
+
+div.ctools-modal-content.acquia-lift-modal {
+  padding: 1em;
+  color: #333;
+  border-color: #555;
+  max-width: 1000px;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-header {
+  background-color: #fff;
+  padding: 0;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-title {
+  font-family: "Helvetica Neue", helvetica, "Segoe UI", segoe, "Ubuntu", "Droid Sans", "Arial", sans-serif;
+  font-size: 2.2em;
+  font-weight: normal;
+  color: #333;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content {
+  padding: .3em;
+  color: #666;
+  font-family: "Helvetica Neue", helvetica, "Segoe UI", segoe, "Ubuntu", "Droid Sans", "Arial", sans-serif;
+  max-width: 1000px;
+}
+
+div.ctools-modal-content.acquia-lift-modal .form-item label {
+  width: auto;
+}
+
+/* Styles specific to Acquia Lift's modal content */
+/* Type select modal */
+div.ctools-modal-content.acquia-lift-modal .modal-content .acquia-lift-type {
+  border: 1px solid #CCC;
+  padding: 1.4em;
+  background-color: #F5F5F5;
+  margin-bottom: 1.4em;
+  cursor: pointer;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content .acquia-lift-type:hover {
+  background-color: white;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content .acquia-lift-type:last-child {
+  margin-bottom: 0;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content .acquia-lift-type-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content .acquia-lift-type-logo {
+  float: left;
+  width: 125px; /* Width of largest logo image */
+  padding-right: 1.4em;
+  text-align: center;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content a.acquia-lift-type-select,
+div.ctools-modal-content.acquia-lift-modal .modal-content a.acquia-lift-type-select:hover,
+div.ctools-modal-content.acquia-lift-modal .modal-content a.acquia-lift-type-select:active {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Styles specific to the campaign creation form */
+div.ctools-modal-content.acquia-lift-modal .modal-content label {
+  float: none;
+}
+
+div.ctools-modal-content.acquia-lift-modal .modal-content .acquia-lift-form-type {
+  display: inline-block;
+  margin: 0 1em .75em 0;
+  font-size: 1.4em;
+}
+
+/* Variation type details form */
+.acquia-lift-variation-type-form a.acquia-lift-selector-edit {
+  font-size: .8em;
+  vertical-align: top;
+  margin-left: .3em; /* LTR */
+  cursor: pointer;
+}
+
+/* Start campaign form */
+#acquia-lift-start-campaign-form .form-type-checkboxes .form-type-checkbox,
+#acquia-lift-start-campaign-form .form-type-radios .form-type-radio,
+#acquia-lift-start-campaign-form .form-item-campaign-end-date {
+  padding: 0 10px;
+}
+#acquia-lift-start-campaign-form .form-item-campaign-end-date .form-item {
+  margin-right: 0;
+}

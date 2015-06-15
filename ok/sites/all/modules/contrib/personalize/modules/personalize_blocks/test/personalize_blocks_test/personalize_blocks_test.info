@@ -1,0 +1,14 @@
+name = Personalize Blocks test module
+description = Contains custom blocks for testing
+core = 7.x
+package = Testing
+hidden = TRUE
+
+dependencies[] = personalize_blocks
+
+; Information added by Drupal.org packaging script on 2015-06-11
+version = "7.x-1.0-rc13"
+core = "7.x"
+project = "personalize"
+datestamp = "1434044002"
+

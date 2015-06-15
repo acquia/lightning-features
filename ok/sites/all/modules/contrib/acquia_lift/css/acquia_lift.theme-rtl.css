@@ -1,0 +1,9 @@
+/**
+ * @file
+ * RTL Styles for the Acquia Lift module.
+ */
+
+.personalize-in-context-link:before {
+  margin-right: auto; /* RTL */
+  margin-left: .3em; /* RTL */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QUnit Tests - Acquia Lift Page Variations</title>
+    <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.14.0.css">
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture">
+    <!-- HTML required for DOM tests -->
+    <div class="region-page-top"></div>
+    <div id="watch">
+        <div id="mousehere">Mouse element</div>
+        <div id="another">Another element with <span class="some-class">a span element inside.</span></div>
+    </div>
+    <div id="nowatch">No DOM watching allowed here.</div>
+</div>
+
+
+<script src="//code.jquery.com/qunit/qunit-1.14.0.js"></script>
+<script src="//code.jquery.com/jquery-1.4.4.js"></script>
+<script src="jquery.once.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.0/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+<script src="/misc/drupal.js"></script>
+<script src="/misc/ajax.js"></script>
+<script src="/sites/all/libraries/qtip/jquery.qtip-1.0.0-rc3.js"></script>
+
+<script type="text/javascript">
+    var Drupal = Drupal || {};
+    Drupal.jQuery = jQuery;
+    Drupal.behaviors = Drupal.behaviors || {};
+    Drupal.settings = Drupal.settings || {};
+    Drupal.theme = Drupal.theme || {};
+    Drupal.settings.acquia_lift = Drupal.settings.acquia_lift || {};
+    Drupal.settings.acquia_lift.dom_selector_ignore = 'region-page-top';
+    Drupal.settings.personalize = Drupal.settings.personalize || {};
+    Drupal.settings.visitor_actions = Drupal.settings.visitor_actions || {};
+    Drupal.settings.visitor_actions.ignoreIds = '/(^nowatch)';
+</script>
+<script src="../../visitor_actions/modules/visitor_actions_ui/js/jquery/ducktape.position.js"></script>
+<script src="../../visitor_actions/modules/visitor_actions_ui/js/jquery/ducktape.events.js"></script>
+<script src="../../visitor_actions/modules/visitor_actions_ui/js/visitor_actions_ui.backbone_parent.js"></script>
+<script src="../../visitor_actions/modules/visitor_actions_ui/js/visitor_actions_ui.selector.js"></script>
+<script src="../../visitor_actions/modules/visitor_actions_ui//js/visitor_actions_ui.dialog.js"></script>
+
+<script src="../js/acquia_lift.dom_selector.js"></script>
+<script src="../js/acquia_lift.messagebox.js"></script>
+
+<script src="../js/acquia_lift.flow.js"></script>
+<script src="page_variations.tests.js"></script>
+</body>
+</html>

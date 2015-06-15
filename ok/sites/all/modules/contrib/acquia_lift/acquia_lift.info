@@ -1,0 +1,26 @@
+name = Acquia Lift
+description = Extension to Personalize module that provides integration to the Acquia Lift service for machine-learning-based personalization.
+configure = admin/config/content/personalize/acquia_lift
+
+dependencies[] = contextual
+dependencies[] = libraries
+dependencies[] = personalize
+dependencies[] = personalize_blocks
+dependencies[] = personalize_elements
+dependencies[] = personalize_fields
+dependencies[] = visitor_actions
+dependencies[] = visitor_actions_ui
+
+package = Personalization
+core = 7.x
+
+files[] = includes/acquia_lift.classes.inc
+files[] = tests/acquia_lift.test
+files[] = tests/AcquiaLiftAPI.test
+
+; Information added by Drupal.org packaging script on 2015-06-02
+version = "7.x-1.0-rc15"
+core = "7.x"
+project = "acquia_lift"
+datestamp = "1433262071"
+

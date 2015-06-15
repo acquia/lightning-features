@@ -1,0 +1,21 @@
+name = Personalize
+description = The Personalize module serves as an API for controlling personalization of content on pages based on the user's context.
+configure = admin/config/content/personalize
+package = Personalization
+core = 7.x
+php = 5.3
+
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = visitor_actions
+
+files[] = includes/personalize.classes.inc
+files[] = includes/personalize.controller.inc
+files[] = tests/personalize.test
+
+; Information added by Drupal.org packaging script on 2015-06-11
+version = "7.x-1.0-rc13"
+core = "7.x"
+project = "personalize"
+datestamp = "1434044002"
+

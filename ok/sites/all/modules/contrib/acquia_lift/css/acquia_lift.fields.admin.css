@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Styles needed to make personalize_fields function.
+ */
+
+/**
+ * Hide elements of display.
+ */
+.personalize-fields-collapsed .personalize-field-previous,
+.personalize-fields-collapsed .personalize-field-next,
+.personalize-field-expand[disabled],
+.personalize-field-collapse[disabled],
+.personalize-option-hidden {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,13 @@
+name = Personalize UUID
+description = Adds UUID supports to Personalize Agent, Variation Set and Goals.
+dependencies[] = personalize
+dependencies[] = uuid
+package = Personalization
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2015-06-11
+version = "7.x-1.0-rc13"
+core = "7.x"
+project = "personalize"
+datestamp = "1434044002"
+

@@ -1,0 +1,41 @@
+# Tests assume the standard toolbar module
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext:
+          - temp_path: '/tmp'
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      selenium2: ~
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: 'drupal'
+      drush:
+        alias: 'local'
+        #root: ${drush.root}
+      drupal:
+        #drupal_root: '/Users/lisa.backer/Sites/lift'
+      region_map:
+        menu: '#toolbar'
+        lift_tray: '#navbar-administration .navbar-tray-acquia-lift'
+        lift_tray_campaign_header: '#acquia-lift-menu-campaigns'
+        lift_tray_variation_count: '#navbar-administration .navbar-tray-acquia-lift .acquia-lift-option-sets-list .acquia-lift-personalize-type-count span'
+        lift_tray_goal_count: '#navbar-administration .navbar-tray-acquia-lift .acquia-lift-goals-list .acquia-lift-personalize-type-count span'
+        modal_title: '#modal-title'
+        modal_content: '#modal-content'
+        messagebox: '#acquia-lift-message-box'
+        page_content: '#page-wrapper'
+        dialog_variation_type: '#acquia-lift-modal-variation-type-select-dialog'
+        dialog_variation_type_form: '.visitor-actions-ui-dialog.acquia-lift-variation-type-form'
+        dialog_goal_form: '#visitor-actions-form'
+      selectors:
+        message_selector: '.messages'
+        error_message_selector: '.messages.messages-error'
+        success_message_selector: '.messages.messages-status'

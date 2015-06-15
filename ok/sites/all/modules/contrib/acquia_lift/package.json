@@ -1,0 +1,19 @@
+{
+  "name": "acquia_lift",
+  "description": "Extension to Personalize module that provides integration to the Acquia Lift service for machine-learning-based personalization.",
+  "repository": {
+    "type": "git",
+    "url": "http://git.drupal.org/project/acquia_lift.git"
+  },
+  "license": "GPL",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-concurrent": "^0.5.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-qunit": "^0.5.2",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "time-grunt": "^1.0.0"
+  }
+}

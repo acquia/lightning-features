@@ -146,7 +146,7 @@ projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][download][type] = "git"
-projects[entityreference][download][revision] = "ab62b9a"
+projects[entityreference][download][revision] = "dc4196b"
 projects[entityreference][download][branch] = "7.x-1.x"
 
 projects[entityreference_prepopulate][version] = "1.5"
@@ -169,7 +169,7 @@ projects[field_group][version] = "1.x-dev"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 projects[field_group][download][type] = "git"
-projects[field_group][download][revision] = "630410c"
+projects[field_group][download][revision] = "9cdde2b"
 projects[field_group][download][branch] = "7.x-1.x"
 
 projects[fieldable_panels_panes][version] = "1.x-dev"
@@ -226,6 +226,7 @@ projects[imageinfo_cache][version] = "3.5"
 projects[imageinfo_cache][type] = "module"
 projects[imageinfo_cache][subdir] = "contrib"
 
+projects[import][version] = "1.0-alpha1"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 
@@ -514,7 +515,7 @@ projects[workbench_moderation][patch][2462453] = "http://drupal.org/files/issues
 ; https://www.drupal.org/node/2485713
 projects[workbench_moderation][patch][2485713] = "http://www.drupal.org/files/issues/workbench-moderation-ajax-block-2485713-6.patch"
 
-projects[workbench_moderation_buttons][version] = "1.0-alpha1"
+projects[workbench_moderation_buttons][version] = "1.0-alpha3"
 projects[workbench_moderation_buttons][type] = "module"
 projects[workbench_moderation_buttons][subdir] = "contrib"
 

@@ -1,0 +1,36 @@
+/* Page variation edit toggle in unified navigation bar */
+#navbar-administration a.acquia-lift-option-sets-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+#navbar-administration a.acquia-lift-page-variation-toggle {
+  display: inline-block;
+  text-indent: -99999px;
+  width: 30px;
+  height: 30px;
+  background: transparent url("../images/page-variation-toggle-inactive.png") no-repeat center;
+  padding: 1em 1.3333em;
+  cursor: pointer;
+  vertical-align: middle;
+}
+#navbar-administration a.acquia-lift-page-variation-toggle-hidden {
+  display: none;
+}
+#navbar-administration .acquia-lift-page-variation-toggle.acquia-lift-page-variation-toggle-disabled {
+  background-image: url("../images/page-variation-toggle-disabled.png");
+}
+#navbar-administration .acquia-lift-page-variation-toggle.acquia-lift-page-variation-toggle-active {
+  background-image: url("../images/page-variation-toggle-active.png");
+}
+/* Ensure QTips are always on top */
+.qtip {
+  z-index: 9999;
+}
+
+/* DOM Selector */
+.acquia-lift-dom-highlight {
+  background: #666 !important;
+  color: #fff !important;
+  cursor: "pointer" !important;
+  opacity: 0.6 !important;
+}

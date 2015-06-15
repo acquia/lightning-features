@@ -1,0 +1,97 @@
+<?php
+
+/**
+ * @file personalize_taxonomy_context.module
+ * Provides a visitor context plugin for taxonomy.
+ */
+
+/**
+ * Implements hook_personalize_visitor_contexts().
+ */
+function personalize_taxonomy_context_personalize_visitor_context() {
+  $info = array();
+  $path = drupal_get_path('module', 'personalize_taxonomy_context') . '/plugins';
+  $info['taxonomy_context'] = array(
+    'path' => $path . '/visitor_context',
+    'handler' => array(
+      'file' => 'TaxonomyContext.inc',
+      'class' => 'TaxonomyContext',
+    ),
+  );
+  return $info;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function personalize_taxonomy_context_node_view($node, $view_mode, $langcode) {
+  if ($view_mode == 'full') {
+    personalize_taxonomy_context_node_taxonomy($node);
+  }
+}
+
+/**
+ * Handles the node-specific taxonomy data.
+ *
+ * @param $node
+ *   (optional) If passed then the taxonomy terms for the selected node
+ *   are added to the page taxonomy context.
+ * @return array
+ *   Returns the taxonomy context for the page.
+ */
+function personalize_taxonomy_context_node_taxonomy($node = NULL) {
+  $taxonomy = &drupal_static(__FUNCTION__);
+  if (!isset($taxonomy)) {
+    $taxonomy = array();
+  }
+
+  // 1) Add vocabulary and terms only if the node is passed in.
+  if (!isset($node)) {
+    return $taxonomy;
+  }
+
+  // 2) Otherwise, use the node to collect taxonomy data.
+  // For each vocabulary, add any terms that are applied to the viewed node.
+  $vocabularies = array();
+  foreach($node as $property_name => $property_value) {
+    $language = field_language('node', $node, $property_name);
+    // If the field is not a vocabulary, move on.
+    if (!$language || !isset($property_value[$language])) {
+      continue;
+    }
+    // Process vocabulary.
+    foreach ($property_value[$language] as $field) {
+      // If the field is not an taxonomy term, move on.
+      if (!isset($field['taxonomy_term']) || $field['taxonomy_term']->entity_type !== 'taxonomy_term') {
+        continue;
+      };
+      // Process term.
+      $vocabulary_machine_name = $field['taxonomy_term']->vocabulary_machine_name;
+      $name = $field['taxonomy_term']->name;
+      if (!isset($vocabularies[$vocabulary_machine_name])) {
+        $vocabularies[$vocabulary_machine_name] = $name;
+        continue;
+      }
+      $vocabularies[$vocabulary_machine_name] .= ',' . $name;
+    }
+  }
+
+  $taxonomy['vocabularies'] = $vocabularies;
+}
+
+/**
+ * Implements hook_page_build().
+ */
+function personalize_taxonomy_context_page_build(&$page) {
+  $page['page_top']['personalize_taxonomy_context'] = array(
+    '#attached' => array(
+      'js' => array(
+        drupal_get_path('module', 'personalize_taxonomy_context') . '/js/personalize_taxonomy_context.js' => array(),
+        array(
+          'data' => array('personalize_taxonomy_context' => personalize_taxonomy_context_node_taxonomy()),
+          'type' => 'setting',
+        ),
+      ),
+    )
+  );
+}

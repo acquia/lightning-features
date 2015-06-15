@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Tests for Personalize Taxonomy Context module.
+ */
+
+class PersonalizeTaxonomyContextTest extends DrupalWebTestCase {
+  protected $adminUser;
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Personalize Taxonomy Context Tests'),
+      'description' => t('Tests basic functionality of Personalize Taxonomy Context module.'),
+      'group' => t('Personalize'),
+    );
+  }
+
+  function setUp() {
+    parent::setUp(array('ctools', 'personalize', 'personalize_test', 'personalize_taxonomy_context'));
+    $this->adminUser = $this->drupalCreateUser(array('administer personalize configuration', 'access administration pages', 'manage personalized content'));
+  }
+
+  function testTaxonomyConfiguration() {
+  }
+}
