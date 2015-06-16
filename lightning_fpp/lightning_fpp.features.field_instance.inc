@@ -46,19 +46,13 @@ function lightning_fpp_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'inline_entity_form',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
         'fields' => array(),
-        'type_settings' => array(
-          'allow_existing' => 1,
-          'delete_references' => 0,
-          'label_plural' => 'content',
-          'label_singular' => 'content',
-          'match_operator' => 'CONTAINS',
-          'override_labels' => 1,
-        ),
+        'view' => 'entity_reference_view_widget_nodes|entityreference_view_widget_1',
+        'view_mode' => 'full',
       ),
-      'type' => 'inline_entity_form',
+      'type' => 'entityreference_view_widget',
       'weight' => -4,
     ),
   );

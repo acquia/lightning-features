@@ -106,6 +106,13 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
+projects[dialog][version] = "2.0-alpha1"
+projects[dialog][type] = "module"
+projects[dialog][subdir] = "contrib"
+; Work around ctools z-index issues.
+; http://drupal.org/node/2505107
+projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-3.patch"
+
 projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
@@ -152,6 +159,13 @@ projects[entityreference][download][branch] = "7.x-1.x"
 projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
+
+projects[entityreference_view_widget][version] = "2.0-rc6"
+projects[entityreference_view_widget][type] = "module"
+projects[entityreference_view_widget][subdir] = "contrib"
+; Use Dialog instead of Chaos Tools for modal support.
+; http://drupal.org/node/2505107
+projects[entityreference_view_widget][patch][2505107] = "http://drupal.org/files/issues/dialog-api-2505107-1.patch"
 
 projects[escape_admin][version] = "1.2"
 projects[escape_admin][type] = "module"
