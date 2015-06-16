@@ -8,7 +8,7 @@ Using the lightning_features module in your own install profile's is recommended
 
 FAQ
 
-- If you are not using a module and a lightning_features provided module does not require it as a dependency, it can be deleted from the project.
+- If you are not using a module and no lightning_features modules inuse require it as a dependency, it could be deleted from your project with a patch for lightning_features.make
 - You will not see any performance decrease on your delivery if you leave uninstalled modules in your profiles directory.
 - We recommend evaluating each lightning_* module for your own usage and only using the things you deem necessary.
 
