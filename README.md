@@ -4,6 +4,14 @@ lightning-features
 
 Decoupled components used by the Lightning distribution for Drupal.
 
+Using the lightning_features module in your own install profile's is recommended.
+
+FAQ
+
+1 If you are not using a module and a lightning_features provided module does not require it as a dependency, it can be deleted from the project.
+1 You will not see any performance decrease on your delivery if you leave uninstalled modules in your profiles directory.
+1 We recommend evaluating each lightning_* module for your own usage and only using the things you deem necessary.
+
 See lightning_features.make for a detailed list of dependent modules and libraries.
 
 ### Updating
