@@ -1,9 +1,0 @@
-/**
- * @file
- * Styles for integrating Personalize with the Navbar module (version <= 1.5).
- */
-
-@import "base";
-// Overwrite menu class name
-$menu-class: menu;
-@import "acquia_lift.navbar.styles";
