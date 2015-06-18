@@ -251,7 +251,7 @@ projects[inline_entity_form][download][type] = "git"
 projects[inline_entity_form][download][revision] = "47ffa63"
 projects[inline_entity_form][download][branch] = "7.x-1.x"
 
-projects[jquery_update][version] = "2.5"
+projects[jquery_update][version] = "2.6"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
