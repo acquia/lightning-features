@@ -35,7 +35,7 @@ before_script:
 - drush en lightning_* -y
 - drush dis dblog -y
 - drush cc all
-- drush runserver --server=builtin 8080 &
+- drush runserver --default-server=builtin 8080 &
 - until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do sleep 0.2; done
 script:
 - drush uli -l http://127.0.0.1:8080 -v
