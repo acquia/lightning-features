@@ -17,6 +17,10 @@ projects[visitor_actions][type] = "module"
 projects[visitor_actions][subdir] = "contrib"
 
 ; Libraries
+libraries[chosen][destination] = "libraries"
+libraries[chosen][download][type] = "get"
+libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
+
 ;libraries[d3][destination] = "libraries"
 ;libraries[d3][download][type] = "get"
 ;libraries[d3][download][url] = https://github.com/mbostock/d3/releases/download/v3.4.11/d3.zip
