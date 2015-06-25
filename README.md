@@ -27,7 +27,7 @@ If you built your own profile using Lightning Features: you must keep lightning_
 
 `sh update.sh`
 
-### Behat tests
+### Running tests
 
 Move the tests folder to your Drupal docroot.
 
@@ -49,7 +49,7 @@ Execute the Lightning Features scenarios using the "dev" Behat profile.
 
   ``bin/behat --tags=lightning --profile=dev``
 
-#### Tests tagged with @lightning
+#### Behat tests tagged with @lightning
 
 ##### article.feature
 
