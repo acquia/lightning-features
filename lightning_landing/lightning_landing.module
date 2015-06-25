@@ -5,16 +5,3 @@
  */
 
 include_once 'lightning_landing.features.inc';
-
-/**
- * Implements hook_behat_info().
- */
-function lightning_landing_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-
-  return $info;
-}

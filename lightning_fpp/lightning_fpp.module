@@ -32,19 +32,6 @@ function lightning_fpp_entity_info_alter(&$entity_info) {
 }
 
 /**
- * Implements hook_behat_info().
- */
-function lightning_fpp_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-
-  return $info;
-}
-
-/**
  * Implements hook_migrate_api().
  */
 function lightning_fpp_migrate_api() {

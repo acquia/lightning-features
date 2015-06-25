@@ -5,20 +5,3 @@
  */
 
 include_once 'lightning_article.features.inc';
-/**
- * @file
- * Code for the lightning_article feature.
- */
-
-/**
- * Implements hook_behat_info().
- */
-function lightning_article_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-
-  return $info;
-}

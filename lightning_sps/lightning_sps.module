@@ -14,16 +14,3 @@ function lightning_sps_field_widget_form_alter(&$element, &$form_state, $context
     $element['overwrite']['#default_value'] = 1;
   }
 }
-
-/**
- * Implements hook_behat_info().
- */
-function lightning_sps_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-
-  return $info;
-}

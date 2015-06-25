@@ -25,19 +25,6 @@ function lightning_moderation_migrate_api() {
 }
 
 /**
- * Implements hook_behat_info().
- */
-function lightning_moderation_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-
-  return $info;
-}
-
-/**
  * Implements hook_block_info_alter().
  */
 function lightning_moderation_block_info_alter(&$blocks, $theme, $code_blocks) {

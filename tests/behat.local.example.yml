@@ -1,0 +1,4 @@
+dev:
+  extensions:
+    Behat\MinkExtension:
+      base_url: BASE_URL

@@ -3,16 +3,3 @@
  * @file
  * Drupal module file.
  */
-
-/**
- * Implements hook_behat_info().
- */
-function lightning_filter_behat_info() {
-  $info = array(
-    'paths' => array(
-      'features' => 'features',
-    ),
-  );
-
-  return $info;
-}
