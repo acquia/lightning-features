@@ -49,74 +49,76 @@ Execute the Lightning Features scenarios using the "dev" Behat profile.
 
   ``bin/behat --tags=lightning --profile=dev``
 
-#### article
+#### Tests tagged with @lightning
+
+##### article.feature
 
 * Article content type exists
 * Creating an article as admin
 * Article content type has fields provided by feature
 
-#### breakpoints
+##### breakpoints.feature
 
 * Checks to ensure breakpoints were created
 
-#### cache
+##### cache.feature
 
 * Checks to ensure Views Content Cache is enabled
 
-#### filter
+##### filter.feature
 
 * Text formats exist
 * Text formats have appropriate feature-defined filters
 
-#### forms
+##### forms.feature
 
 * Webform type present
 * Can create Webform
 * Check basic Webform fields
 
-#### fpp
+##### fpp.feature
 
 * Checks for FPP types
 * Checks for fields on FPP types
 
-#### identifiers
+##### identifiers.feature
 
 * Checks to ensure taxonomy exists
 
-#### landing
+##### landing.feature
 
 * Ensure landing page content type exists
 * Create landing page content
 * Landing Page fields
 
-#### letterbox
+##### letterbox.feature
 
 * Checks for letterbox breakpoints
 
-#### moderation
+##### moderation.feature
 
 * Ensure moderation steps are created
 
-#### page
+##### page.feature
 
 * Ensure page content type exists
 * Create page content
 * Page fields
 
-#### roles
+##### roles.feature
 
 * Role exists: curator
 * Role exists: reviewer
 * Role exists: marketer
 
-#### sps
+##### sps.feature
 
 * Checks for Article field collection
 
-#### tags
+##### tags.feature
 * Tags taxonomy vocabulary exists
 
-#### wysiwyg
+##### wysiwyg.feature
 
 * Check Linkit exists
 * Linkit sanity check
