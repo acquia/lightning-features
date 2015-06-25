@@ -27,82 +27,96 @@ If you built your own profile using Lightning Features: you must keep lightning_
 
 `sh update.sh`
 
-### Behat Tests
+### Behat tests
 
-Run tests from the command line:
+Move the tests folder to your Drupal docroot.
 
-`sh run-tests.sh http://lightning.local`
+  ``mv lightning_features/tests docroot/tests``
 
-Replace [http://lightning.local] with the site environment url to test against.
+Install the drupal-extension for mink/behat from the tests folder.
 
-#### lightning_article
+  ``cd tests && composer install``
+
+Set up the behat.local.yml file replacing ``BASE_URL`` with your own url.
+
+  ``cp behat.local.example.yml behat.local.yml``
+
+Check that behat is installed and running under the dev profile.
+
+  ``bin/behat --help --profile=dev``
+
+Execute the Lightning Features scenarios using the "dev" Behat profile.
+
+  ``bin/behat --tags=lightning --profile=dev``
+
+#### article
 
 * Article content type exists
 * Creating an article as admin
 * Article content type has fields provided by feature
 
-#### lightning_breakpoints
+#### breakpoints
 
 * Checks to ensure breakpoints were created
 
-#### lightning_cache
+#### cache
 
 * Checks to ensure Views Content Cache is enabled
 
-#### lightning_filter
+#### filter
 
 * Text formats exist
 * Text formats have appropriate feature-defined filters
 
-#### lightning_forms
+#### forms
 
 * Webform type present
 * Can create Webform
 * Check basic Webform fields
 
-#### lightning_fpp
+#### fpp
 
 * Checks for FPP types
 * Checks for fields on FPP types
 
-#### lightning_identifiers
+#### identifiers
 
 * Checks to ensure taxonomy exists
 
-#### lightning_landing
+#### landing
 
 * Ensure landing page content type exists
 * Create landing page content
 * Landing Page fields
 
-#### lightning_letterbox
+#### letterbox
 
 * Checks for letterbox breakpoints
 
-#### lightning_moderation
+#### moderation
 
 * Ensure moderation steps are created
 
-#### lightning_page
+#### page
 
 * Ensure page content type exists
 * Create page content
 * Page fields
 
-#### lightning_roles
+#### roles
 
 * Role exists: curator
 * Role exists: reviewer
 * Role exists: marketer
 
-#### lightning_sps
+#### sps
 
 * Checks for Article field collection
 
-#### lightning_tags
+#### tags
 * Tags taxonomy vocabulary exists
 
-#### lightning_wysiwyg
+#### wysiwyg
 
 * Check Linkit exists
 * Linkit sanity check
