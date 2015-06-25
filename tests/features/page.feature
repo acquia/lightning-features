@@ -1,9 +1,9 @@
-@lightning
+@lightning @page
 Feature: Lightning Page
   Makes sure that the Page feature is present and configured.
 
   @api
-  Scenario: Check for Article Type Present
+  Scenario: Check Basic Page Content Type Present
     Given I am logged in as a user with the "administrator" role
     When I visit "/admin/structure/types"
     Then I should see "Basic Page"
@@ -18,8 +18,9 @@ Feature: Lightning Page
   @api
   Scenario: Make sure I can make a Page
     Given I am logged in as a user with the "administrator" role
-    And I am viewing an "Basic page" node:
-      | title | Test Basic Page            |
-      | body  | A place for the body to go |
+    And "page" content:
+      | title           | body                       |
+      | Test Basic Page | A place for the body to go |
     When I go to "/admin/content"
-    Then I should see "Test Basic Page"
+    And I follow "Test Basic Page"
+    Then I should see "A place for the body to go"

@@ -1,6 +1,6 @@
-@lightning
-Feature: Lightning Wysiwyg
-  Ensure wysiwyg settings are set.
+@lightning @wysiwyg
+Feature: Lightning WYSIWYG
+  Ensure WYSIWYG settings are set.
 
   @api
   Scenario: Check for Lightning Node Linkit Type Present

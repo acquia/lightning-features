@@ -1,4 +1,4 @@
-@lightning
+@lightning @forms
 Feature: Lightning Forms
   Makes sure that the form feature is present.
 
@@ -11,9 +11,9 @@ Feature: Lightning Forms
   @api
   Scenario: Make sure I can make an Webform
     Given I am logged in as a user with the "administrator" role
-    And I am viewing an "Webform" node:
-      | title | Test Webform  |
-      | body  | A placeholder |
+    And "webform" content:
+      | title        | body          |
+      | Test Webform | A placeholder |
     When I go to "/admin/content"
     Then I should see "Test Webform"
 

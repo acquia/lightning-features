@@ -1,4 +1,4 @@
-@lightning
+@lightning @identifiers
 Feature: Lightning Identifiers
   Makes sure that the identifiers taxonomy is present.
 

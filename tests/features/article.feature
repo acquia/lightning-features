@@ -1,20 +1,20 @@
-@lightning
+@lightning @article
 Feature: Lightning Article
   Makes sure that the article feature is present.
 
   @api
-  Scenario: Check for Article Type Present
+  Scenario: Check Article content type is present
     Given I am logged in as a user with the "administrator" role
     When I visit "/admin/structure/types"
     Then I should see "Article"
 
   @api
   Scenario: Make sure I can make an Article
-    Given I am logged in as a user with the "administrator" role
-    And I am viewing an "Article" node:
-      | title | My article with fields! |
-      | body  | A placeholder           |
-    When I go to "/admin/content"
+    Given "article" content:
+    | title                   | body          |
+    | My article with fields! | A placeholder |
+    And I am logged in as a user with the "administrator" role
+    When I visit "/admin/content"
     Then I should see "My article with fields!"
 
   @api

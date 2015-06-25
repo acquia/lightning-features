@@ -1,4 +1,4 @@
-@lightning
+@lightning @tags
 Feature: Lightning Tags
 
   @api

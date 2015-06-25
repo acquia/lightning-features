@@ -1,4 +1,4 @@
-@lightning
+@lightning @cache
 Feature: Lightning Cache
   Makes sure that the Cache feature is properly configured .
 

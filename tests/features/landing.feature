@@ -1,4 +1,4 @@
-@lightning
+@lightning @landing
 Feature: Lightning Landing
   Makes sure that the landing feature was created correctly.
 
@@ -11,9 +11,9 @@ Feature: Lightning Landing
   @api
   Scenario: Make sure I can make a Landing page
     Given I am logged in as a user with the "administrator" role
-    And I am viewing a "Landing Page" node:
-      | title | This is a landing page |
-      | body  | A placeholder          |
+    And "landing_page" content:
+      | title                   | body          |
+      | This is a landing page  | A placeholder |
     When I go to "/admin/content"
     Then I should see "This is a landing page"
 

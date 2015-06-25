@@ -1,4 +1,4 @@
-@lightning
+@lightning @fpp
 Feature: Lightning Fieldable Panel Panes
   Makes sure that the FPP feature is present and configured correctly.
 

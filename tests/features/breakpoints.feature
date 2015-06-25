@@ -1,4 +1,4 @@
-@lightning
+@lightning @breakpoints
 Feature: Lightning Breakpoints
   Ensures that Lighting Breakpoints are created properly.
 

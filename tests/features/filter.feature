@@ -1,4 +1,4 @@
-@lightning
+@lightning @filter
 Feature: Lightning Filter
   Ensures that Lighting Filter text filters are created appropriately.
 

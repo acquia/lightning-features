@@ -1,4 +1,4 @@
-@lightning
+@lightning @moderation
 Feature: Lightning Moderation
   Makes sure that the moderation feature is configured.
 

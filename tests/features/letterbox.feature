@@ -1,4 +1,4 @@
-@lightning
+@lightning @letterbox
 Feature: Lightning Letterbox
   Ensures that Lighting Letterbox feature is configured properly.
 
