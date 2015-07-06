@@ -48,7 +48,11 @@ function lightning_fpp_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference_view_widget',
       'settings' => array(
-        'fields' => array(),
+        'allow_duplicates' => 0,
+        'close_modal' => 1,
+        'pass_argument' => 0,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
         'view' => 'entity_reference_view_widget_nodes|entityreference_view_widget_1',
         'view_mode' => 'full',
       ),
@@ -210,7 +214,8 @@ function lightning_fpp_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-quick_links-field_quick_links_links'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-quick_links-field_quick_links_links'
   $field_instances['fieldable_panels_pane-quick_links-field_quick_links_links'] = array(
     'bundle' => 'quick_links',
     'default_value' => NULL,
