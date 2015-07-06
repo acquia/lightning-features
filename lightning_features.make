@@ -486,12 +486,9 @@ projects[views_field_view][download][type] = "git"
 projects[views_field_view][download][revision] = "bb6cfea"
 projects[views_field_view][download][branch] = "7.x-1.x"
 
-projects[views_bulk_operations][version] = "3.x-dev"
+projects[views_bulk_operations][version] = "3.3"
 projects[views_bulk_operations][type] = "module"
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][download][type] = "git"
-projects[views_bulk_operations][download][revision] = "52bd47b"
-projects[views_bulk_operations][download][branch] = "7.x-3.x"
 
 projects[views_content_cache][version] = "3.x-dev"
 projects[views_content_cache][type] = "module"
