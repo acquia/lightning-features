@@ -175,7 +175,7 @@ projects[fape][version] = "1.2"
 projects[fape][type] = "module"
 projects[fape][subdir] = "contrib"
 
-projects[features][version] = "2.5"
+projects[features][version] = "2.6"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 
