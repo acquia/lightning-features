@@ -535,9 +535,9 @@ projects[workbench_moderation_notes][subdir] = "contrib"
 projects[workbench_moderation_notes][download][type] = "git"
 projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
 projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
-; Incorrect status message "...no published revision of this site"
-; http://drupal.org/node/2045407
-projects[workbench_moderation_notes][patch][2045407] = "http://drupal.org/files/workbench_moderation_notes-no_live_node_alert-2045407-1.patch"
+; Sync workbench_moderation_notes_node_history_view output with workbench_moderation_node_history_view
+; https://www.drupal.org/node/2529452
+projects[workbench_moderation_notes][patch][2529452] = "https://www.drupal.org/files/issues/workbench_moderation_notes-node_history_view-sync.patch"
 
 projects[xautoload][version] = "4.5"
 projects[xautoload][type] = "module"
