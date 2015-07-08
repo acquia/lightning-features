@@ -117,13 +117,6 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[distro_update][version] = "1.x-dev"
-projects[distro_update][type] = "module"
-projects[distro_update][subdir] = "contrib"
-projects[distro_update][download][type] = "git"
-projects[distro_update][download][revision] = "f5ab9fe"
-projects[distro_update][download][branch] = "7.x-1.x"
-
 projects[draggableviews][version] = "2.x-dev"
 projects[draggableviews][type] = "module"
 projects[draggableviews][subdir] = "contrib"
