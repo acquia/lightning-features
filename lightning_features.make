@@ -407,7 +407,7 @@ projects[responsive_preview][version] = "1.x-dev"
 projects[responsive_preview][type] = "module"
 projects[responsive_preview][subdir] = "contrib"
 projects[responsive_preview][download][type] = "git"
-projects[responsive_preview][download][revision] = "d741779"
+projects[responsive_preview][download][revision] = "e89d023"
 projects[responsive_preview][download][branch] = "7.x-1.x"
 ; Before js processing, the phone image incorrectly positioned.
 ; https://drupal.org/node/2276789
