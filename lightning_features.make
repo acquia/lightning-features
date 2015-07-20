@@ -214,7 +214,7 @@ projects[focal_point][version] = "1.0-beta1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
-projects[form_builder][version] = "1.9"
+projects[form_builder][version] = "1.10"
 projects[form_builder][type] = "module"
 projects[form_builder][subdir] = "contrib"
 
@@ -501,7 +501,7 @@ projects[views_load_more][version] = "1.5"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.9"
+projects[webform][version] = "4.10"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
