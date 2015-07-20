@@ -7,6 +7,7 @@ project = lightning_sps
 dependencies[] = collection
 dependencies[] = collection_field
 dependencies[] = collection_sps
+dependencies[] = defaultconfig
 dependencies[] = field_ui
 dependencies[] = features
 dependencies[] = iib

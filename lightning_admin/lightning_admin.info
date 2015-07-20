@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = lightning_admin
 dependencies[] = contextual
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = ember_support
 dependencies[] = escape_admin
 dependencies[] = features

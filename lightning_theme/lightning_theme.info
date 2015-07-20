@@ -4,6 +4,7 @@ core = 7.x
 package = Lightning
 version = 7.x-1.0
 project = lightning_theme
+dependencies[] = defaultconfig
 dependencies[] = system
 datestamp = 1408404197
 features[ctools][] = strongarm:strongarm:1

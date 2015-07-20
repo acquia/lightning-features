@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_landing
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = field_ui

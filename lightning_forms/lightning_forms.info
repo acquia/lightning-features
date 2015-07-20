@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_forms
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = form_builder
 dependencies[] = form_builder_webform
