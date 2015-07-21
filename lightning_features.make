@@ -142,7 +142,7 @@ projects[entity_embed][version] = "1.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
 projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][revision] = "4fdb5c6"
+projects[entity_embed][download][revision] = "f930e28"
 projects[entity_embed][download][branch] = "7.x-1.x"
 
 projects[entityreference][version] = "1.x-dev"
