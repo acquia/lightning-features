@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = lightning_fpp
 dependencies[] = better_formats
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = entity
 dependencies[] = entity_embed
 dependencies[] = entityreference

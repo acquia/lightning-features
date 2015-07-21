@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = lightning_panels
 dependencies[] = context_admin
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = demonstratie_panels
 dependencies[] = ember_support
 dependencies[] = features

@@ -4,6 +4,7 @@ core = 7.x
 package = Lightning
 version = 7.x-1.0
 project = lightning_metatags
+dependencies[] = defaultconfig
 dependencies[] = metatag
 datestamp = 1411763263
 features[features_api][] = api:2

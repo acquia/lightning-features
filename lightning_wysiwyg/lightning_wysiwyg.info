@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = lightning_wysiwyg
 dependencies[] = ctools
 dependencies[] = ckeditor
+dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = linkit
 datestamp = 1408404197

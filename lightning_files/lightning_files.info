@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_files
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = file
 dependencies[] = file_entity

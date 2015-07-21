@@ -10,6 +10,7 @@ dependencies[] = bean_tax
 dependencies[] = block
 dependencies[] = block_class
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = entity
 dependencies[] = field_ui
 dependencies[] = features
