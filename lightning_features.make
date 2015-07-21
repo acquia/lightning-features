@@ -106,9 +106,12 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha2"
+projects[dialog][version] = "2.0-alpha1"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
+; Implement query parameter based content negotiation as alternative to extensions.
+; http://drupal.org/node/2528994
+projects[dialog][patch][2528994] = "http://drupal.org/files/issues/2528994-1.patch"
 ; Work around ctools z-index issues.
 ; http://drupal.org/node/2505107
 projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-3.patch"
