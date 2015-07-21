@@ -45,7 +45,7 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "24e805a"
+projects[ckeditor][download][revision] = "32f0973"
 projects[ckeditor][download][branch] = "7.x-1.x"
 
 projects[classy_panel_styles][version] = "1.0-alpha1"
@@ -106,12 +106,9 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha1"
+projects[dialog][version] = "2.0-alpha2"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
-; Implement query parameter based content negotiation as alternative to extensions.
-; http://drupal.org/node/2528994
-projects[dialog][patch][2528994] = "http://drupal.org/files/issues/2528994-1.patch"
 ; Work around ctools z-index issues.
 ; http://drupal.org/node/2505107
 projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-3.patch"
@@ -138,12 +135,9 @@ projects[entity][download][type] = "git"
 projects[entity][download][revision] = "4d76c5c"
 projects[entity][download][branch] = "7.x-1.x"
 
-projects[entity_embed][version] = "1.x-dev"
+projects[entity_embed][version] = "2.0-alpha1"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][revision] = "f930e28"
-projects[entity_embed][download][branch] = "7.x-1.x"
 
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
@@ -192,12 +186,9 @@ projects[fieldable_panels_panes][patch][1986334] = "http://drupal.org/files/issu
 ; https://www.drupal.org/node/2477421
 projects[fieldable_panels_panes][patch][2477421] = "https://www.drupal.org/files/issues/fieldable_panels_panes-save-continue-redirect-2477421-1.patch"
 
-projects[file_entity][version] = "2.x-dev"
+projects[file_entity][version] = "2.0-beta2"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "54a45a3"
-projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[file_entity_link][version] = "1.0-alpha3"
 projects[file_entity_link][type] = "module"
@@ -267,12 +258,9 @@ projects[magic_beans][download][type] = "git"
 projects[magic_beans][download][revision] = "9113b89"
 projects[magic_beans][download][branch] = "7.x-1.x"
 
-projects[media][version] = "2.x-dev"
+projects[media][version] = "2.0-beta1"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
-projects[media][download][type] = "git"
-projects[media][download][revision] = "a2b8ae2"
-projects[media][download][branch] = "7.x-2.x"
 
 projects[media_oembed][version] = "2.3"
 projects[media_oembed][type] = "module"
