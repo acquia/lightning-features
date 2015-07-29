@@ -48,7 +48,7 @@ projects[ckeditor][download][type] = "git"
 projects[ckeditor][download][revision] = "24e805a"
 projects[ckeditor][download][branch] = "7.x-1.x"
 
-projects[classy_panel_styles][version] = "1.0-alpha1"
+projects[classy_panel_styles][version] = "1.0-alpha2"
 projects[classy_panel_styles][type] = "module"
 projects[classy_panel_styles][subdir] = "contrib"
 
