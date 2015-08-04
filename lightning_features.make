@@ -48,7 +48,7 @@ projects[ckeditor][download][type] = "git"
 projects[ckeditor][download][revision] = "32f0973"
 projects[ckeditor][download][branch] = "7.x-1.x"
 
-projects[classy_panel_styles][version] = "1.0-alpha1"
+projects[classy_panel_styles][version] = "1.0-alpha2"
 projects[classy_panel_styles][type] = "module"
 projects[classy_panel_styles][subdir] = "contrib"
 
@@ -478,7 +478,7 @@ projects[views_content_cache][download][type] = "git"
 projects[views_content_cache][download][revision] = "45863c3"
 projects[views_content_cache][download][branch] = "7.x-3.x"
 
-projects[views_fieldsets][version] = "1.2"
+projects[views_fieldsets][version] = "1.3"
 projects[views_fieldsets][type] = "module"
 projects[views_fieldsets][subdir] = "contrib"
 
