@@ -106,7 +106,7 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha2"
+projects[dialog][version] = "2.0-alpha3"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
 ; Work around ctools z-index issues.
@@ -258,9 +258,12 @@ projects[magic_beans][download][type] = "git"
 projects[magic_beans][download][revision] = "9113b89"
 projects[magic_beans][download][branch] = "7.x-1.x"
 
-projects[media][version] = "2.0-beta1"
+projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
+projects[media][download][type] = "git"
+projects[media][download][revision] = "cfb0242"
+projects[media][download][branch] = "7.x-2.x"
 
 projects[media_oembed][version] = "2.3"
 projects[media_oembed][type] = "module"
