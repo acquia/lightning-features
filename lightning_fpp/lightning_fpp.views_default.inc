@@ -120,12 +120,12 @@ function lightning_fpp_views_default_views() {
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Published */
-  $handler->display->display_options['fields']['status']['id'] = 'status';
-  $handler->display->display_options['fields']['status']['table'] = 'node';
-  $handler->display->display_options['fields']['status']['field'] = 'status';
-  $handler->display->display_options['fields']['status']['type'] = 'published-notpublished';
-  $handler->display->display_options['fields']['status']['not'] = 0;
+  /* Field: Workbench Moderation: State */
+  $handler->display->display_options['fields']['state']['id'] = 'state';
+  $handler->display->display_options['fields']['state']['table'] = 'workbench_moderation_node_history';
+  $handler->display->display_options['fields']['state']['field'] = 'state';
+  $handler->display->display_options['fields']['state']['label'] = 'Moderation state';
+  $handler->display->display_options['fields']['state']['machine_name'] = 0;
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
@@ -184,17 +184,16 @@ function lightning_fpp_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status_2']['id'] = 'status_2';
-  $handler->display->display_options['filters']['status_2']['table'] = 'node';
-  $handler->display->display_options['filters']['status_2']['field'] = 'status';
-  $handler->display->display_options['filters']['status_2']['value'] = 'All';
-  $handler->display->display_options['filters']['status_2']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['status_2']['expose']['operator_id'] = '';
-  $handler->display->display_options['filters']['status_2']['expose']['label'] = 'Published';
-  $handler->display->display_options['filters']['status_2']['expose']['operator'] = 'status_2_op';
-  $handler->display->display_options['filters']['status_2']['expose']['identifier'] = 'status_2';
-  $handler->display->display_options['filters']['status_2']['expose']['remember_roles'] = array(
+  /* Filter criterion: Workbench Moderation: State */
+  $handler->display->display_options['filters']['state']['id'] = 'state';
+  $handler->display->display_options['filters']['state']['table'] = 'workbench_moderation_node_history';
+  $handler->display->display_options['filters']['state']['field'] = 'state';
+  $handler->display->display_options['filters']['state']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['state']['expose']['operator_id'] = 'state_op';
+  $handler->display->display_options['filters']['state']['expose']['label'] = 'State';
+  $handler->display->display_options['filters']['state']['expose']['operator'] = 'state_op';
+  $handler->display->display_options['filters']['state']['expose']['identifier'] = 'state';
+  $handler->display->display_options['filters']['state']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
