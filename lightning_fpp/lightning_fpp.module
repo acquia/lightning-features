@@ -44,3 +44,15 @@ function lightning_fpp_migrate_api() {
   );
   return $api;
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function lightning_fpp_form_views_form_alter(&$form, &$form_state, $form_id) {
+  if (!isset($form['entityreference_view_widget'])) {
+    return;
+  }
+
+  // Change the form submit text from 'Submit' to 'Add'.
+  $form['actions_ervw']['ervw_submit']['#value'] = t('Add');
+}
