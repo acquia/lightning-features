@@ -273,7 +273,7 @@ projects[media_youtube][version] = "3.0"
 projects[media_youtube][type] = "module"
 projects[media_youtube][subdir] = "contrib"
 
-projects[metatag][version] = "1.6"
+projects[metatag][version] = "1.7"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
 
