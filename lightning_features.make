@@ -509,6 +509,9 @@ projects[workbench_moderation][patch][2360973] = "http://drupal.org/files/issues
 ; restws_page_callback() breaks workbench_moderation
 ; https://www.drupal.org/node/1838640
 projects[workbench_moderation][patch][1838640] = "http://drupal.org/files/issues/workbench_moderation-fix_callback_argument-1838640-23.patch"
+; "View draft" opens published version / "Edit draft" opens correctly
+; https://www.drupal.org/node/2447659
+projects[workbench_moderation][patch][2447659] = "http://drupal.org/files/issues/workbench-moderation-show-draft-2447659-19.patch"
 
 projects[workbench_moderation_buttons][version] = "1.0-alpha3"
 projects[workbench_moderation_buttons][type] = "module"
