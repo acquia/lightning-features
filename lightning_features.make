@@ -365,12 +365,9 @@ projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[quickedit][version] = "1.x-dev"
+projects[quickedit][version] = "1.2"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
-projects[quickedit][download][type] = "git"
-projects[quickedit][download][revision] = "9578a1a"
-projects[quickedit][download][branch] = "7.x-1.x"
 ; Assign filter types to Entity Embed filters.
 ; https://www.drupal.org/node/2458517#comment-9754317
 projects[quickedit][patch][2458517] = "http://drupal.org/files/issues/entity-embed-filter-types-2458517-1.patch"
