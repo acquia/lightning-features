@@ -505,10 +505,13 @@ projects[workbench_moderation][subdir] = "contrib"
 projects[workbench_moderation][patch][2462453] = "http://drupal.org/files/issues/workbench_moderation-iib-var-2462453-1.patch"
 ; Provide an AJAX callback to reload the Workbench block, for inline editing support
 ; https://www.drupal.org/node/2485713
-projects[workbench_moderation][patch][2485713] = "http://www.drupal.org/files/issues/workbench-moderation-ajax-block-2485713-6.patch"
+projects[workbench_moderation][patch][2485713] = "http://drupal.org/files/issues/workbench-moderation-ajax-block-2485713-6.patch"
 ; Fix warnings on installation and features revert.
 ; https://www.drupal.org/node/2360973
-projects[workbench_moderation][patch][2360973] = "https://www.drupal.org/files/issues/workbench_moderation-install-warnings-2360973-3.patch"
+projects[workbench_moderation][patch][2360973] = "http://drupal.org/files/issues/workbench_moderation-install-warnings-2360973-3.patch"
+; restws_page_callback() breaks workbench_moderation
+; https://www.drupal.org/node/1838640
+projects[workbench_moderation][patch][1838640] = "http://drupal.org/files/issues/workbench_moderation-fix_callback_argument-1838640-23.patch"
 
 projects[workbench_moderation_buttons][version] = "1.0-alpha3"
 projects[workbench_moderation_buttons][type] = "module"
