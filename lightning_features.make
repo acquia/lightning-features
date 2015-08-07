@@ -228,12 +228,9 @@ projects[import][version] = "1.0-alpha1"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 
-projects[inline_entity_form][version] = "1.x-dev"
+projects[inline_entity_form][version] = "1.6"
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][subdir] = "contrib"
-projects[inline_entity_form][download][type] = "git"
-projects[inline_entity_form][download][revision] = "47ffa63"
-projects[inline_entity_form][download][branch] = "7.x-1.x"
 
 projects[jquery_update][version] = "2.6"
 projects[jquery_update][type] = "module"
@@ -281,7 +278,7 @@ projects[module_filter][version] = "2.0"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
-projects[migrate][version] = "2.7"
+projects[migrate][version] = "2.8"
 projects[migrate][type] = "module"
 projects[migrate][subdir] = "contrib"
 
