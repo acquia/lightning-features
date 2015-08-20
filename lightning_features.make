@@ -112,6 +112,9 @@ projects[dialog][subdir] = "contrib"
 ; Work around ctools z-index issues.
 ; http://drupal.org/node/2505107
 projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-3.patch"
+; Work around behavior settings issues.
+; http://drupal.org/node/2548791
+projects[dialog][patch][2548791] = "http://drupal.org/files/issues/close_property_undefined-2548791-3.patch"
 
 projects[diff][version] = "3.2"
 projects[diff][type] = "module"
