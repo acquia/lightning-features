@@ -27,6 +27,7 @@ dependencies[] = simple_gmap
 dependencies[] = text
 datestamp = 1411763263
 features[ctools][] = fieldable_panels_panes:fieldable_panels_pane_type:1
+features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_base][] = field_add_media
 features[field_base][] = field_basic_text_text
