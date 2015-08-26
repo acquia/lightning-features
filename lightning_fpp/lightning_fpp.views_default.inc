@@ -177,19 +177,42 @@ function lightning_fpp_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Workbench Moderation: State */
-  $handler->display->display_options['filters']['state']['id'] = 'state';
-  $handler->display->display_options['filters']['state']['table'] = 'workbench_moderation_node_history';
-  $handler->display->display_options['filters']['state']['field'] = 'state';
-  $handler->display->display_options['filters']['state']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['state']['expose']['operator_id'] = 'state_op';
-  $handler->display->display_options['filters']['state']['expose']['label'] = 'State';
-  $handler->display->display_options['filters']['state']['expose']['operator'] = 'state_op';
-  $handler->display->display_options['filters']['state']['expose']['identifier'] = 'state';
-  $handler->display->display_options['filters']['state']['expose']['remember_roles'] = array(
+  /* Filter criterion: Workbench Moderation: Published */
+  $handler->display->display_options['filters']['published']['id'] = 'published';
+  $handler->display->display_options['filters']['published']['table'] = 'workbench_moderation_node_history';
+  $handler->display->display_options['filters']['published']['field'] = 'published';
+  $handler->display->display_options['filters']['published']['value'] = '1';
+  $handler->display->display_options['filters']['published']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['published']['expose']['operator_id'] = '';
+  $handler->display->display_options['filters']['published']['expose']['label'] = 'Published';
+  $handler->display->display_options['filters']['published']['expose']['operator'] = 'published_op';
+  $handler->display->display_options['filters']['published']['expose']['identifier'] = 'published';
+  $handler->display->display_options['filters']['published']['expose']['required'] = TRUE;
+  $handler->display->display_options['filters']['published']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    3 => 0,
+    30037204 => 0,
+    103270763 => 0,
+    175031666 => 0,
+    197817655 => 0,
+  );
+  /* Filter criterion: Workbench Moderation: Current */
+  $handler->display->display_options['filters']['is_current']['id'] = 'is_current';
+  $handler->display->display_options['filters']['is_current']['table'] = 'workbench_moderation_node_history';
+  $handler->display->display_options['filters']['is_current']['field'] = 'is_current';
+  $handler->display->display_options['filters']['is_current']['value'] = '1';
+  $handler->display->display_options['filters']['is_current']['expose']['operator_id'] = '';
+  $handler->display->display_options['filters']['is_current']['expose']['label'] = 'Current';
+  $handler->display->display_options['filters']['is_current']['expose']['operator'] = 'is_current_op';
+  $handler->display->display_options['filters']['is_current']['expose']['identifier'] = 'is_current';
+  $handler->display->display_options['filters']['is_current']['expose']['required'] = TRUE;
+  $handler->display->display_options['filters']['is_current']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    30037204 => 0,
+    103270763 => 0,
+    175031666 => 0,
+    197817655 => 0,
   );
 
   /* Display: Entity Reference View Widget */
