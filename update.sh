@@ -13,6 +13,6 @@
 
 # Usage: sh update.sh  
 drush make --no-core lightning_features.make -y
-cp -fR sites/all/libraries/* ../../../libraries/.
-cp -fR sites/all/modules/contrib/* ../.
+rsync --delete sites/all/libraries/* ../../../libraries/.
+rsync --delete sites/all/modules/contrib/* ../.
 rm -rf sites
