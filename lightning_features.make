@@ -142,7 +142,7 @@ projects[entity_embed][version] = "2.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
 projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][revision] = "ab62b9a"
+projects[entity_embed][download][revision] = "f1b615c"
 projects[entity_embed][download][branch] = "7.x-2.x"
 ; Backport field formatter display capabilities.
 ; http://drupal.org/node/2550669
