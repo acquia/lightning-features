@@ -146,7 +146,7 @@ projects[entity_embed][download][revision] = "f1b615c"
 projects[entity_embed][download][branch] = "7.x-2.x"
 ; Backport field formatter display capabilities.
 ; http://drupal.org/node/2550669
-projects[entity_embed][patch][2550669] = "http://drupal.org/files/issues/add-field-formatter-support-2550669-8.patch"
+projects[entity_embed][patch][2550669] = "http://drupal.org/files/issues/add-field-formatter-support-2550669-9.patch"
 
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
