@@ -279,9 +279,6 @@ projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
 projects[media][download][revision] = "844baf0"
 projects[media][download][branch] = "7.x-2.x"
-; Browser window opens twice.
-; https://drupal.org/node/2534724#comment-10245583
-projects[media][patch][2534724] = "https://drupal.org/files/issues/media-browser_opens_twice-2534724-30.patch"
 
 projects[media_oembed][version] = "2.3"
 projects[media_oembed][type] = "module"
