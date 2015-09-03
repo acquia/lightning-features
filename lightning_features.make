@@ -180,7 +180,7 @@ projects[fieldable_panels_panes][version] = "1.x-dev"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][revision] = "f513a15"
+projects[fieldable_panels_panes][download][revision] = "0475405"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 ; Allow a particular revision of a fieldable panels pane to be placed in a panelized page
 ; http://drupal.org/node/1986334
