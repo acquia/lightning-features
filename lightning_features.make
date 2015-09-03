@@ -77,7 +77,7 @@ projects[context_admin][download][type] = "git"
 projects[context_admin][download][revision] = "0e5bf6a"
 projects[context_admin][download][branch] = "7.x-1.x"
 
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.9"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 ; When Ctools modal is open, disable the page scroll behind the modal
