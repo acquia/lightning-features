@@ -142,9 +142,15 @@ projects[entity][download][type] = "git"
 projects[entity][download][revision] = "4d76c5c"
 projects[entity][download][branch] = "7.x-1.x"
 
-projects[entity_embed][version] = "2.0-alpha1"
+projects[entity_embed][version] = "2.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
+projects[entity_embed][download][type] = "git"
+projects[entity_embed][download][revision] = "f1b615c"
+projects[entity_embed][download][branch] = "7.x-2.x"
+; Backport field formatter display capabilities.
+; http://drupal.org/node/2550669
+projects[entity_embed][patch][2550669] = "http://drupal.org/files/issues/add-field-formatter-support-2550669-9.patch"
 
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
@@ -152,6 +158,12 @@ projects[entityreference][subdir] = "contrib"
 projects[entityreference][download][type] = "git"
 projects[entityreference][download][revision] = "ab62b9a"
 projects[entityreference][download][branch] = "7.x-1.x"
+; Notice : Undefined variable: element.
+; http://drupal.org/node/2550669
+projects[entityreference][patch][2495405] = "http://drupal.org/files/issues/entityreference-2495405-2.patch"
+; Notice : Undefined index: entityreference_field_formatter_prepare_view().
+; http://drupal.org/node/1823406
+projects[entityreference][patch][1823406] = "http://drupal.org/files/undefined_index-1823406-14.patch"
 
 projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][type] = "module"
@@ -193,9 +205,12 @@ projects[fieldable_panels_panes][patch][1986334] = "http://drupal.org/files/issu
 ; https://www.drupal.org/node/2477421
 projects[fieldable_panels_panes][patch][2477421] = "https://www.drupal.org/files/issues/fieldable_panels_panes-save-continue-redirect-2477421-1.patch"
 
-projects[file_entity][version] = "2.0-beta2"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
+projects[file_entity][download][type] = "git"
+projects[file_entity][download][url] = "http://git.drupal.org/project/file_entity.git"
+projects[file_entity][download][branch] = "7.x-2.x"
+projects[file_entity][download][revision] = "656f387"
 
 projects[file_entity_link][version] = "1.0-alpha3"
 projects[file_entity_link][type] = "module"
@@ -266,7 +281,7 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "cfb0242"
+projects[media][download][revision] = "844baf0"
 projects[media][download][branch] = "7.x-2.x"
 
 projects[media_oembed][version] = "2.3"
