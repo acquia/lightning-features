@@ -5,15 +5,15 @@ projects[acquia_connector][version] = "2.15"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
-projects[acquia_lift][version] = "2.0-beta3"
+projects[acquia_lift][version] = "2.0-beta6"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
-projects[personalize][version] = "2.0-beta3"
+projects[personalize][version] = "2.0-beta6"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
 
-projects[visitor_actions][version] = "1.1"
+projects[visitor_actions][version] = "1.2"
 projects[visitor_actions][type] = "module"
 projects[visitor_actions][subdir] = "contrib"
 
