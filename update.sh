@@ -13,6 +13,6 @@
 
 # Usage: sh update.sh  
 drush make --no-core lightning_features.make -y
-rsync --delete sites/all/libraries/* ../../../libraries/.
-rsync --delete sites/all/modules/contrib/* ../.
+rsync -rv --update --delete sites/all/libraries/* ../../../libraries/.
+rsync -rv --update --delete sites/all/modules/contrib/* ../.
 rm -rf sites
