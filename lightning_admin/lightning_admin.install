@@ -25,5 +25,8 @@ function lightning_admin_install() {
   $variants = variable_get('navbar_libraries_variants', array());
   $variants['modernizr'] = 'source';
   variable_set('navbar_libraries_variants', $variants);
+
+  // Re-enable standard checkboxes on Modules page.
+  variable_set('module_filter_use_switch', FALSE);
 }
 
