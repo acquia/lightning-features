@@ -284,7 +284,7 @@ projects[media][download][type] = "git"
 projects[media][download][revision] = "844baf0"
 projects[media][download][branch] = "7.x-2.x"
 
-projects[media_oembed][version] = "2.3"
+projects[media_oembed][version] = "2.4"
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
 
