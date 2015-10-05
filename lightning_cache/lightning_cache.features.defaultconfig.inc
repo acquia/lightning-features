@@ -38,7 +38,6 @@ function lightning_cache_defaultconfig_strongarm() {
     'letterbox-narrow' => 'letterbox-narrow',
     'letterbox-tablet' => 'letterbox-tablet',
     'letterbox-wide' => 'letterbox-wide',
-    'linkit_thumb' => 'linkit_thumb',
     'media_thumbnail' => 'media_thumbnail',
     'medium' => 'medium',
     'thumbnail' => 'thumbnail',
@@ -54,7 +53,6 @@ function lightning_cache_defaultconfig_strongarm() {
     'letterbox-narrow' => 'letterbox-narrow',
     'letterbox-tablet' => 'letterbox-tablet',
     'letterbox-wide' => 'letterbox-wide',
-    'linkit_thumb' => 'linkit_thumb',
     'media_thumbnail' => 'media_thumbnail',
   );
   $export['imageinfo_cache_field_image'] = $strongarm;

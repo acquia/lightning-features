@@ -39,6 +39,8 @@ Feature: Lightning Filter
     And the checkbox "edit-filters-filter-html-escape-status" should not be checked
     And the checkbox "edit-filters-filter-autop-status" should be checked
     And the checkbox "edit-filters-filter-url-status" should be checked
+    And the checkbox "edit-filters-editor-image-align-status" should be checked
+    And the checkbox "edit-filters-editor-image-caption-status" should be checked
     And the checkbox "edit-filters-filter-htmlcorrector-status" should be checked
 
   @api

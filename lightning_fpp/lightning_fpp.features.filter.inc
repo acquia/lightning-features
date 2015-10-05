@@ -17,6 +17,8 @@ function lightning_fpp_filter_default_formats() {
     'cache' => 1,
     'status' => 1,
     'weight' => -6,
+    'editor' => '',
+    'editor_settings' => 'a:0:{}',
     'filters' => array(
       'filter_htmlcorrector' => array(
         'weight' => 10,

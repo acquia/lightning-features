@@ -3,15 +3,8 @@ Feature: Lightning WYSIWYG
   Ensure WYSIWYG settings are set.
 
   @api
-  Scenario: Check for Lightning Node Linkit Type Present
+  Scenario: Lightning WYSIWYG Configuration sanity check
     Given I am logged in as a user with the "administrator" role
-    When I visit "/admin/config/content/linkit"
-    Then I should see "lightning Nodes"
-
-  @api
-  Scenario: Lightning Node Linkit Configuration sanity check
-    Given I am logged in as a user with the "administrator" role
-    When I visit "admin/config/content/linkit/list/lightning_wysiwyg_nodes/edit"
-    Then the checkbox "edit-data-text-formats-filtered-html" should be checked
-    And the checkbox "edit-data-search-plugins-entitynode-enabled" should be checked
-    And the checkbox "edit-data-text-formats-full-html" should not be checked
+    When I visit "admin/config/content/formats/filtered_html"
+    Then the "Text editor" field should contain "CKEditor"
+    And the checkbox "edit-editor-settings-image-upload-status" should be checked

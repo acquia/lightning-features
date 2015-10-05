@@ -120,5 +120,4 @@ Execute the Lightning Features scenarios using the "dev" Behat profile.
 
 ##### wysiwyg.feature
 
-* Check Linkit exists
-* Linkit sanity check
+* WYSIWYG Configuration sanity check
