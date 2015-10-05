@@ -1,6 +1,0 @@
-name: 'Lightning Roles'
-description: 'User role configurations.'
-core: 8.x
-package: Lightning
-project: lightning_roles
-type: module
