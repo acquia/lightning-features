@@ -1,0 +1,7 @@
+name: 'Content Types'
+type: module
+core: 8.x
+version: 8.x-1.0-dev
+package: 'Lightning Features'
+features:
+  bundle: lightning_features
