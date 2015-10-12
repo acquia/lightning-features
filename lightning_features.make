@@ -107,15 +107,9 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha4"
+projects[dialog][version] = "2.0-alpha6"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
-; Work around ctools z-index issues.
-; http://drupal.org/node/2505107
-projects[dialog][patch][2505107] = "http://drupal.org/files/issues/ctools-z-index-2505107-3.patch"
-; Work around behavior settings issues.
-; http://drupal.org/node/2548791
-projects[dialog][patch][2548791] = "http://drupal.org/files/issues/close_property_undefined-2548791-3.patch"
 
 projects[diff][version] = "3.2"
 projects[diff][type] = "module"
@@ -128,12 +122,9 @@ projects[draggableviews][download][type] = "git"
 projects[draggableviews][download][revision] = "4f5ac4c"
 projects[draggableviews][download][branch] = "7.x-2.x"
 
-projects[editor][version] = "1.x-dev"
+projects[editor][version] = "1.0-alpha3"
 projects[editor][type] = "module"
 projects[editor][subdir] = "contrib"
-projects[editor][download][type] = "git"
-projects[editor][download][revision] = "5b8bd9f"
-projects[editor][download][branch] = "7.x-1.x"
 
 projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
@@ -384,18 +375,12 @@ projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[quickedit][version] = "1.2"
+projects[quickedit][version] = "1.3"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
-; Assign filter types to Entity Embed filters.
-; https://www.drupal.org/node/2458517#comment-9754317
-projects[quickedit][patch][2458517] = "http://drupal.org/files/issues/entity-embed-filter-types-2458517-1.patch"
 ; Remove data-quickedit-field-id for personalized fields.
 ; http://drupal.org/node/2424613#comment-9613695
 projects[quickedit][patch][2424613] = "http://drupal.org/files/issues/quick_edit-personalize-2424613-4.patch"
-; Don't load external CKEditor plugins until CKEditor integration improves.
-; https://www.drupal.org/node/2459541
-projects[quickedit][patch][2459541] = "http://drupal.org/files/issues/ignore-remove-external-plugins.patch"
 ; Refresh the Workbench block after editing with Quickedit
 ; https://www.drupal.org/node/2485871
 projects[quickedit][patch][2485871] = "http://www.drupal.org/files/issues/quickedit-workbench-block-ajax-2485871-1.patch"
