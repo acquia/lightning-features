@@ -97,7 +97,7 @@ projects[defaultconfig][version] = "1.x-dev"
 projects[defaultconfig][subdir] = "module"
 projects[defaultconfig][subdir] = "contrib"
 projects[defaultconfig][download][type] = "git"
-projects[defaultconfig][download][revision] = "6314345"
+projects[defaultconfig][download][revision] = "0486149"
 projects[defaultconfig][download][branch] = "7.x-1.x"
 ; Fatal error when adding a permission that doesn't exist
 ; http://drupal.org/node/2008178
