@@ -122,7 +122,7 @@ projects[draggableviews][download][type] = "git"
 projects[draggableviews][download][revision] = "4f5ac4c"
 projects[draggableviews][download][branch] = "7.x-2.x"
 
-projects[editor][version] = "1.0-alpha3"
+projects[editor][version] = "1.0-alpha4"
 projects[editor][type] = "module"
 projects[editor][subdir] = "contrib"
 
@@ -141,8 +141,8 @@ projects[entity_embed][version] = "3.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
 projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][revision] = "35be8b0"
-projects[entity_embed][download][branch] = "7.x-3.x-editor"
+projects[entity_embed][download][revision] = "a4a0472"
+projects[entity_embed][download][branch] = "7.x-3.x"
 
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
@@ -375,7 +375,7 @@ projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[quickedit][version] = "1.3"
+projects[quickedit][version] = "1.4"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
 ; Remove data-quickedit-field-id for personalized fields.
