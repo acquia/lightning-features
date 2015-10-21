@@ -46,23 +46,18 @@ function lightning_filter_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
-      'filter_align' => array(
+      'editor_align' => array(
         'weight' => 4,
         'status' => 1,
         'settings' => array(),
       ),
-      'editor_image_align' => array(
+      'editor_caption' => array(
         'weight' => 5,
         'status' => 1,
         'settings' => array(),
       ),
-      'editor_image_caption' => array(
-        'weight' => 6,
-        'status' => 1,
-        'settings' => array(),
-      ),
       'filter_htmlcorrector' => array(
-        'weight' => 7,
+        'weight' => 6,
         'status' => 1,
         'settings' => array(),
       ),
@@ -88,16 +83,6 @@ function lightning_filter_filter_default_formats() {
       ),
       'filter_autop' => array(
         'weight' => 1,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'entity_embed' => array(
-        'weight' => 2,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'filter_align' => array(
-        'weight' => 3,
         'status' => 1,
         'settings' => array(),
       ),
