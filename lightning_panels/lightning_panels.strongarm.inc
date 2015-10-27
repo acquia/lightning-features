@@ -29,16 +29,6 @@ function lightning_panels_defaultconfig_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panels_page_allowed_types';
   $strongarm->value = array(
-    'context_admin-context_admin:termref_create_node:article:field_tags' => 0,
-    'context_admin-context_admin:termref_create_node:landing:field_landing_identifiers' => 0,
-    'context_admin-context_admin:termref_create_node:landing:field_landing_tags' => 0,
-    'context_admin-context_admin:admin_section' => 0,
-    'context_admin-context_admin:node_create_menu' => 0,
-    'context_admin-context_admin:node_edit_menu' => 0,
-    'context_admin-context_admin:node_view_menu' => 0,
-    'context_admin-context_admin:taxonomy_list_menu' => 0,
-    'context_admin-context_admin:term_options_menu' => 0,
-    'context_admin-context_admin:user_create_menu' => 0,
     'page_actions-page_actions' => 0,
     'page_breadcrumb-page_breadcrumb' => 0,
     'page_feed_icons-page_feed_icons' => 0,
@@ -411,7 +401,6 @@ function lightning_panels_defaultconfig_strongarm() {
     'views' => '0',
     'views_panes' => 'views_panes',
     'other' => 'other',
-    'context_admin' => 0,
     'token' => 0,
     'custom' => 0,
     'entity_view' => 0,
