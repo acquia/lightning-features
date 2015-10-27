@@ -17,15 +17,23 @@ See lightning_features.make for a detailed list of dependent modules and librari
 ### Updating
 If you downloaded the Lightning Demo from http://drupal.org/project/lightning
 
-`cd profiles/lightning/modules/contrib/lightning_features`
+`cd profiles/lightning/modules/contrib`
+
+`rm -rf lightning_features`
+
+`git clone --branch 7.x-1.x brantwynn@git.drupal.org:project/lightning_features.git`
+
+Or download the latest package from http://drupal.org/project/lightning_features
+
+`cd lightning_features`
 
 `sh update.sh`
 
 If you built your own profile using Lightning Features: you must keep lightning_features and the contrib it provides in profiles/[my-profile]/modules/contrib otherwise the update.sh script will not run correctly.
 
-`cd profiles/[my-profile]/modules/contrib/lightning_features`
+Replace the first step in updating using the appropriate profile directory.
 
-`sh update.sh`
+`cd profiles/[my-profile]/modules/contrib`
 
 ### Running tests
 
