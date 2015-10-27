@@ -21,7 +21,7 @@ If you downloaded the Lightning Demo from http://drupal.org/project/lightning
 
 `rm -rf lightning_features`
 
-`git clone --branch 7.x-1.x brantwynn@git.drupal.org:project/lightning_features.git`
+`git clone --branch 7.x-1.x http://git.drupal.org/project/lightning_features.git`
 
 Or download the latest package from http://drupal.org/project/lightning_features
 
