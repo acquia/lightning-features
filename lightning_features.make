@@ -18,6 +18,9 @@ projects[bean][patch][2465267] = "http://drupal.org/files/issues/bean-entity-api
 ; Bean's panelizer integration does not correctly use views_data_alter
 ; http://drupal.org/node/2474631
 projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-10.patch"
+; Implement migration support for Beans
+; http://www.drupal.org/node/2295973
+projects[bean][patch][2295973] = "http://drupal.org/files/issues/bean-migrate-support-2295973-7.patch"
 
 projects[bean_tax][version] = "2.7"
 projects[bean_tax][type] = "module"
