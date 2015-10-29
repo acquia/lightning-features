@@ -187,15 +187,12 @@ projects[field_group][version] = "1.4"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
-projects[fieldable_panels_panes][version] = "1.x-dev"
+projects[fieldable_panels_panes][version] = "1.7"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
-projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][revision] = "0475405"
-projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 ; Allow a particular revision of a fieldable panels pane to be placed in a panelized page
 ; http://drupal.org/node/1986334
-projects[fieldable_panels_panes][patch][1986334] = "http://drupal.org/files/issues/1986334-10.patch"
+projects[fieldable_panels_panes][patch][1986334] = "http://drupal.org/files/issues/fieldable_panel_panes-allow_a_particular-1986334-42.patch"
 ; Fix bug where clicking "Save and add fields" would redirect to /fields
 ; https://www.drupal.org/node/2477421
 projects[fieldable_panels_panes][patch][2477421] = "https://www.drupal.org/files/issues/fieldable_panels_panes-save-continue-redirect-2477421-1.patch"
