@@ -129,6 +129,10 @@ projects[editor][version] = "1.0-alpha4"
 projects[editor][type] = "module"
 projects[editor][subdir] = "contrib"
 
+; EditorLinkDialog should validate URLs, and autocomplete like the Link widget.
+; https://www.drupal.org/node/2604774#comment-10524388
+projects[editor][patch][2604774] = "http://drupal.org/files/issues/validation-autocomplete-links-2604774-4.patch"
+
 projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
