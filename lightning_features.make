@@ -17,7 +17,7 @@ projects[bean][subdir] = "contrib"
 projects[bean][patch][2465267] = "http://drupal.org/files/issues/bean-entity-api-version-0.patch"
 ; Bean's panelizer integration does not correctly use views_data_alter
 ; http://drupal.org/node/2474631
-projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-10.patch"
+projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-11.patch"
 ; Implement migration support for Beans
 ; http://www.drupal.org/node/2295973
 projects[bean][patch][2295973] = "http://drupal.org/files/issues/bean-migrate-support-2295973-7.patch"
@@ -496,6 +496,9 @@ projects[workbench][subdir] = "contrib"
 projects[workbench][download][type] = "git"
 projects[workbench][download][revision] = "6856e4a"
 projects[workbench][download][branch] = "7.x-1.x"
+; Update to Views API 3.
+; https://www.drupal.org/node/2606230
+projects[workbench][patch][2606230] = "http://drupal.org/files/issues/update-views-api-2606230-2.patch"
 
 projects[workbench_moderation][version] = "1.4"
 projects[workbench_moderation][type] = "module"
