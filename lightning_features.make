@@ -246,7 +246,7 @@ projects[inline_entity_form][version] = "1.6"
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.6"
+projects[jquery_update][version] = "2.7"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
