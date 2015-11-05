@@ -5,6 +5,7 @@ package = Lightning
 version = 7.x-1.0
 project = lightning_wysiwyg
 dependencies[] = ctools
+dependencies[] = dialog
 dependencies[] = editor
 dependencies[] = editor_ckeditor
 dependencies[] = features
