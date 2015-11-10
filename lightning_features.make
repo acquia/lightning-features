@@ -427,6 +427,9 @@ projects[sps][patch][1733490] = "http://drupal.org/files/sps-css-cleanup-1733490
 ; sps_entity_create() throws errors
 ; http://drupal.org/node/2288873
 projects[sps][patch][2288873] = "http://drupal.org/files/issues/sps-undefiend-method-create-3.patch"
+; Avoid cache poisoning of entity_info
+; http://drupal.org/node/2346351
+projects[sps][patch][2346351] = "http://drupal.org/files/issues/sps-avoid-cache-poisoning-of-entity_get_info.patch"
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][type] = "module"
