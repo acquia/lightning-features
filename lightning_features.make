@@ -331,7 +331,7 @@ projects[options_element][version] = "1.12"
 projects[options_element][type] = "module"
 projects[options_element][subdir] = "contrib"
 
-projects[pathauto][version] = "1.2"
+projects[pathauto][version] = "1.3"
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
 
@@ -453,7 +453,7 @@ projects[ux_elements][download][branch] = "master"
 ; http://drupal.org/node/1224568
 projects[ux_elements][patch][1224568] = "http://drupal.org/files/issues/1224568-ux_elements_redeclare.patch"
 
-projects[views][version] = "3.11"
+projects[views][version] = "3.13"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 ; Call to a member function init_display() on a non-object...
@@ -490,7 +490,7 @@ projects[views_load_more][version] = "1.5"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.11"
+projects[webform][version] = "4.12"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
