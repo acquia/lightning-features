@@ -12,9 +12,9 @@ projects[better_formats][subdir] = "contrib"
 projects[bean][version] = "1.9"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
-; Bean insists we use a tagged release of Entity API
-; http://drupal.org/node/2465267
-projects[bean][patch][2465267] = "http://drupal.org/files/issues/bean-entity-api-version-0.patch"
+projects[bean][download][type] = "git"
+projects[bean][download][revision] = "34acaec"
+projects[bean][download][branch] = "7.x-1.x"
 ; Bean's panelizer integration does not correctly use views_data_alter
 ; http://drupal.org/node/2474631
 projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-11.patch"
@@ -25,13 +25,6 @@ projects[bean][patch][2295973] = "http://drupal.org/files/issues/bean-migrate-su
 projects[bean_tax][version] = "2.7"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
-
-projects[behatrunner][version] = "1.x-dev"
-projects[behatrunner][type] = "module"
-projects[behatrunner][subdir] = "contrib"
-projects[behatrunner][download][type] = "git"
-projects[behatrunner][download][revision] = "0714764"
-projects[behatrunner][download][branch] = "7.x"
 
 projects[block_class][version] = "2.x-dev"
 projects[block_class][type] = "module"
