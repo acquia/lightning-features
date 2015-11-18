@@ -126,6 +126,13 @@ projects[editor][subdir] = "contrib"
 ; https://www.drupal.org/node/2604774#comment-10576566
 projects[editor][patch][2604774] = "http://drupal.org/files/issues/validation-autocomplete-links-2604774-5.patch"
 
+projects[editor_ckeditor_widgets][version] = "1.x-dev"
+projects[editor_ckeditor_widgets][type] = "module"
+projects[editor_ckeditor_widgets][subdir] = "contrib"
+projects[editor_ckeditor_widgets][download][type] = "git"
+projects[editor_ckeditor_widgets][download][revision] = "9415baf"
+projects[editor_ckeditor_widgets][download][branch] = "7.x-1.x"
+
 projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
