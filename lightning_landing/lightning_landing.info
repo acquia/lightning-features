@@ -10,7 +10,6 @@ dependencies[] = field_group
 dependencies[] = field_ui
 dependencies[] = lightning_identifiers
 dependencies[] = lightning_metatags
-dependencies[] = lightning_moderation
 dependencies[] = lightning_panels
 dependencies[] = lightning_tags
 dependencies[] = node

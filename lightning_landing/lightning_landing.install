@@ -10,6 +10,9 @@
  */
 function lightning_landing_install() {
 
+   // Enable Lightning Moderation during install allowing overrides.
+   module_enable(array('lightning_moderation')); 
+
   // Add shortcut for Landing page wizard.
   if (module_exists('shortcut')) {
     $t = get_t();
