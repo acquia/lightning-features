@@ -8,7 +8,6 @@ projects[acquia_connector][subdir] = "contrib"
 projects[acquia_lift][version] = "2.0-beta9"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
-projects[acquia_lift][patch][] = "https://gist.githubusercontent.com/katbailey/5be4bad38994aec5a344/raw/7c739f799825f4bd187e3f71237d2ab6bdb9a882/catch_exception.patch"
 
 projects[personalize][version] = "2.x-dev"
 projects[personalize][type] = "module"
