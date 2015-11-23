@@ -37,8 +37,6 @@ Feature: Lightning Filter
     When I go to "/admin/config/content/formats/filtered_html"
     Then the checkbox "edit-filters-filter-html-status" should be checked
     And the checkbox "edit-filters-filter-html-escape-status" should not be checked
-    And the checkbox "edit-filters-filter-autop-status" should be checked
-    And the checkbox "edit-filters-filter-url-status" should be checked
     And the checkbox "edit-filters-editor-align-status" should be checked
     And the checkbox "edit-filters-editor-caption-status" should be checked
     And the checkbox "edit-filters-filter-htmlcorrector-status" should be checked
