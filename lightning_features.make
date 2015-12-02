@@ -73,9 +73,6 @@ projects[context_admin][download][branch] = "7.x-1.x"
 projects[ctools][version] = "1.9"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-; When Ctools modal is open, disable the page scroll behind the modal
-; http://drupal.org/node/2475417
-projects[ctools][patch][2475417] = "http://drupal.org/files/issues/fix-background-scroll-2475417-5.patch"
 ; should entity view hooks be triggered unconditionally in node_view, term_view and user_view pages?
 ; (AKA hook_node_view and related entity hooks are not being fired when using page manager)
 ; http://drupal.org/node/2422123
