@@ -127,7 +127,7 @@ projects[editor_ckeditor_widgets][version] = "1.x-dev"
 projects[editor_ckeditor_widgets][type] = "module"
 projects[editor_ckeditor_widgets][subdir] = "contrib"
 projects[editor_ckeditor_widgets][download][type] = "git"
-projects[editor_ckeditor_widgets][download][revision] = "9415baf"
+projects[editor_ckeditor_widgets][download][revision] = "23c91d5"
 projects[editor_ckeditor_widgets][download][branch] = "7.x-1.x"
 
 projects[ember_support][version] = "1.x-dev"
@@ -546,6 +546,10 @@ projects[shortcutperrole][subdir] = "contrib"
 ; Libraries
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.1.0.zip"
+
+libraries[ckeditor-leaflet][download][type] = "get"
+libraries[ckeditor-leaflet][download][url] = "https://github.com/ranelpadon/ckeditor-leaflet/archive/master.zip"
+libraries[ckeditor-leaflet][directory_name] = "ckeditor-leaflet"
 
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
