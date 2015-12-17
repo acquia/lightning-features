@@ -26,12 +26,9 @@ projects[bean_tax][version] = "2.7"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
-projects[block_class][version] = "2.x-dev"
+projects[block_class][version] = "2.2"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
-projects[block_class][download][type] = "git"
-projects[block_class][download][revision] = "f062706"
-projects[block_class][download][branch] = "7.x-2.x"
 
 projects[breakpoints][version] = "1.3"
 projects[breakpoints][type] = "module"
