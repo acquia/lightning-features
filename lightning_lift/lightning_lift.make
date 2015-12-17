@@ -9,10 +9,6 @@ projects[acquia_lift][version] = "2.0-beta9"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
-; Modal backdrop scrolls with page.
-; https://www.drupal.org/node/2627192#comment-10627356
-projects[acquia_lift][patch][2627192] = "http://drupal.org/files/issues/modal-background-scrolling-2627192-2.patch"
-
 projects[personalize][version] = "2.x-dev"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
