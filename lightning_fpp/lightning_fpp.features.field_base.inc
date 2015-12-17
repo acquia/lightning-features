@@ -10,7 +10,7 @@
 function lightning_fpp_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_add_media'
+  // Exported field_base: 'field_add_media'.
   $field_bases['field_add_media'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -36,7 +36,7 @@ function lightning_fpp_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_basic_text_text'
+  // Exported field_base: 'field_basic_text_text'.
   $field_bases['field_basic_text_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -55,7 +55,7 @@ function lightning_fpp_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_content'
+  // Exported field_base: 'field_content'.
   $field_bases['field_content'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -88,7 +88,7 @@ function lightning_fpp_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_map_address'
+  // Exported field_base: 'field_map_address'.
   $field_bases['field_map_address'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -109,7 +109,7 @@ function lightning_fpp_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_map_information'
+  // Exported field_base: 'field_map_information'.
   $field_bases['field_map_information'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -128,7 +128,7 @@ function lightning_fpp_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_quick_links_links'
+  // Exported field_base: 'field_quick_links_links'.
   $field_bases['field_quick_links_links'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -157,7 +157,7 @@ function lightning_fpp_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_raw_html'
+  // Exported field_base: 'field_raw_html'.
   $field_bases['field_raw_html'] = array(
     'active' => 1,
     'cardinality' => 1,
