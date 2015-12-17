@@ -302,7 +302,7 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "71972ec"
+projects[navbar][download][revision] = "a406320"
 projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
