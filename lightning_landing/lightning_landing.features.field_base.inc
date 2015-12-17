@@ -10,7 +10,7 @@
 function lightning_landing_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_landing_identifiers'
+  // Exported field_base: 'field_landing_identifiers'.
   $field_bases['field_landing_identifiers'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -36,7 +36,7 @@ function lightning_landing_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_landing_tags'
+  // Exported field_base: 'field_landing_tags'.
   $field_bases['field_landing_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
