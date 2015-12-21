@@ -15,6 +15,7 @@ function lightning_moderation_defaultconfig_user_default_permissions() {
     'name' => 'access workbench',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'workbench',
@@ -124,6 +125,7 @@ function lightning_moderation_defaultconfig_user_default_permissions() {
     'name' => 'view all unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'workbench_moderation',
@@ -134,6 +136,7 @@ function lightning_moderation_defaultconfig_user_default_permissions() {
     'name' => 'view moderation history',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'workbench_moderation',
@@ -144,6 +147,7 @@ function lightning_moderation_defaultconfig_user_default_permissions() {
     'name' => 'view moderation messages',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'workbench_moderation',

@@ -27,6 +27,7 @@ function lightning_content_defaultconfig_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'node',
@@ -77,6 +78,7 @@ function lightning_content_defaultconfig_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'node',
@@ -87,6 +89,7 @@ function lightning_content_defaultconfig_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'node',

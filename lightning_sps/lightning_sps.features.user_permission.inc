@@ -15,6 +15,7 @@ function lightning_sps_defaultconfig_user_default_permissions() {
     'name' => 'access collection list',
     'roles' => array(
       'administrator' => 'administrator',
+      'ba' => 'ba',
       'curator' => 'curator',
     ),
     'module' => 'collection',

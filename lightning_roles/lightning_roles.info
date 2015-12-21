@@ -11,6 +11,7 @@ dependencies[] = role_export
 dependencies[] = system
 datestamp = 1408404197
 features[features_api][] = api:2
+features[user_role][] = ba
 features[user_role][] = curator
 features[user_role][] = reviewer
 features[user_role][] = marketer
