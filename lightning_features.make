@@ -97,7 +97,7 @@ projects[devel][version] = "1.3"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha7"
+projects[dialog][version] = "2.0-alpha8"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
 
@@ -112,7 +112,7 @@ projects[draggableviews][download][type] = "git"
 projects[draggableviews][download][revision] = "4f5ac4c"
 projects[draggableviews][download][branch] = "7.x-2.x"
 
-projects[editor][version] = "1.0-alpha5"
+projects[editor][version] = "1.0-alpha6"
 projects[editor][type] = "module"
 projects[editor][subdir] = "contrib"
 
@@ -142,21 +142,15 @@ projects[entity_embed][version] = "3.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
 projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][revision] = "ea69dc8"
+projects[entity_embed][download][revision] = "2882073"
 projects[entity_embed][download][branch] = "7.x-3.x"
 
 projects[entityreference][version] = "1.x-dev"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][download][type] = "git"
-projects[entityreference][download][revision] = "ab62b9a"
+projects[entityreference][download][revision] = "b5009cd"
 projects[entityreference][download][branch] = "7.x-1.x"
-; Notice : Undefined variable: element.
-; http://drupal.org/node/2550669
-projects[entityreference][patch][2495405] = "http://drupal.org/files/issues/entityreference-2495405-2.patch"
-; Notice : Undefined index: entityreference_field_formatter_prepare_view().
-; http://drupal.org/node/1823406
-projects[entityreference][patch][1823406] = "http://drupal.org/files/undefined_index-1823406-14.patch"
 
 projects[entityreference_prepopulate][version] = "1.5"
 projects[entityreference_prepopulate][type] = "module"
