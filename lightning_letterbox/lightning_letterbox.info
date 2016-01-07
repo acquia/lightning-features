@@ -1,9 +1,8 @@
 name = Lightning Letterbox
 description = Letterbox image styles and picture configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_letterbox
+core = 7.x
+
 dependencies[] = breakpoints
 dependencies[] = colorbox
 dependencies[] = ctools
@@ -12,7 +11,7 @@ dependencies[] = file_entity
 dependencies[] = image
 dependencies[] = lightning_breakpoints
 dependencies[] = picture
-datestamp = 1411763263
+
 features[breakpoint_group][] = letterbox
 features[ctools][] = breakpoints:default_breakpoint_group:1
 features[ctools][] = breakpoints:default_breakpoints:1
