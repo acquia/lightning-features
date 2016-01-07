@@ -1,12 +1,11 @@
 name = Lightning Breakpoints
 description = Basic breakpoint configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_breakpoints
+core = 7.x
+
 dependencies[] = breakpoints
 dependencies[] = navbar
-datestamp = 1411763263
+
 features[breakpoints][] = breakpoints.module.navbar.wide
 features[breakpoints][] = custom.user.mobile
 features[breakpoints][] = custom.user.narrow
