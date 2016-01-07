@@ -1,14 +1,13 @@
 name = Lightning Filter
 description = Text format and filter configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0-alpha3
-project = lightning_features
+core = 7.x
+
 dependencies[] = editor
 dependencies[] = entity_embed
 dependencies[] = features
 dependencies[] = filter
-datestamp = 1449086310
+
 features[features_api][] = api:2
 features[filter][] = filtered_html
 features[filter][] = full_html
