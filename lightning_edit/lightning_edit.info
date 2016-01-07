@@ -1,10 +1,8 @@
 name = Lightning Edit
 description = In-place content editing configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_edit
+core = 7.x
+
 dependencies[] = features
 dependencies[] = quickedit
 dependencies[] = quickedit_tab
-datestamp = 1408404197
