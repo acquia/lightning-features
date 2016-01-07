@@ -1,19 +1,19 @@
 name = Lightning Cache
 description = Caching mechanisms.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_cache
+core = 7.x
+
 dependencies[] = cache_warmer
 dependencies[] = defaultconfig
 dependencies[] = httprl
 dependencies[] = imageinfo_cache
 dependencies[] = views_content_cache
-datestamp = 1418223259
+
 features[defaultconfig][] = strongarm:imageinfo_cache_disable_on_demand_generation
 features[defaultconfig][] = strongarm:imageinfo_cache_field_add_media
 features[defaultconfig][] = strongarm:imageinfo_cache_field_image
 features[defaultconfig][] = strongarm:imageinfo_cache_getimagesize
 features[defaultconfig][] = strongarm:imageinfo_cache_use_httprl
 features[features_api][] = api:2
+
 mtime = 1418223259
