@@ -181,7 +181,7 @@ projects[features][version] = "2.7"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 
-projects[field_group][version] = "1.4"
+projects[field_group][version] = "1.5"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
