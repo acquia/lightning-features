@@ -1,15 +1,15 @@
 name = Lightning Page
 description = Basic page content type configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_page
+core = 7.x
+
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = field_ui
 dependencies[] = lightning_base
 dependencies[] = strongarm
 dependencies[] = text
+
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_instance][] = node-page-body
@@ -26,4 +26,5 @@ features[variable][] = menu_parent_page
 features[variable][] = node_options_page
 features[variable][] = node_preview_page
 features[variable][] = node_submitted_page
+
 mtime = 1425593982
