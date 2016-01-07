@@ -1,9 +1,8 @@
 name = Lightning Admin
 description = Administration improvements via modules and configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_admin
+core = 7.x
+
 dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = ember_support
@@ -16,5 +15,5 @@ dependencies[] = navbar
 dependencies[] = responsive_preview
 dependencies[] = shortcut
 dependencies[] = system
-datestamp = 1408404197
+
 features[features_api][] = api:2
