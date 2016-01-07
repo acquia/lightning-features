@@ -1,15 +1,14 @@
 name = Lightning Roles
 description = User role configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_roles
+core = 7.x
+
 dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = role_export
 dependencies[] = system
-datestamp = 1408404197
+
 features[features_api][] = api:2
 features[user_role][] = ba
 features[user_role][] = curator
