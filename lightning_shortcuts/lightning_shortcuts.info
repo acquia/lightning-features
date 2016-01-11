@@ -1,8 +1,7 @@
 name = Lightning Shortcuts
 description = Provides default shortcutperrole sets for lightning_roles roles.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_shortcuts
+core = 7.x
+
 dependencies[] = lightning_roles
 dependencies[] = shortcutperrole

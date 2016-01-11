@@ -1,9 +1,8 @@
 name = Lightning Blocks
 description = Block entity configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_blocks
+core = 7.x
+
 dependencies[] = bean
 dependencies[] = bean_admin_ui
 dependencies[] = bean_tax
@@ -18,7 +17,7 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = taxonomy_entity_index
 dependencies[] = text
-datestamp = 1411763263
+
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = bean_ctools_prefix

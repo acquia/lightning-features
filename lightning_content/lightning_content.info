@@ -1,9 +1,8 @@
 name = Lightning Content
 description = Core node administration configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_content
+core = 7.x
+
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_api
@@ -16,5 +15,5 @@ dependencies[] = node
 dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = system
-datestamp = 1408404197
+
 features[features_api][] = api:2

@@ -1,11 +1,9 @@
 name = Lightning Developer
 description = Optional developer tools to aid in site building.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_devel
+core = 7.x
+
 dependencies[] = features
 dependencies[] = dblog
 dependencies[] = devel
 dependencies[] = diff
-datestamp = 1408404197

@@ -1,9 +1,8 @@
 name = Lightning FPP
 description = Fieldable Panels Pane (Widget) configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_fpp
+core = 7.x
+
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = entity_embed
@@ -24,7 +23,7 @@ dependencies[] = media_oembed
 dependencies[] = options
 dependencies[] = simple_gmap
 dependencies[] = text
-datestamp = 1411763263
+
 features[ctools][] = fieldable_panels_panes:fieldable_panels_pane_type:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
@@ -50,5 +49,6 @@ features[fieldable_panels_pane_type][] = raw_html
 features[fieldable_panels_pane_type][] = text
 features[filter][] = raw_html
 features[views_view][] = entity_reference_view_widget_nodes
+
 files[] = lightning_fpp.nodes.article.inc
 files[] = lightning_fpp.fpp.content.inc

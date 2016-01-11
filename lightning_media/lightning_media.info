@@ -1,9 +1,8 @@
 name = Lightning Media
 description = Media configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_media
+core = 7.x
+
 dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = entity_embed
@@ -15,7 +14,7 @@ dependencies[] = media_internet
 dependencies[] = media_oembed
 dependencies[] = multiform
 dependencies[] = plupload
-datestamp = 1408404197
+
 features[ctools][] = file_entity:file_default_displays:1
 features[features_api][] = api:2
 features[file_display][] = audio__preview__media_oembed_thumbnail

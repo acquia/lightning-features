@@ -1,9 +1,8 @@
 name = Lightning Files
 description = File Entity Configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_files
+core = 7.x
+
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = file
@@ -12,7 +11,7 @@ dependencies[] = file_entity_link
 dependencies[] = file_image_formatters
 dependencies[] = strongarm
 dependencies[] = system
-datestamp = 1408404197
+
 features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

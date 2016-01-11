@@ -1,9 +1,8 @@
 name = Lightning Panels
 description = Layout building toolset and base configurations.
-core = 7.x
 package = Lightning
-version = 7.x-1.0
-project = lightning_panels
+core = 7.x
+
 dependencies[] = ctools
 dependencies[] = demonstratie_panels
 dependencies[] = ember_support
@@ -13,7 +12,7 @@ dependencies[] = panelizer
 dependencies[] = panels
 dependencies[] = panels_ipe
 dependencies[] = strongarm
-datestamp = 1411763263
+
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = panels:layouts:1
