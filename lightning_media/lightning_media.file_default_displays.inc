@@ -10,16 +10,6 @@
 function lightning_media_file_default_displays() {
   $file_displays = array();
 
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'audio__preview__media_oembed_thumbnail';
-  $file_display->weight = 0;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'image_style' => 'media_thumbnail',
-  );
-  $file_displays['audio__preview__media_oembed_thumbnail'] = $file_display;
-
   // Audio previews should be displayed using a large filetype icon.
   $file_display = new stdClass();
   $file_display->api_version = 1;
@@ -39,16 +29,6 @@ function lightning_media_file_default_displays() {
   $file_display->settings = '';
   $file_displays['audio__media_browser__file_field_file_default'] = $file_display;
 
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'document__preview__media_oembed_thumbnail';
-  $file_display->weight = 0;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'image_style' => 'media_thumbnail',
-  );
-  $file_displays['document__preview__media_oembed_thumbnail'] = $file_display;
-
   // Document previews should be displayed using a large filetype icon.
   $file_display = new stdClass();
   $file_display->api_version = 1;
@@ -67,16 +47,6 @@ function lightning_media_file_default_displays() {
   $file_display->status = TRUE;
   $file_display->settings = '';
   $file_displays['document__media_browser__file_field_file_default'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'image__preview__media_oembed_thumbnail';
-  $file_display->weight = 0;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'image_style' => 'media_thumbnail',
-  );
-  $file_displays['image__preview__media_oembed_thumbnail'] = $file_display;
 
   // Image previews should be displayed as image thumbnails by default.
   $file_display = new stdClass();
@@ -108,16 +78,6 @@ function lightning_media_file_default_displays() {
   $file_display->status = TRUE;
   $file_display->settings = '';
   $file_displays['image__media_browser__file_field_file_default'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'video__preview__media_oembed_thumbnail';
-  $file_display->weight = 0;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'image_style' => 'media_thumbnail',
-  );
-  $file_displays['video__preview__media_oembed_thumbnail'] = $file_display;
 
   // Video previews should be displayed using a large filetype icon.
   $file_display = new stdClass();
