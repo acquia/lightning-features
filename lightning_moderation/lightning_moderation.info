@@ -25,5 +25,3 @@ features[workbench_moderation_transitions][] = needs_review:draft
 features[workbench_moderation_transitions][] = needs_review:published
 
 files[] = lightning_moderation.nodes.inc
-
-mtime = 1426611062
