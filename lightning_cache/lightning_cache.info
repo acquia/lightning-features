@@ -15,5 +15,3 @@ features[defaultconfig][] = strongarm:imageinfo_cache_field_image
 features[defaultconfig][] = strongarm:imageinfo_cache_getimagesize
 features[defaultconfig][] = strongarm:imageinfo_cache_use_httprl
 features[features_api][] = api:2
-
-mtime = 1418223259
