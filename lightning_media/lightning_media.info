@@ -8,6 +8,7 @@ dependencies[] = ctools
 dependencies[] = entity_embed
 dependencies[] = ember_support
 dependencies[] = file_entity
+dependencies[] = image
 dependencies[] = media
 dependencies[] = media_bulk_upload
 dependencies[] = media_internet
