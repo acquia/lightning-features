@@ -3,8 +3,11 @@ description = Taxonomy for marketing campaign identifiers.
 package = Lightning
 core = 7.x
 
+dependencies[] = ctools
 dependencies[] = features
+dependencies[] = strongarm
 dependencies[] = taxonomy
 
+features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[taxonomy][] = identifiers

@@ -1,1 +1,7 @@
 <?php
+/**
+ * @file
+ * Code for the Lightning Tags feature.
+ */
+
+include_once 'lightning_tags.features.inc';
