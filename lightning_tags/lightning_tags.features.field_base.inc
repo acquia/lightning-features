@@ -10,7 +10,7 @@
 function lightning_tags_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_tags'
+  // Exported field_base: 'field_tags'.
   $field_bases['field_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
