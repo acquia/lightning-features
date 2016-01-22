@@ -26,7 +26,7 @@ projects[bean_tax][version] = "2.7"
 projects[bean_tax][type] = "module"
 projects[bean_tax][subdir] = "contrib"
 
-projects[block_class][version] = "2.2"
+projects[block_class][version] = "2.3"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
 
