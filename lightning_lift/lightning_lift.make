@@ -1,20 +1,17 @@
 api = 2
 core = 7.x
 
-projects[acquia_connector][version] = "2.15"
+projects[acquia_connector][version] = "2.16"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
-projects[acquia_lift][version] = "2.0-beta9"
+projects[acquia_lift][version] = "2.0-beta10"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
-projects[personalize][version] = "2.x-dev"
+projects[personalize][version] = "2.0-beta10"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
-projects[personalize][download][type] = "git"
-projects[personalize][download][revision] = "4ad98b2"
-projects[personalize][download][branch] = "7.x-2.x"
 
 projects[visitor_actions][version] = "1.4"
 projects[visitor_actions][type] = "module"
