@@ -272,6 +272,9 @@ projects[media_youtube][subdir] = "contrib"
 projects[metatag][version] = "1.11"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
+; Fix i18n errors
+; http://drupal.org/node/2658262
+projects[metatag][patch][2658262] = "http://drupal.org/files/issues/2658262-2.patch"
 
 projects[module_filter][version] = "2.0"
 projects[module_filter][type] = "module"
