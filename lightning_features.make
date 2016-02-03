@@ -152,7 +152,7 @@ projects[entityreference][download][type] = "git"
 projects[entityreference][download][revision] = "b5009cd"
 projects[entityreference][download][branch] = "7.x-1.x"
 
-projects[entityreference_prepopulate][version] = "1.5"
+projects[entityreference_prepopulate][version] = "1.6"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
