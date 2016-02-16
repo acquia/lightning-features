@@ -443,7 +443,7 @@ projects[views][subdir] = "contrib"
 ; http://drupal.org/node/1685144
 projects[views][patch][1685114] = "http://drupal.org/files/views-1685144-localization-bug_1.patch"
 
-projects[views_autocomplete_filters][version] = "1.1"
+projects[views_autocomplete_filters][version] = "1.2"
 projects[views_autocomplete_filters][type] = "module"
 projects[views_autocomplete_filters][subdir] = "contrib"
 
