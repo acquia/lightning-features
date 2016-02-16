@@ -447,12 +447,9 @@ projects[views_autocomplete_filters][version] = "1.2"
 projects[views_autocomplete_filters][type] = "module"
 projects[views_autocomplete_filters][subdir] = "contrib"
 
-projects[views_field_view][version] = "1.x-dev"
+projects[views_field_view][version] = "1.2"
 projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
-projects[views_field_view][download][type] = "git"
-projects[views_field_view][download][revision] = "bb6cfea"
-projects[views_field_view][download][branch] = "7.x-1.x"
 
 projects[views_bulk_operations][version] = "3.3"
 projects[views_bulk_operations][type] = "module"
