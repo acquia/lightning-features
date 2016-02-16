@@ -1,0 +1,34 @@
+/**
+ * @file navbar.icons-contrib.css
+ */
+
+.navbar-icon-my-workbench:before {
+  background-image: url("../icons/787878/pencil.svg");
+}
+.no-svg .navbar-icon-my-workbench:before {
+  background-image: url("../icons/787878/pencil.png");
+}
+.navbar-icon-my-workbench:active:before,
+.navbar-icon-my-workbench.navbar-active:before {
+  background-image: url("../icons/000000/pencil.svg");
+}
+.no-svg .navbar-icon-my-workbench:active:before,
+.no-svg .navbar-icon-my-workbench.navbar-active:before {
+  background-image: url("../icons/000000/pencil.png");
+}
+
+.navbar-icon-store:before {
+  background-image: url("../icons/787878/cart.svg");
+}
+.no-svg .navbar-icon-store:before {
+  background-image: url("../icons/787878/cart.png");
+}
+.navbar-icon-store:active:before,
+.navbar-icon-store.navbar-active:before {
+  background-image: url("../icons/000000/cart.svg");
+}
+.no-svg .navbar-icon-store:active:before,
+.no-svg .navbar-icon-store.navbar-active:before {
+  background-image: url("../icons/000000/cart.png");
+}
+

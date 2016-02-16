@@ -292,15 +292,9 @@ projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
 projects[multiform][subdir] = "contrib"
 
-projects[navbar][version] = "1.x-dev"
+projects[navbar][version] = "1.7"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
-projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "a406320"
-projects[navbar][download][branch] = "7.x-1.x"
-; Menu icons for contrib modules
-; http://drupal.org/node/1954912
-projects[navbar][patch][1954912] = "http://drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"
