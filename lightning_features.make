@@ -295,9 +295,6 @@ projects[multiform][subdir] = "contrib"
 projects[navbar][version] = "1.7"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
-; Menu icons for contrib modules
-; http://drupal.org/node/1954912
-projects[navbar][patch][1954912] = "http://drupal.org/files/issues/navbar-contrib-icons-1954912-20.patch"
 
 projects[nra][version] = "1.0-alpha2"
 projects[nra][type] = "module"

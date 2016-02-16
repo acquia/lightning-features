@@ -6,3 +6,14 @@
 
 include_once 'lightning_admin.features.inc';
 
+/**
+ * Implements hook_library_alter().
+ */
+function lightning_admin_library_alter(&$libraries, $module) {
+  // Add icons for contrib modules.
+  if ($module == 'navbar' && isset($libraries['navbar'])) {
+    $path = drupal_get_path('module', 'lightning_admin');
+
+    $libraries['navbar']['css'][$path . '/css/navbar.icons-contrib.css'] = array();
+  }
+}
