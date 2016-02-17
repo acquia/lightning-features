@@ -105,12 +105,9 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[draggableviews][version] = "2.x-dev"
+projects[draggableviews][version] = "2.1"
 projects[draggableviews][type] = "module"
 projects[draggableviews][subdir] = "contrib"
-projects[draggableviews][download][type] = "git"
-projects[draggableviews][download][revision] = "4f5ac4c"
-projects[draggableviews][download][branch] = "7.x-2.x"
 
 projects[editor][version] = "1.0-alpha6"
 projects[editor][type] = "module"
