@@ -30,7 +30,7 @@ projects[block_class][version] = "2.3"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
 
-projects[breakpoints][version] = "1.3"
+projects[breakpoints][version] = "1.4"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
 
