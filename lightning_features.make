@@ -5,7 +5,7 @@ projects[admin_views][version] = "1.5"
 projects[admin_views][type] = "module"
 projects[admin_views][subdir] = "contrib"
 
-projects[better_formats][version] = "1.0-beta1"
+projects[better_formats][version] = "1.0-beta2"
 projects[better_formats][type] = "module"
 projects[better_formats][subdir] = "contrib"
 
@@ -30,7 +30,7 @@ projects[block_class][version] = "2.3"
 projects[block_class][type] = "module"
 projects[block_class][subdir] = "contrib"
 
-projects[breakpoints][version] = "1.3"
+projects[breakpoints][version] = "1.4"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
 
@@ -56,7 +56,7 @@ projects[colorbox][download][type] = "git"
 projects[colorbox][download][revision] = "97a4ff1"
 projects[colorbox][download][branch] = "7.x-1.x"
 
-projects[composer_manager][version] = "1.7"
+projects[composer_manager][version] = "1.8"
 projects[composer_manager][type] = "module"
 projects[composer_manager][subdir] = "contrib"
 
@@ -93,7 +93,7 @@ projects[defaultconfig][download][branch] = "7.x-1.x"
 ; http://drupal.org/node/2008178
 projects[defaultconfig][patch][2008178] = "http://drupal.org/files/issues/defaultconfig-rebuild-2008178-14.patch"
 
-projects[devel][version] = "1.3"
+projects[devel][version] = "1.5"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
@@ -105,12 +105,9 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[draggableviews][version] = "2.x-dev"
+projects[draggableviews][version] = "2.1"
 projects[draggableviews][type] = "module"
 projects[draggableviews][subdir] = "contrib"
-projects[draggableviews][download][type] = "git"
-projects[draggableviews][download][revision] = "4f5ac4c"
-projects[draggableviews][download][branch] = "7.x-2.x"
 
 projects[editor][version] = "1.0-alpha6"
 projects[editor][type] = "module"
@@ -202,7 +199,7 @@ projects[file_image_formatters][version] = "1.1"
 projects[file_image_formatters][type] = "module"
 projects[file_image_formatters][subdir] = "contrib"
 
-projects[focal_point][version] = "1.0-beta1"
+projects[focal_point][version] = "1.0-beta6"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
@@ -443,16 +440,13 @@ projects[views][subdir] = "contrib"
 ; http://drupal.org/node/1685144
 projects[views][patch][1685114] = "http://drupal.org/files/views-1685144-localization-bug_1.patch"
 
-projects[views_autocomplete_filters][version] = "1.1"
+projects[views_autocomplete_filters][version] = "1.2"
 projects[views_autocomplete_filters][type] = "module"
 projects[views_autocomplete_filters][subdir] = "contrib"
 
-projects[views_field_view][version] = "1.x-dev"
+projects[views_field_view][version] = "1.2"
 projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
-projects[views_field_view][download][type] = "git"
-projects[views_field_view][download][revision] = "bb6cfea"
-projects[views_field_view][download][branch] = "7.x-1.x"
 
 projects[views_bulk_operations][version] = "3.3"
 projects[views_bulk_operations][type] = "module"
