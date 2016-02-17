@@ -93,7 +93,7 @@ projects[defaultconfig][download][branch] = "7.x-1.x"
 ; http://drupal.org/node/2008178
 projects[defaultconfig][patch][2008178] = "http://drupal.org/files/issues/defaultconfig-rebuild-2008178-14.patch"
 
-projects[devel][version] = "1.3"
+projects[devel][version] = "1.5"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
