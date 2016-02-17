@@ -202,7 +202,7 @@ projects[file_image_formatters][version] = "1.1"
 projects[file_image_formatters][type] = "module"
 projects[file_image_formatters][subdir] = "contrib"
 
-projects[focal_point][version] = "1.0-beta1"
+projects[focal_point][version] = "1.0-beta6"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
