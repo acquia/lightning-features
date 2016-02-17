@@ -56,7 +56,7 @@ projects[colorbox][download][type] = "git"
 projects[colorbox][download][revision] = "97a4ff1"
 projects[colorbox][download][branch] = "7.x-1.x"
 
-projects[composer_manager][version] = "1.7"
+projects[composer_manager][version] = "1.8"
 projects[composer_manager][type] = "module"
 projects[composer_manager][subdir] = "contrib"
 
