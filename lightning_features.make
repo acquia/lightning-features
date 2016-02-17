@@ -5,7 +5,7 @@ projects[admin_views][version] = "1.5"
 projects[admin_views][type] = "module"
 projects[admin_views][subdir] = "contrib"
 
-projects[better_formats][version] = "1.0-beta1"
+projects[better_formats][version] = "1.0-beta2"
 projects[better_formats][type] = "module"
 projects[better_formats][subdir] = "contrib"
 
