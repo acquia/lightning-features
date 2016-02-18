@@ -49,12 +49,9 @@ projects[collections][download][type] = "git"
 projects[collections][download][revision] = "b4e8212"
 projects[collections][download][branch] = "7.x-1.x"
 
-projects[colorbox][version] = "2.x-dev"
+projects[colorbox][version] = "2.10"
 projects[colorbox][type] = "module"
 projects[colorbox][subdir] = "contrib"
-projects[colorbox][download][type] = "git"
-projects[colorbox][download][revision] = "97a4ff1"
-projects[colorbox][download][branch] = "7.x-1.x"
 
 projects[composer_manager][version] = "1.8"
 projects[composer_manager][type] = "module"
