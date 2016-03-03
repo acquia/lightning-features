@@ -173,7 +173,7 @@ projects[field_group][version] = "1.5"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
-projects[fieldable_panels_panes][version] = "1.7"
+projects[fieldable_panels_panes][version] = "1.8"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 ; Allow a particular revision of a fieldable panels pane to be placed in a
@@ -341,12 +341,9 @@ projects[panels_preview][version] = "1.0-alpha2"
 projects[panels_preview][type] = "module"
 projects[panels_preview][subdir] = "contrib"
 
-projects[picture][version] = "1.x-dev"
+projects[picture][version] = "2.13"
 projects[picture][type] = "module"
 projects[picture][subdir] = "contrib"
-projects[picture][download][type] = "git"
-projects[picture][download][revision] = "3d9fe6c"
-projects[picture][download][branch] = "7.x-1.x"
 
 projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
