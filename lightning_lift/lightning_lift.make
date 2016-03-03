@@ -5,7 +5,7 @@ projects[acquia_connector][version] = "2.16"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
-projects[acquia_lift][version] = "2.0-rc1"
+projects[acquia_lift][version] = "2.0-rc2"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
