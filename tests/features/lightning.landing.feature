@@ -27,7 +27,7 @@ Feature: Lightning Landing
     And I should see "field_landing_tags"
     And I should see "metatags"
 
-  @javascript
+  @api @javascript
   Scenario: Use the IPE on a Landing Page
     Given I am logged in as a user with the "administrator" role
     And "landing_page" content:
