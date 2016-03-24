@@ -173,13 +173,16 @@ projects[field_group][version] = "1.5"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
-projects[fieldable_panels_panes][version] = "1.8"
+projects[fieldable_panels_panes][version] = "1.x-dev"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
+projects[fieldable_panels_panes][download][type] = "git"
+projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
+projects[fieldable_panels_panes][download][revision] = "a067f9b"
 ; Allow a particular revision of a fieldable panels pane to be placed in a
 ; panelized page
 ; http://drupal.org/node/1986334
-projects[fieldable_panels_panes][patch][1986334] = "http://drupal.org/files/issues/fpp-revisions-1986334-52.patch"
+projects[fieldable_panels_panes][patch][1986334] = "https://www.drupal.org/files/issues/fieldable_panels_panes-n1986334-75.patch"
 
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
