@@ -52,11 +52,13 @@ function lightning_build_distribution() {
 
 	# Build Codebase
 	mkdir profiles
-	ls lightning
+	ls -l lightning
         mv lightning lightning-features
         git clone --branch 7.x-1.x https://github.com/acquia/lightning.git
-        mv lightning-features lightning/modules/lightning_features
-        mv lightning/modules/lightning_features/tests/features/*.feature lightning/tests/features/.
+        cp lightning-features/tests/features/*.feature lightning/tests/features/.
+        cp lightning/behat.travis.yml.dist lightning-features/.
+        cp -R lightning/scripts lightning-features/scripts
+        cp -R lightning-features lightning/modules/lightning_features
         mv lightning profiles/
         mkdir drupal
 	mv profiles drupal/
