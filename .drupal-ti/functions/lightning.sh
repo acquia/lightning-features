@@ -66,6 +66,8 @@ function lightning_build_distribution() {
 	cd drupal
 	drush make --yes profiles/lightning/drupal-org-core.make --prepare-install
 	drush make --yes profiles/lightning/modules/lightning_features/lightning_features.make --no-core --contrib-destination=profiles/lightning
+	drush dl curate
+	drush dl assemble
 	drush dl diff
 	mkdir -p sites/default/private/files
 	mkdir -p sites/default/private/temp
