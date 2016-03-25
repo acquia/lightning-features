@@ -53,7 +53,7 @@ function lightning_build_distribution() {
 	# Build Codebase
 	mkdir profiles
         mkdir lightning_features
-        cp -R lightning/* lightning_features/*
+        cp -R lightning/* lightning_features/.
         cp -R lightning/.* lightning_features/.
         rm -r lightning
  
