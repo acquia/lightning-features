@@ -40,7 +40,7 @@ function lightning_ensure_distribution() {
 	MODULE_DIR=$(cd "$TRAVIS_BUILD_DIR"; pwd)
 
 	# Point distribution into the drupal installation directory.
-	ln -sf "$MODULE_DIR" "$DRUPAL_TI_DISTRIBUTION_NAME"
+	#ln -sf "$MODULE_DIR" "$DRUPAL_TI_DISTRIBUTION_NAME"
 }
 
 #
@@ -49,16 +49,18 @@ function lightning_ensure_distribution() {
 function lightning_build_distribution() {
 	# Ensure we are in the right directory.
 	cd "$DRUPAL_TI_DRUPAL_BASE"
-
+        
+        # Hotlink to the right directory for our project.
+        ln -sf "$MODULE_DIR" lightning_features
+        ls lightning_features
 	# Build Codebase
 	mkdir profiles
-        ls lightning
-        mv lightning lightning_features
-        git clone --branch 7.x-1.x https://github.com/acquia/lightning.git
+        # Clone the actual lightning 7.x-1.x branch as for our build.
+        git clone --branch 7.x-1.x https://github.com/acquia/lightning.git lightning
+        # Copy Lightning's .dist file and scripts for checking features overrides.
         cp lightning/behat.travis.yml.dist lightning_features/behat.travis.yml.dist 
         cp -R lightning/scripts lightning_features/scripts
-        mkdir -p lightning/modules/contrib
-        mv lightning_features lightning/modules/contrib/lightning_features
+        
         mv lightning profiles/
         mkdir drupal
 	mv profiles drupal/
@@ -67,9 +69,11 @@ function lightning_build_distribution() {
 	lightning_header Building Lightning from current branch
 	cd drupal
 	drush make --yes profiles/lightning/drupal-org-core.make --prepare-install
-	drush make --yes profiles/lightning/modules/contrib/lightning_features/lightning_features.make --no-core --contrib-destination=profiles/lightning
-        drush dl curate
-        drush dl assemble
+	drush make --yes profiles/lightning/drupal-org.make --no-core --contrib-destination=profiles/lightning
+        # Override what we've been provided from the profile (e.g. a tagged release).
+        rm -r profiles/lightning/modules/contrib/lightning_features
+        ln -sf "$MODULE_DIR" profiles/lightning/modules/contrib/lightning_features 
+        drush make --yes profiles/lightning/modules/contrib/lightning_features/lightning_features.make --no-core --contrib-destination=profiles/lightning
         drush dl diff
 	mkdir -p sites/default/private/files
 	mkdir -p sites/default/private/temp
