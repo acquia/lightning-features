@@ -52,12 +52,12 @@ function lightning_build_distribution() {
 
 	# Build Codebase
 	mkdir profiles
-	ls -l lightning
-        mv lightning lightning-features
-        git clone --branch 7.x-1.x https://github.com/acquia/lightning.git
-        cp lightning/behat.travis.yml.dist lightning-features/.
-        cp -R lightning/scripts lightning-features/scripts
-        cp -R lightning-features lightning/modules/lightning_features
+	ls lightning
+        cp lightning/lightning_features.make .
+        rm -r lightning/*
+        mv lightning_features.make lightning/
+        git clone --branch 7.x-1.x https://github.com/acquia/lightning.git build
+        cp -R build/* lightning/
         mv lightning profiles/
         mkdir drupal
 	mv profiles drupal/
@@ -66,10 +66,10 @@ function lightning_build_distribution() {
 	lightning_header Building Lightning from current branch
 	cd drupal
 	drush make --yes profiles/lightning/drupal-org-core.make --prepare-install
-	drush make --yes profiles/lightning/modules/lightning_features/lightning_features.make --no-core --contrib-destination=profiles/lightning
-	drush dl curate
-	drush dl assemble
-	drush dl diff
+	drush make --yes profiles/lightning/lightning_features.make --no-core --contrib-destination=profiles/lightning
+        drush dl curate
+        drush dl assemble
+        drush dl diff
 	mkdir -p sites/default/private/files
 	mkdir -p sites/default/private/temp
 
