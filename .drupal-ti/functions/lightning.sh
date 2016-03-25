@@ -74,6 +74,8 @@ function lightning_build_distribution() {
         rm -r profiles/lightning/modules/contrib/lightning_features
         ln -sf "$MODULE_DIR" profiles/lightning/modules/contrib/lightning_features 
         drush make --yes profiles/lightning/modules/contrib/lightning_features/lightning_features.make --no-core --contrib-destination=profiles/lightning
+	# Copy the Lightning Features tests into the profile.
+        mv profiles/lightning/modules/contrib/lightning_features/tests/features/*.feature profiles/lightning/tests/features/.
         drush dl diff
 	mkdir -p sites/default/private/files
 	mkdir -p sites/default/private/temp
