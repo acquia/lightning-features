@@ -52,8 +52,9 @@ function lightning_build_distribution() {
 
 	# Build Codebase
 	mkdir profiles
-        cp -R lightning lightning_features
-        cp -R lightning/.* lightning_features/
+        mkdir lightning_features
+        cp -R lightning/* lightning_features/*
+        cp -R lightning/.* lightning_features/.
         rm -r lightning
  
         git clone --branch 7.x-1.x https://github.com/acquia/lightning.git
