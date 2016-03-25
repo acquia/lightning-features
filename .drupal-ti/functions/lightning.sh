@@ -55,6 +55,8 @@ function lightning_build_distribution() {
         ls lightning
         mv lightning lightning_features
         git clone --branch 7.x-1.x https://github.com/acquia/lightning.git
+        cp lightning/behat.travis.yml.dist lightning_features/behat.travis.yml.dist 
+        cp -R lightning/scripts lightning_features/scripts
         mkdir -p lightning/modules/contrib
         mv lightning_features lightning/modules/contrib/lightning_features
         mv lightning profiles/
