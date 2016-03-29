@@ -15,5 +15,8 @@ function lightning_fpp_install() {
     module_enable(array('sps_fpp'));
   }
 
+  // Enable FPP revision locking
+  variable_set('fpp_revision_locking', 'lock');
+
 }
 
