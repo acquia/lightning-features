@@ -251,7 +251,7 @@ projects[media][download][type] = "git"
 projects[media][download][revision] = "844baf0"
 projects[media][download][branch] = "7.x-2.x"
 
-projects[media_oembed][version] = "2.5"
+projects[media_oembed][version] = "2.6"
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
 
