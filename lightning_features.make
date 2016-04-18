@@ -106,7 +106,7 @@ projects[draggableviews][version] = "2.1"
 projects[draggableviews][type] = "module"
 projects[draggableviews][subdir] = "contrib"
 
-projects[editor][version] = "1.0-alpha6"
+projects[editor][version] = "1.0-alpha7"
 projects[editor][type] = "module"
 projects[editor][subdir] = "contrib"
 
