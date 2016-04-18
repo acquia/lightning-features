@@ -345,7 +345,7 @@ projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[quickedit][version] = "1.4"
+projects[quickedit][version] = "1.5"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
 ; Remove data-quickedit-field-id for personalized fields.
