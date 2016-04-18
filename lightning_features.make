@@ -94,7 +94,7 @@ projects[devel][version] = "1.5"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha8"
+projects[dialog][version] = "2.0-alpha9"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
 
