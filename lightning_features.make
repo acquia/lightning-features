@@ -222,7 +222,7 @@ projects[import][version] = "1.0-alpha1"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 
-projects[inline_entity_form][version] = "1.6"
+projects[inline_entity_form][version] = "1.8"
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][subdir] = "contrib"
 
