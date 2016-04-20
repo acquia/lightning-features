@@ -94,7 +94,7 @@ projects[devel][version] = "1.5"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[dialog][version] = "2.0-alpha8"
+projects[dialog][version] = "2.0-alpha9"
 projects[dialog][type] = "module"
 projects[dialog][subdir] = "contrib"
 
@@ -106,7 +106,7 @@ projects[draggableviews][version] = "2.1"
 projects[draggableviews][type] = "module"
 projects[draggableviews][subdir] = "contrib"
 
-projects[editor][version] = "1.0-alpha6"
+projects[editor][version] = "1.0-alpha7"
 projects[editor][type] = "module"
 projects[editor][subdir] = "contrib"
 
@@ -345,7 +345,7 @@ projects[plupload][version] = "1.7"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
-projects[quickedit][version] = "1.4"
+projects[quickedit][version] = "1.5"
 projects[quickedit][type] = "module"
 projects[quickedit][subdir] = "contrib"
 ; Remove data-quickedit-field-id for personalized fields.
