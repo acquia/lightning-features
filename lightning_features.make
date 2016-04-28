@@ -520,6 +520,10 @@ libraries[ckeditor-leaflet][download][type] = "get"
 libraries[ckeditor-leaflet][download][url] = "https://github.com/ranelpadon/ckeditor-leaflet/archive/master.zip"
 libraries[ckeditor-leaflet][directory_name] = "ckeditor-leaflet"
 
+libraries[ckeditor-track-changes][download][type] = "get"
+libraries[ckeditor-track-changes][download][url] = "https://github.com/loopindex/ckeditor-track-changes/archive/fe309f5f5ea98ce739bf21e06f34d1d935d0c0ad.zip"
+libraries[ckeditor-track-changes][directory_name] = "lite"
+
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
 
