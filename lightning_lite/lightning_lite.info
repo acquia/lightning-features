@@ -1,0 +1,6 @@
+name = Lightning Lite
+description = Integrates the Lite track changes plugin for CKEditor with Lightning.
+package = User interface
+core = 7.x
+
+dependencies[] = lite

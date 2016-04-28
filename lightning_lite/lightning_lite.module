@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Integrates the Lite track changes plugin for CKEditor with Lightning.
+ */
+
+/**
+ * Implements hook_filter_default_formats_alter().
+ *
+ * The LITE plugin does not currently handle custom HTML tags such as
+ * `<drupal-entity>` and `<drupal-url>`.
+ * The plugin must be patched to ignore custom tags until the issue is fixed.
+ * Unfortunately, the version hosted on ckeditor.com is minified making patching
+ * impossible. Therefore, in order to work around the issue, we use the raw
+ * source files from Github which use a different directory structure.
+ */
+function lightning_lite_libraries_info_alter(&$libraries) {
+  // The raw source files hosted on Github are located in a subdirectory.
+  if (!empty($libraries['lite'])) {
+    $libraries['lite']['path'] = 'src/lite';
+  }
+}
+
+/**
+ * Implements hook_filter_default_formats_alter().
+ */
+function lightning_lite_filter_default_formats_alter(&$formats) {
+  if (!empty($formats['filtered_html'])) {
+    $editor_settings = unserialize($formats['filtered_html']['editor_settings']);
+
+    // Add a new group containing the Lite buttons to the first toolbar row.
+    $editor_settings['toolbar'][0][] = array(
+      'name' => 'Lite',
+      'items' => array(
+        0 => 'lite-toggletracking',
+        1 => 'lite-toggleshow',
+        2 => 'lite-acceptall',
+        3 => 'lite-rejectall',
+        4 => 'lite-acceptone',
+        5 => 'lite-rejectone',
+      ),
+    );
+
+    $formats['filtered_html']['editor_settings'] = serialize($editor_settings);
+  }
+}
