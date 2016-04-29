@@ -19,6 +19,14 @@ function lightning_lite_libraries_info_alter(&$libraries) {
   // The raw source files hosted on Github are located in a subdirectory.
   if (!empty($libraries['lite'])) {
     $libraries['lite']['path'] = 'src/lite';
+
+    // Reset the library path to work around a bug with the Libraries module not
+    // incorporating the ['path'] when calling libraries_get_path().
+    $libraries['lite']['library path'] = libraries_get_path('lite') . '/' . $libraries['lite']['path'];
+
+    // Hardcode the version number because the raw source files do not contain
+    // any version information.
+    $libraries['lite']['version'] = '1.2.26';
   }
 }
 
