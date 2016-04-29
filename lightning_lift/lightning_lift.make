@@ -9,7 +9,7 @@ projects[acquia_lift][version] = "2.0-rc2"
 projects[acquia_lift][type] = "module"
 projects[acquia_lift][subdir] = "contrib"
 
-projects[personalize][version] = "2.0-rc1"
+projects[personalize][version] = "2.0-rc2"
 projects[personalize][type] = "module"
 projects[personalize][subdir] = "contrib"
 
