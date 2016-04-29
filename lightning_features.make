@@ -238,12 +238,9 @@ projects[link][version] = "1.4"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
-projects[lite][version] = "1.x-dev"
+projects[lite][version] = "1.0"
 projects[lite][type] = "module"
 projects[lite][subdir] = "contrib"
-projects[lite][download][type] = "git"
-projects[lite][download][revision] = "c143067"
-projects[lite][download][branch] = "7.x-1.x"
 
 projects[magic_beans][version] = "1.x-dev"
 projects[magic_beans][type] = "module"
