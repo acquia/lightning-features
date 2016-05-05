@@ -170,12 +170,9 @@ projects[field_group][version] = "1.5"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
-projects[fieldable_panels_panes][version] = "1.x-dev"
+projects[fieldable_panels_panes][version] = "1.10"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
-projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
-projects[fieldable_panels_panes][download][revision] = "a32dd49"
 
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
