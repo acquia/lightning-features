@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[acquia_connector][version] = "2.16"
+projects[acquia_connector][version] = "2.17"
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
 
