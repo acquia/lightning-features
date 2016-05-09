@@ -125,7 +125,7 @@ projects[ember_support][version] = "1.x-dev"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
 
-projects[entity][version] = "1.x-dev"
+projects[entity][version] = "1.7"
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 
