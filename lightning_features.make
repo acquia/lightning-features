@@ -174,12 +174,12 @@ projects[fieldable_panels_panes][version] = "1.10"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 
+projects[file_entity][version] = "2.0-beta3"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][download][type] = "git"
-projects[file_entity][download][url] = "http://git.drupal.org/project/file_entity.git"
-projects[file_entity][download][branch] = "7.x-2.x"
-projects[file_entity][download][revision] = "621a20c"
+; Fatal error: Call to undefined function file_entity_view_page().
+; http://drupal.org/node/2569679
+projects[file_entity][patch][2569679] = "http://drupal.org/files/issues/file_entity-fix-default-page-view-fallback-2569679-2.patch"
 
 projects[file_entity_link][version] = "1.0-alpha3"
 projects[file_entity_link][type] = "module"
