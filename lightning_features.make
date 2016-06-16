@@ -49,7 +49,7 @@ projects[collections][download][type] = "git"
 projects[collections][download][revision] = "b4e8212"
 projects[collections][download][branch] = "7.x-1.x"
 
-projects[colorbox][version] = "2.10"
+projects[colorbox][version] = "2.12"
 projects[colorbox][type] = "module"
 projects[colorbox][subdir] = "contrib"
 
