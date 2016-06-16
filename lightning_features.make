@@ -427,9 +427,6 @@ projects[ux_elements][patch][1224568] = "http://drupal.org/files/issues/1224568-
 projects[views][version] = "3.14"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
-; Call to a member function init_display() on a non-object...
-; http://drupal.org/node/1685144
-projects[views][patch][1685114] = "http://drupal.org/files/views-1685144-localization-bug_1.patch"
 
 projects[views_autocomplete_filters][version] = "1.2"
 projects[views_autocomplete_filters][type] = "module"
