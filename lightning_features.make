@@ -245,12 +245,9 @@ projects[magic_beans][subdir] = "contrib"
 projects[magic_beans][download][type] = "git"
 projects[magic_beans][download][branch] = "7.x-1.x"
 
-projects[media][version] = "2.x-dev"
+projects[media][version] = "2.0-beta2"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
-projects[media][download][type] = "git"
-projects[media][download][revision] = "844baf0"
-projects[media][download][branch] = "7.x-2.x"
 
 projects[media_oembed][version] = "2.6"
 projects[media_oembed][type] = "module"
