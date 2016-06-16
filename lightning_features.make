@@ -147,7 +147,7 @@ projects[entityreference_prepopulate][version] = "1.6"
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
-projects[entityreference_view_widget][version] = "2.0-rc6"
+projects[entityreference_view_widget][version] = "2.0-rc7"
 projects[entityreference_view_widget][type] = "module"
 projects[entityreference_view_widget][subdir] = "contrib"
 ; Use Dialog instead of Chaos Tools for modal support.
