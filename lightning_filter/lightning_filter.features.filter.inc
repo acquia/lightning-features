@@ -24,7 +24,7 @@ function lightning_filter_filter_default_formats() {
         'weight' => 0,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h3> <h4> <h5> <p> <img> <figure> <figcaption> <drupal-entity> <div> <iframe> <span> <table> <thead> <tbody> <tr> <td> <th>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h3> <h4> <h5> <p> <img> <figure> <figcaption> <del data-changedata data-cid data-last-change-time data-time data-username class="ice-del ice-cts-*"> <ins data-changedata data-cid data-last-change-time data-time data-username class="ice-ins ice-cts-*"> <drupal-entity data-entity-type data-entity-uuid data-view-mode data-entity-embed-display data-entity-embed-settings data-align data-caption data-embed-button> <div> <iframe> <span> <table> <thead> <tbody> <tr> <td> <th>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
