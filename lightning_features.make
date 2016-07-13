@@ -249,7 +249,7 @@ projects[media][version] = "2.0-beta2"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 
-projects[media_oembed][version] = "2.6"
+projects[media_oembed][version] = "2.7"
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
 
