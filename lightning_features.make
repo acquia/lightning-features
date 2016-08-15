@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[admin_views][version] = "1.5"
+projects[admin_views][version] = "1.6"
 projects[admin_views][type] = "module"
 projects[admin_views][subdir] = "contrib"
 
