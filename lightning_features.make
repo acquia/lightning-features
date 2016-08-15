@@ -9,12 +9,9 @@ projects[better_formats][version] = "1.0-beta2"
 projects[better_formats][type] = "module"
 projects[better_formats][subdir] = "contrib"
 
-projects[bean][version] = "1.9"
+projects[bean][version] = "1.11"
 projects[bean][type] = "module"
 projects[bean][subdir] = "contrib"
-projects[bean][download][type] = "git"
-projects[bean][download][revision] = "34acaec"
-projects[bean][download][branch] = "7.x-1.x"
 ; Bean's panelizer integration does not correctly use views_data_alter
 ; http://drupal.org/node/2474631
 projects[bean][patch][2474631] = "http://drupal.org/files/issues/2474631-11.patch"
