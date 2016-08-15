@@ -449,7 +449,7 @@ projects[views_load_more][version] = "1.5"
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.12"
+projects[webform][version] = "4.13"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
