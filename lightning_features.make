@@ -303,11 +303,9 @@ projects[pathauto][version] = "1.3"
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
 
-projects[panelizer][version] = "3.2"
+projects[panelizer][version] = "3.3"
+projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
-;projects[panelizer][download][type] = "git"
-;projects[panelizer][download][revision] = "071ee2d"
-;projects[panelizer][download][branch] = "7.x-3.x"
 ; Better Revision Handling inside and outside of Workbench Moderation
 ; http://drupal.org/node/2457113
 projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113_0.diff"
