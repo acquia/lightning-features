@@ -308,7 +308,7 @@ projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
 ; Better Revision Handling inside and outside of Workbench Moderation
 ; http://drupal.org/node/2457113
-projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113_0.diff"
+projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/panelizer-n2457113-69.patch"
 
 projects[panels][version] = "3.6"
 projects[panels][type] = "module"
