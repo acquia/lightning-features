@@ -73,8 +73,8 @@ function lightning_landing_panelizer_defaults() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '919d49f2-3878-bfa4-018b-3f0ba58eeb38';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'panelizer_default';
+  $display->storage_id = 'node:landing:default';
   $display->content = array();
   $display->panels = array();
   $display->hide_title = PANELS_TITLE_FIXED;
