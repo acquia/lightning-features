@@ -232,7 +232,7 @@ projects[link][version] = "1.4"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
-projects[lite][version] = "1.0"
+projects[lite][version] = "1.1"
 projects[lite][type] = "module"
 projects[lite][subdir] = "contrib"
 
