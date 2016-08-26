@@ -484,6 +484,9 @@ projects[workbench_moderation][patch][1838640] = "http://drupal.org/files/issues
 ; "View draft" opens published version / "Edit draft" opens correctly
 ; https://www.drupal.org/node/2447659
 projects[workbench_moderation][patch][2447659] = "http://drupal.org/files/issues/workbench-moderation-show-draft-2447659-19.patch"
+; Provide hook to alter the new state of transitions.
+; http://www.drupal.org/node/2757963
+projects[workbench_moderation][patch][2757963] = "https://www.drupal.org/files/issues/allow_new_state_alter-2757963-2.patch"
 
 projects[workbench_moderation_buttons][version] = "1.0-alpha3"
 projects[workbench_moderation_buttons][type] = "module"
