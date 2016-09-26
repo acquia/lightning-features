@@ -310,15 +310,13 @@ projects[panelizer][subdir] = "contrib"
 ; http://drupal.org/node/2457113
 projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/panelizer-n2457113-69.patch"
 
-projects[panels][version] = "3.6"
+projects[panels][version] = "3.7"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 ; Fix IPE JS alert (Panelizer is Incompatible with Moderation)
 ; http://drupal.org/node/1402860#comment-9729091
 projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch"
 ; IPE Insufficient for working with Panelizer Revisioning
-; https://www.drupal.org/node/2462331#comment-9778921
-projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-7.patch"
 ; Refresh the Workbench block after editing with Panels IPE
 ; https://www.drupal.org/node/2485837
 projects[panels][patch][2485837] = "http://www.drupal.org/files/issues/panels-ipe-workbench-block-2485837-1.patch"
