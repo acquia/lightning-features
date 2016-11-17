@@ -164,7 +164,7 @@ projects[field_group][version] = "1.5"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
-projects[fieldable_panels_panes][version] = "1.10"
+projects[fieldable_panels_panes][version] = "1.11"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 
