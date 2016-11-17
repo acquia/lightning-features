@@ -133,12 +133,9 @@ projects[entity_embed][download][type] = "git"
 projects[entity_embed][download][revision] = "bb4f5e3"
 projects[entity_embed][download][branch] = "7.x-3.x"
 
-projects[entityreference][version] = "1.x-dev"
+projects[entityreference][version] = "1.2"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
-projects[entityreference][download][type] = "git"
-projects[entityreference][download][revision] = "b5009cd"
-projects[entityreference][download][branch] = "7.x-1.x"
 
 projects[entityreference_prepopulate][version] = "1.6"
 projects[entityreference_prepopulate][type] = "module"
