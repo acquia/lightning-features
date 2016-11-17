@@ -475,7 +475,7 @@ projects[workbench_moderation][patch][2447659] = "http://drupal.org/files/issues
 ; http://www.drupal.org/node/2757963
 projects[workbench_moderation][patch][2757963] = "https://www.drupal.org/files/issues/allow_new_state_alter-2757963-2.patch"
 
-projects[workbench_moderation_buttons][version] = "1.0-alpha3"
+projects[workbench_moderation_buttons][version] = "1.0"
 projects[workbench_moderation_buttons][type] = "module"
 projects[workbench_moderation_buttons][subdir] = "contrib"
 
