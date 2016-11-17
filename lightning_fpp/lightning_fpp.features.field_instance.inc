@@ -26,6 +26,7 @@ function lightning_fpp_field_default_field_instances() {
           'quickedit' => array(
             'editor' => 'form',
           ),
+          'use_content_language' => TRUE,
           'view_mode' => 'featured',
         ),
         'type' => 'entityreference_entity_view',
@@ -88,6 +89,7 @@ function lightning_fpp_field_default_field_instances() {
           'quickedit' => array(
             'editor' => 'form',
           ),
+          'static_scale' => 1,
           'zoom_level' => 14,
         ),
         'type' => 'simple_gmap',
