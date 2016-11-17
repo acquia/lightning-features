@@ -300,7 +300,7 @@ projects[pathauto][version] = "1.3"
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
 
-projects[panelizer][version] = "3.3"
+projects[panelizer][version] = "3.4"
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
 ; Better Revision Handling inside and outside of Workbench Moderation
