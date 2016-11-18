@@ -99,6 +99,10 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
+projects[drafty][version] = "1.0-beta3"
+projects[drafty][type] = "module"
+projects[drafty][subdir] = "contrib"
+
 projects[draggableviews][version] = "2.1"
 projects[draggableviews][type] = "module"
 projects[draggableviews][subdir] = "contrib"
@@ -456,7 +460,7 @@ projects[workbench][download][branch] = "7.x-1.x"
 ; https://www.drupal.org/node/2606230
 projects[workbench][patch][2606230] = "http://drupal.org/files/issues/update-views-api-2606230-2.patch"
 
-projects[workbench_moderation][version] = "1.4"
+projects[workbench_moderation][version] = "3.0"
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
 ; Workbench Moderation IIB Integration should be optional
@@ -468,12 +472,9 @@ projects[workbench_moderation][patch][2485713] = "http://drupal.org/files/issues
 ; Fix warnings on installation and features revert.
 ; https://www.drupal.org/node/2360973
 projects[workbench_moderation][patch][2360973] = "http://drupal.org/files/issues/workbench_moderation-install-warnings-2360973-3.patch"
-; restws_page_callback() breaks workbench_moderation
-; https://www.drupal.org/node/1838640
-projects[workbench_moderation][patch][1838640] = "http://drupal.org/files/issues/workbench_moderation-fix_callback_argument-1838640-23.patch"
 ; "View draft" opens published version / "Edit draft" opens correctly
 ; https://www.drupal.org/node/2447659
-projects[workbench_moderation][patch][2447659] = "http://drupal.org/files/issues/workbench-moderation-show-draft-2447659-19.patch"
+projects[workbench_moderation][patch][2447659] = "http://drupal.org/files/issues/workbench-moderation-show-draft-2447659-45.patch"
 ; Provide hook to alter the new state of transitions.
 ; http://www.drupal.org/node/2757963
 projects[workbench_moderation][patch][2757963] = "https://www.drupal.org/files/issues/allow_new_state_alter-2757963-2.patch"
