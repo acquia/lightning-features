@@ -322,7 +322,7 @@ projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-
 ; https://www.drupal.org/node/2485837
 projects[panels][patch][2485837] = "http://www.drupal.org/files/issues/panels-ipe-workbench-block-2485837-1.patch"
 
-projects[panels_preview][version] = "1.0-alpha2"
+projects[panels_preview][version] = "1.0-beta1"
 projects[panels_preview][type] = "module"
 projects[panels_preview][subdir] = "contrib"
 
