@@ -168,12 +168,9 @@ projects[field_group][version] = "1.5"
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 
-projects[fieldable_panels_panes][version] = "1.11"
+projects[fieldable_panels_panes][version] = "1.10"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
-; Remove migrate_d2d as a migrate dependency.
-; http://drupal.org/node/2828589
-projects[fieldable_panels_panes][patch][2828589] = "http://drupal.org/files/issues/0001-Revert-Issue-2798965-by-tbfisher-Migrate-class-for-u.patch"
 
 projects[file_entity][version] = "2.0-beta3"
 projects[file_entity][type] = "module"
