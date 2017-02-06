@@ -370,7 +370,7 @@ projects[rules][version] = "2.9"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
-projects[simple_gmap][version] = "1.3"
+projects[simple_gmap][version] = "1.4"
 projects[simple_gmap][type] = "module"
 projects[simple_gmap][subdir] = "contrib"
 
