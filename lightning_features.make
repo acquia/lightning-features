@@ -311,7 +311,7 @@ projects[panelizer][subdir] = "contrib"
 ; http://drupal.org/node/2457113
 projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/panelizer-n2457113-69.patch"
 
-projects[panels][version] = "3.8"
+projects[panels][version] = "3.9"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 ; Fix IPE JS alert (Panelizer is Incompatible with Moderation)
