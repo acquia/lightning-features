@@ -99,7 +99,7 @@ projects[diff][version] = "3.3"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[drafty][version] = "1.0-beta3"
+projects[drafty][version] = "1.0-beta4"
 projects[drafty][type] = "module"
 projects[drafty][subdir] = "contrib"
 
