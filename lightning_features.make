@@ -435,7 +435,7 @@ projects[views_content_cache][download][type] = "git"
 projects[views_content_cache][download][revision] = "45863c3"
 projects[views_content_cache][download][branch] = "7.x-3.x"
 
-projects[views_fieldsets][version] = "1.3"
+projects[views_fieldsets][version] = "2.1"
 projects[views_fieldsets][type] = "module"
 projects[views_fieldsets][subdir] = "contrib"
 
