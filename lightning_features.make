@@ -256,7 +256,7 @@ projects[metatag][version] = "1.21"
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
 
-projects[module_filter][version] = "2.0"
+projects[module_filter][version] = "2.1"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
