@@ -363,7 +363,7 @@ projects[role_export][version] = "1.0"
 projects[role_export][type] = "module"
 projects[role_export][subdir] = "contrib"
 
-projects[rules][version] = "2.9"
+projects[rules][version] = "2.10"
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 
