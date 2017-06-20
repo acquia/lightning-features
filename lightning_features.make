@@ -35,7 +35,7 @@ projects[cache_warmer][version] = "4.1"
 projects[cache_warmer][type] = "module"
 projects[cache_warmer][subdir] = "contrib"
 
-projects[classy_panel_styles][version] = "1.0-alpha2"
+projects[classy_panel_styles][version] = "1.0-alpha3"
 projects[classy_panel_styles][type] = "module"
 projects[classy_panel_styles][subdir] = "contrib"
 
