@@ -69,7 +69,7 @@ projects[ctools][subdir] = "contrib"
 ; http://drupal.org/node/2422123
 projects[ctools][patch][2422123] = "https://www.drupal.org/files/issues/entity_related_hooks-2422123-20.patch"
 
-projects[date][version] = "2.9"
+projects[date][version] = "2.10"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
