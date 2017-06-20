@@ -137,7 +137,7 @@ projects[entity_embed][download][type] = "git"
 projects[entity_embed][download][revision] = "bb4f5e3"
 projects[entity_embed][download][branch] = "7.x-3.x"
 
-projects[entityreference][version] = "1.2"
+projects[entityreference][version] = "1.4"
 projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 
