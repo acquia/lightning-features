@@ -409,7 +409,7 @@ projects[ux_elements][download][branch] = "master"
 ; http://drupal.org/node/1224568
 projects[ux_elements][patch][1224568] = "http://drupal.org/files/issues/1224568-ux_elements_redeclare.patch"
 
-projects[views][version] = "3.15"
+projects[views][version] = "3.16"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
