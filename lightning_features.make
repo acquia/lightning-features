@@ -172,7 +172,7 @@ projects[fieldable_panels_panes][version] = "1.10"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 
-projects[file_entity][version] = "2.2"
+projects[file_entity][version] = "2.3"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 
