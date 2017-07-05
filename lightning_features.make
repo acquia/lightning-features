@@ -240,7 +240,7 @@ projects[magic_beans][subdir] = "contrib"
 projects[magic_beans][download][type] = "git"
 projects[magic_beans][download][branch] = "7.x-1.x"
 
-projects[media][version] = "2.8"
+projects[media][version] = "2.9"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 
